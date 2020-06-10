@@ -20,11 +20,13 @@ body{
 
 .nav-link{
     font-weight: 500;
-    color: #1C1C1C;
+    color: #000000;
+    
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
     padding-left: 10%;
+    color: #000000;
 }
 
 .btn{
