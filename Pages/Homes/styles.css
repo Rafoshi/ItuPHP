@@ -69,6 +69,17 @@ body{
     margin-left: 50px;
 }
 
+.sidenav-language .dark-theme #toggle-icon{
+    color: #25282B;
+}
+
+.dark-theme{
+    font-weight: 500;
+    color: #52575C;
+    padding-top: 230%;
+    margin-left: 35%;
+}
+
 #main {
     transition: margin-left .5s;
     padding: none;
