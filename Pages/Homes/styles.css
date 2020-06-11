@@ -91,6 +91,7 @@ body{
 
 .btn-language{
     border: none;
+    background-color: #EFEFEF;
 }
 
 .btn-language:focus {
