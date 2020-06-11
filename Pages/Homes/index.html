@@ -1,51 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <!--Por favor vai -->>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="bootstrap.css">
         <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <script src="index.js" charset="utf-8" ></script>
+        <script src="./bootstrap.min.js" charset="utf-8" ></script>
+        <script src="https://unpkg.com/feather-icons"></script>
     </head>
     <body >
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-nav">
-                    <button class="btn-language">
-                        <img src="../../assets/globe.svg" class="img-fluid" alt="Language">
-                    </button>
-                    <img src="../../assets/logo-title.svg" class="img-fluid" alt="Logo">
-                </div>
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Início</a>
-                    <a class="nav-item nav-link" href="#">Preços</a>
-                    <a class="nav-item nav-link" href="#">Portifólio</a>
-                    <a class="nav-item nav-link" href="#">Sobre</a>
-                </div>
-                <button class="btn"><img src="../../assets/login.svg">Entrar</button>
-            </nav>
-        </header>  
-        <!--Testetlksdjflksdajf-->  
-        <main>
-            <p>SIDE NAV AQUI Ó</p>
-        </main>
-        <div class="cards">
 
-        </div>
-        <big class="about">
+        <div id="mySidenav" class="sidenav-language">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Português<i data-feather="check-circle" id="check-icon"></i></a><hr/>
+            <a href="#">English</a><hr/>
+            <a href="#">Français</a><hr/>
+            <a href="#">日本語</a><hr/>
+          </div>
+
+        <div id="main">
+            <header>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-nav">
+                        <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">
+                            <button class="btn-language">
+                                <i data-feather="globe" id="globe-icon"></i>
+                            </button>
+                        </span>
+                        <img src="../../assets/logo-title.svg" class="img-fluid user-select-none" alt="Logo">
+                    </div>
+
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Início</a>
+                        <a class="nav-item nav-link" href="#">Preços</a>
+                        <a class="nav-item nav-link" href="#">Portifólio</a>
+                        <a class="nav-item nav-link" href="#">Sobre</a>
+                    </div>
+
+                    <button class="btn"><img src="../../assets/login.svg">Entrar</button>
+                </nav>
+            </header>
+
+            <main>
+                
+            </main>
+
+            <div class="cards">
+            </div>
+
+            <big class="about">
+            </big>
+
+            <div class="image-footer">
+            </div>
+
+            <footer>
+            </footer>
             
-        </big>
-        <div class="image-footer">
-
+            <script>feather.replace()</script>
         </div>
-        <footer>
-
-        </footer>
-        <!--Teste Teste-->
-    <script src="index.js" charset="utf-8" ></script>
-    <script src="./bootstrap.min.js" charset="utf-8" ></script>
     </body>
 </html>
