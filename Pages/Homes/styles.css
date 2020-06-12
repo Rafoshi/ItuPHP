@@ -3,7 +3,17 @@ body{
     background-color: #f4f4f4;
     -webkit-font-smoothing: antialiased;
 }
-
+a:link {
+    color: #000000;
+    text-decoration: none;
+  }
+  .grow:hover{
+    color: #000000;
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+    
+  }
 .bg-light {
     background-color: #EFEFEF !important;
 }
