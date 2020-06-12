@@ -14,17 +14,27 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <div class="content">
-        <i data-feather="arrow-left" id="arrow-left" onclick="window.location.href='../Home/index.html'" ></i>
+        <img src="../../assets/arrow-left.svg" alt="Seta para voltar" class="arrow-icon" >
         <div class="container-form-image">
             <div class="form">
-
+                <h1>Olá, faça seu login</h1>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <button type="submit" id="login-button">Entrar</button>
+                  </div>
+                <img src="../../assets/login-blue.svg" alt="Login icone" class="img-login" ondragstart="return false;" >
+                <small>Não tem conta?<u>clique aqui</u></small>
             </div>
             <div class="image">
-                <img src="" alt="">
+                <img src="../../assets/jigsaw-group.svg" alt="Um grupo de pessoals montando quebra cabeça" class="img-fluid" ondragstart="return false;" >
             </div>
+
         </div>
-    </div>
 
     <script>feather.replace()</script>
 </body>

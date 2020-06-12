@@ -198,7 +198,7 @@ main{
     z-index: 1;
 }
 
-    .box {
+.box {
     position: relative;
     -webkit-border-radius: 8px;
     border-radius: 8px;
@@ -214,7 +214,7 @@ main{
     padding-top: 65px;
 }
 
-    .box-inner {
+.box-inner {
     padding: 30px;
 }
 
