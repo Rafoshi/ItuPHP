@@ -9,11 +9,6 @@ a:link {
     text-decoration: none;
 }
 
-#arrow-left{
-    margin-top: 25px;
-    margin-left: 25px;
-    cursor: pointer;
-}
 
 .container-form-image{
     display: flex;
@@ -29,6 +24,7 @@ h1{
     letter-spacing: -0.015em;
     color: #25282B;
     margin-bottom: 20%;
+    margin-top: -10%;
 }
 
 label{
@@ -62,6 +58,11 @@ input{
     height: calc(1.5em + 0.75rem + 10px);
 }
 
+#login-button:hover{
+    background-color: #137CB4;
+    transition: 0.6s;
+}
+
 .img-login{
     filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.15));
     cursor: pointer;
@@ -85,4 +86,5 @@ u{
     filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.15));
     margin-top: 1%;
     margin-left: 2%;
+    cursor: pointer;
 }
