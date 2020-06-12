@@ -1,0 +1,90 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.container-form-image{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+    align-items: center;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #25282B;
+    margin-bottom: 20%;
+    margin-top: -10%;
+}
+
+label{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #25282B;
+}
+
+input{
+    border: 1px solid #A0A4A8;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#login-button{
+    color: #F2F2F2;
+    width: 100%;
+    font-size: 20px;
+    background: #208AC3;
+    border-color: #208AC3;
+    padding: 5px;
+    user-select: none;
+    border-style: none;
+    background: #208AC3;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: calc(1.5em + 0.75rem + 10px);
+}
+
+#login-button:hover{
+    background-color: #137CB4;
+    transition: 0.6s;
+}
+
+.img-login{
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.15));
+    cursor: pointer;
+}
+
+small{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #25282B;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+u{
+    cursor: pointer;
+}
+
+.arrow-icon{
+    filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.15));
+    margin-top: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+}

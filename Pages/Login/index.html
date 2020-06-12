@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Infinity Tech</title>
+        <link rel="icon" href="../../assets/logo.svg">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <script src="index.js" charset="utf-8" ></script>
+        <script src="./bootstrap.min.js" charset="utf-8" ></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <img src="../../assets/arrow-left.svg" alt="Seta para voltar" class="arrow-icon" onclick="window.location.href='../Home/index.html'" >
+
+        <div class="container-form-image">
+            <div class="form">
+                <h1>Olá, faça seu login</h1>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <button type="submit" id="login-button">Entrar</button>
+                </div>
+                    <img src="../../assets/login-blue.svg" alt="Login icone" class="img-login" onclick="window.location.href='../Register/index.html'" ondragstart="return false;" >
+                    <small>Não tem conta?<u><a href="../Register/index.html">clique aqui</a></u></small>
+                </div>
+
+            <div class="image">
+                <img src="../../assets/jigsaw-group.svg" alt="Um grupo de pessoals montando quebra cabeça" class="img-fluid" ondragstart="return false;" >
+            </div>
+        </div>
+
+        <script>feather.replace()</script>
+    </body>
+</html>
