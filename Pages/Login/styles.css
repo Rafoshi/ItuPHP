@@ -1,0 +1,17 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    height: 100000px;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+#arrow-left{
+    margin-top: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+}
