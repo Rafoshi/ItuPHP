@@ -101,3 +101,42 @@ p{
 h2{
     margin-bottom: 10%;
 }
+
+/*
+* Style for underline animation
+*/
+
+.box-e a {line-height:70px;}
+
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.box-e .custom-underline::after {
+  top: 65%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  background-color: #000000;
+    transition: 0.5s ease all .3s;
+}
+
+.box-e:hover .custom-underline::after {
+  width: 90%;
+    transition: 0.3s ease all;
+}
