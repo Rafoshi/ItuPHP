@@ -186,25 +186,36 @@ main{
     margin-top: 30px;
 }
 
-.box-wrapper {
+
+.card-group{
     position: relative;
-    top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    margin-top: 40px;
-    z-index: 1;
+    padding: 30px;
+    margin-top: 400px;
+    
 }
 
-.box {
+.card{
     position: relative;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 10px;
     -webkit-box-shadow: 0 4px 1px rgba(0,0,0,0.1);
     box-shadow: 0 4px 1px rgba(0,0,0,0.1);
+    width: 350px;
+    height: 480px;
+    background: #fff;
+    padding-top: 65px;
+    margin: 27px;
+}
+
+.card-maior{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 356px;
     height: 501px;
     background: #fff;
@@ -215,9 +226,6 @@ main{
     padding-top: 65px;
 }
 
-.box-inner {
-    padding: 30px;
-}
 
 .avatar {
     -webkit-border-radius: 50%;
@@ -251,6 +259,8 @@ h5 {
 }
 
 .name {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
@@ -258,6 +268,7 @@ h5 {
     line-height: 36px;  
     letter-spacing: -0.015em;
     color: #25282B;
+    margin-top: 20px;
 }
     
 .reverse-title{
@@ -282,8 +293,11 @@ h5 {
     color: #000000;
     display: flex;
     justify-content: center;
+    margin-top: 5px;
     }
 .price-text {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -305,29 +319,125 @@ h5 {
 }
     
 .follow-btn button {
+    display: flex;
+    justify-content: center;
     color: #fff;
     background: #2F80ED;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: none;
     transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    position: absolute;
+    margin-top: 70px;
+    position: relative;
     width:  161px;
     height: 45px;
     left: 40%;
     margin-left:-50px;
-    z-index:10;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 36px;
 }
+.follow-btn-gray button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #52575C;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    margin-top: 75px;
+    position: relative;
+    width:  161px;
+    height: 45px;
+    left: 40%;
+    margin-left:-50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 36px;
+}
+
 .follow-btn button:hover {
     background-color: #2F80ED;
     transform: scale(1.01);
+}
+.follow-btn-gray button:hover {
+    background-color: #52575C;
+    transform: scale(1.01);
+}
+
+.title-option{
+    position: relative;
+    text-align: left;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    margin-top: 5%;
+    margin-left: 10%;
+
+    letter-spacing: 0.002em;
+
+    color: #25282B;
+}
+
+.title-history{
+    position: relative;
+    text-align: left;
+
+
+    width: 700px;
+    height: 98px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: 0.002em;
+
+/* H1 */
+
+    color: #25282B;
+}
+
+.about-history{
+    position: relative;
+
+    width: 943px;
+    height: 175px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.001em;
+
+
+    color: #303030
+
+}
+
+.about-image{
+    position: relative;
+    left: 32.43%;
+    right: 34%;
+    top: 93.15%;
+    bottom: 6.05%;
+    
+}
+.page-footer{
+    margin: 30px;
 }
 
 /*Responsive code here*/
