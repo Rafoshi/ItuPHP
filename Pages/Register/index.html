@@ -1,19 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar - Infinity Tech</title>
-    <link rel="icon" href="../../assets/logo.svg">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-    <script src="index.js" charset="utf-8" ></script>
-    <script src="./bootstrap.min.js" charset="utf-8" ></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login - Infinity Tech</title>
+		<link rel="icon" href="../../assets/logo.svg" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="index.js" charset="utf-8"></script>
+		<script src="./bootstrap.min.js" charset="utf-8"></script>
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body>
+		<img
+			src="../../assets/arrow-left.svg"
+			alt="Seta para voltar"
+			class="arrow-icon"
+			onclick="window.location.href='../Home/index.html'"
+		/>
+
+		<div class="container-form-image">
+			<div class="image-text">
+				<img
+					src="../../assets/logo-w-shadow.svg"
+					alt="Logo com sombra"
+					class="img-fluid img-logo"
+				/>
+				<h2>Cadastro</h2>
+				<p>
+					Realize seu cadastro, entre na plataforma <br />
+					e realize seu pedido.
+				</p>
+
+				<img
+					src="../../assets/login-blue.svg"
+					alt="Login icone"
+					class="img-login"
+					onclick="window.location.href='../Register/index.html'"
+					ondragstart="return false;"
+				/>
+				<small class="box-e">
+					<a href="../Login/index.html" class="custom-underline"
+						>Já tenho cadastro.</a
+					>
+				</small>
+			</div>
+
+			<div class="form">
+				<div class="form-group">
+					<label for="inputName">Nome</label>
+					<input type="text" class="form-control" id="inputName" />
+				</div>
+
+				<div class="form-group">
+					<label for="inputEmail">Email</label>
+					<input type="email" class="form-control" id="inputEmail" />
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputPassword1">Senha</label>
+					<input
+						type="password"
+						class="form-control"
+						id="exampleInputPassword1"
+					/>
+					<button type="submit" id="login-button">Cadastrar</button>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			feather.replace();
+		</script>
+	</body>
 </html>

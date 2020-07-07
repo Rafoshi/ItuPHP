@@ -109,6 +109,7 @@ a:link {
     vertical-align: middle;
     margin-right: 3%;
     font-weight: 400;
+    display: flex;
 }
 
 #globe-icon{
@@ -340,6 +341,7 @@ h5 {
 .follow-btn-gray button{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #fff;
     background: #52575C;
     border-radius: 5px;
@@ -438,7 +440,7 @@ h5 {
     margin: 30px;
 }
 
-/*PARTE RESPONSIVA DO SITE*/
+/*Responsive code here*/
 
 @media screen and (max-height: 450px) {
     .sidenav-language {
