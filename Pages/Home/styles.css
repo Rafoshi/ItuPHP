@@ -90,7 +90,7 @@ a:link {
 .dark-theme {
 	font-weight: 500;
 	color: #52575c;
-	padding-top: 230%;
+	padding-top: 200%;
 	margin-left: 35%;
 }
 
@@ -329,10 +329,18 @@ h5 {
 	margin-left: -50px;
 	font-family: Montserrat;
 	font-style: normal;
+	align-items: center;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 36px;
 }
+
+.follow-btn-gray {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
 .follow-btn-gray button {
 	display: flex;
 	justify-content: center;
@@ -347,8 +355,10 @@ h5 {
 	width: 161px;
 	height: 45px;
 	left: 40%;
+	justify-items: center;
 	margin-left: -50px;
 	font-family: Montserrat;
+	align-items: center;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
@@ -362,7 +372,7 @@ h5 {
 	transform: scale(1.01);
 }
 .follow-btn-gray :hover {
-	background-color: #52575c;
+	background-color: #3b4146;
 	-webkit-transform: scale(1.01);
 	-ms-transform: scale(1.01);
 	transform: scale(1.01);
@@ -415,33 +425,30 @@ center {
 
 .about-history {
 	margin: 0 auto;
-	width: 943px;
-	height: 175px;
-
-	font-family: Montserrat;
-	font-style: normal;
+	text-align: center;
+	letter-spacing: 0.001em;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 24px;
-
 	margin-top: 73px;
 	display: flex;
 	align-items: flex-end;
 	letter-spacing: 0.001em;
-
 	color: #303030;
+	max-width: 70%;
 }
 
 .about-image {
-	position: relative;
-	left: 32.43%;
-	right: 34%;
-	top: 100px;
 	bottom: 8.85%;
-	margin-top: 5px;
+	margin-top: 5%;
 }
+
+.about-container {
+	margin-left: 37%;
+}
+
 .page-footer {
-	padding-top: 200px;
+	padding-top: 5%;
 }
 
 /*PARTE RESPONSIVA DO SITE*/
