@@ -2,7 +2,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #f4f4f4;
 	-webkit-font-smoothing: antialiased;
-	height: 100000px;
+	max-height: 100%;
 }
 
 a:link {
@@ -108,7 +108,6 @@ a:link {
 	vertical-align: middle;
 	margin-right: 3%;
 	font-weight: 400;
-	display: flex;
 }
 
 #globe-icon {
@@ -151,7 +150,6 @@ main {
 	letter-spacing: 0.035em;
 	line-height: 133.5%;
 }
-
 #hire-button {
 	color: #f2f2f2;
 	font-size: 20px;
@@ -176,6 +174,10 @@ main {
 	padding: 5px;
 	margin-left: 15px;
 }
+.container-button :hover {
+	-webkit-transform: translateY(1px);
+	transform: translateY(1px);
+}
 
 .container-button {
 	margin-top: 3%;
@@ -195,15 +197,15 @@ main {
 	transform: translate(-50%, -50%);
 	padding: 30px;
 	margin-top: 400px;
+	-webkit-box-pack: center;
+	justify-content: center;
 }
 
 .card {
 	position: relative;
-	border-radius: 10px;
-	-webkit-box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
-	width: 350px;
-	height: 480px;
+	box-shadow: 0 0 10px 0 rgba(120, 135, 182, 0.1);
+	max-width: 350px;
+	max-height: 480px;
 	background: #fff;
 	padding-top: 65px;
 	margin: 27px;
@@ -211,30 +213,26 @@ main {
 
 .card-maior {
 	position: relative;
-	border-radius: 10px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	width: 356px;
-	height: 501px;
+	box-shadow: 0 0 10px 0 rgba(120, 135, 182, 0.1);
+	max-width: 356px;
+	max-height: 501px;
 	background: #fff;
-	text-align: center;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 	padding-top: 65px;
+	margin-bottom: -65px;
+	border-top: 7px solid #008fff;
 }
 
 .avatar {
-	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	background-color: #fff;
 	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1), 1px 2px 4px rgba(0, 0, 0, 0.1),
 		0px 4px 4px rgba(0, 0, 0, 0.1);
-	top: -75px;
+	top: -65px;
 	margin-left: -75px;
-	left: 50%;
+	left: 53%;
 	position: absolute;
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 	display: flex;
 	justify-content: center;
 }
@@ -242,7 +240,6 @@ main {
 .avatar img {
 	display: flex;
 	justify-content: center;
-	left: 50%;
 }
 
 h1,
@@ -339,7 +336,6 @@ h5 {
 .follow-btn-gray button {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	color: #fff;
 	background: #52575c;
 	border-radius: 5px;
@@ -359,17 +355,20 @@ h5 {
 	line-height: 36px;
 }
 
-.follow-btn button:hover {
+.follow-btn :hover {
 	background-color: #2f80ed;
+	-webkit-transform: scale(1.01);
+	-ms-transform: scale(1.01);
 	transform: scale(1.01);
 }
-.follow-btn-gray button:hover {
+.follow-btn-gray :hover {
 	background-color: #52575c;
+	-webkit-transform: scale(1.01);
+	-ms-transform: scale(1.01);
 	transform: scale(1.01);
 }
 
 .title-option {
-	position: relative;
 	text-align: left;
 
 	font-family: Montserrat;
@@ -384,14 +383,7 @@ h5 {
 
 	color: #25282b;
 }
-
-.title-history {
-	position: relative;
-	text-align: left;
-
-	width: 700px;
-	height: 98px;
-
+center {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
@@ -400,14 +392,29 @@ h5 {
 	text-align: center;
 	letter-spacing: 0.002em;
 
-	/* H1 */
+	margin-top: -200px;
+	color: #25282b;
+}
+.title-history {
+	margin: 0 auto;
+	width: 700px;
+	height: 98px;
+	justify-items: center;
 
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 59px;
+	text-align: center;
+	letter-spacing: 0.002em;
+	/* H1 */
+	margin-top: -220px;
 	color: #25282b;
 }
 
 .about-history {
-	position: relative;
-
+	margin: 0 auto;
 	width: 943px;
 	height: 175px;
 
@@ -417,6 +424,7 @@ h5 {
 	font-size: 24px;
 	line-height: 24px;
 
+	margin-top: 73px;
 	display: flex;
 	align-items: flex-end;
 	letter-spacing: 0.001em;
@@ -428,14 +436,15 @@ h5 {
 	position: relative;
 	left: 32.43%;
 	right: 34%;
-	top: 93.15%;
-	bottom: 6.05%;
+	top: 100px;
+	bottom: 8.85%;
+	margin-top: 5px;
 }
 .page-footer {
-	margin: 30px;
+	padding-top: 200px;
 }
 
-/*Responsive code here*/
+/*PARTE RESPONSIVA DO SITE*/
 
 @media screen and (max-height: 450px) {
 	.sidenav-language {

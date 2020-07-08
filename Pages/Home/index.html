@@ -1,226 +1,173 @@
 <!DOCTYPE html>
-	<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Home - Infinity Tech</title>
-		<link rel="icon" href="../../assets/logo.svg">
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="bootstrap.css">
-		<link rel="stylesheet" href="styles.css">
-		<link 
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" 
-		rel="stylesheet"
-		/>
-		<script src="index.js" charset="utf-8" ></script>
-		<script src="./bootstrap.min.js" charset="utf-8" ></script>
-		<script src="https://unpkg.com/feather-icons"></script>
-	</head>
-	<body >
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Infinity Tech</title>
+        <link rel="icon" href="../../assets/logo.svg">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <script src="index.js" charset="utf-8" ></script>
+        <script src="./bootstrap.min.js" charset="utf-8" ></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body >
 
-		<div id="mySidenav" class="sidenav-language">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
-			<a href="#">Português<i data-feather="check-circle" id="check-icon"></i></a><hr/>
-			<a href="#">English</a><hr/>
-			<a href="#">Français</a><hr/>
-			<a href="#">Nederlands</a><hr/> 
+        <div id="mySidenav" class="sidenav-language">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+            <a href="#">Português<i data-feather="check-circle" id="check-icon"></i></a><hr/>
+            <a href="#">English</a><hr/>
+            <a href="#">Français</a><hr/>
+            <a href="#">Nederlands</a><hr/>
+            <div class="dark-theme">
+                Tema Escuro
+                <i data-feather="toggle-left" id="toggle-icon"></i>
+            </div>
+          </div>
 
-			<div class="dark-theme">
-				Tema Escuro
-				<i data-feather="toggle-left" id="toggle-icon"></i> 
-			</div>
-		</div>
+        <div id="main">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-nav">
+                        <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">
+                            <button class="btn-language">
+                                <i data-feather="globe" id="globe-icon"></i>
+                            </button>
+                        </span>
+                        <img src="../../assets/logo-title.svg" class="img-fluid user-select-none" alt="Logo" ondragstart="return false;" >
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Início</a>
+                        <a class="nav-item nav-link" href="#">Preços</a>
+                        <a class="nav-item nav-link" href="#">Portifólio</a>
+                        <a class="nav-item nav-link" href="#">Sobre</a>
+                    </div>
+                    <button class="btn" onclick="window.location.href='../Login/index.html'" ><img src="../../assets/login.svg">Entrar</button>
+                </nav>
+            </header>
 
-		<div id="main">
-			<header>
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="container-nav">
-						<span style="font-size: 30px;cursor: pointer;" onclick="openNav()">
-							<button class="btn-language">
-								<i data-feather="globe" id="globe-icon"></i>
-							</button>
-						</span>
+            <main>
+                <p class="title">O seu sistema do que precisar,<br> para o que precisar.</p>
+                <p class="subtitle">Faremos o sistema  para o seu comércio,<br> com as suas necessidades</p>
 
-						<img 
-							src="../../assets/logo-title.svg" 
-							class="img-fluid user-select-none" 
-							alt="Logo" 
-							ondragstart="return false;" 
-						/>
-					</div>
+                <div class="container-button">
+                    <button id="hire-button">Contrate-nos</button>
+                    <button id="read-button">Veja mais</button>
+                </div>
+                <img class="content-img img-fluid"src="../../assets/main-content.svg"  alt="Homem usando computador" ondragstart="return false;">
+            </main>
 
-					<div class="navbar-nav">
-						<a class="nav-item nav-link" href="#">Início</a>
-						<a class="nav-item nav-link" href="#">Preços</a>
-						<a class="nav-item nav-link" href="#">Portifólio</a>
-						<a class="nav-item nav-link" href="#">Sobre</a>
-					</div>
+            <p class="title-option">Escolha a melhor opção para <br> o seu negócio</p>
 
-					<button class="btn" onclick="window.location.href='../Login/index.html'" >
-						<img src="../../assets/login.svg" />
-						Entrar
-					</button>
-				</nav>
-			</header>
+            <div class="card-group">
+              <div class="card">
+                <div class="avatar">
+                  <img src="../../assets/smartphone.svg">
+                </div>
+                <div class="card-body">
+                  <h3 class="name">Mobile</h3>
+                  <div class="value">12x<div class="reverse-title">R$200</div></div>
+                  <p class="price-text">à vista R$ 2000</p>
+                  <br><br>
+                  <h3 class="desc-card">Tenha uma experiência única mobile, aumente as vendas do seu negócio e amplie seus horizontes.</h3>
+                  <div class="follow-btn-gray">
+                    <button>Contrate-nos</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-maior">
+                <div class="avatar">
+                  <img src="../../assets/monitorsmartphone.svg">
+                </div>
+                <div class="card-body">
+                  <h3 class="name">Web & <br>Mobile</h3>
+                  <div class="value">12x<div class="reverse-title">R$200</div></div>
+                  <p class="price-text">à vista R$ 2000</p>
+                  <br><br>
+                  <h3 class="desc-card">Junte sua experiência web e mobile em um só pacote, potencializando <br>suas vendas.</h3>
+                  <div class="follow-btn">
+                    <button>Contrate-nos</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="avatar">
+                  <img src="../../assets/monitor.svg">
+                </div>
+                <div class="card-body">
+                  <h3 class="name">Web</h3>
+                  <div class="value">12x<div class="reverse-title">R$200</div></div>
+                  <p class="price-text">à vista R$ 2000</p>
+                  <br><br>
+                  <h3 class="desc-card">Adquira seu página web e passe uma imagem mais profissional  para os seu clientes.</h3>
+                  <div class="follow-btn-gray">
+                    <button>Contrate-nos</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-			<main>
-				<p class="title">O seu sistema do que precisar,<br> para o que precisar.</p>
-				<p class="subtitle">Faremos o sistema  para o seu comércio,<br> com as suas necessidades</p>
+              <p class="title-history">Um pouco mais a hístoria da <br> nossa empresa</p>
+              <p class="about-history">Não acredite em algo simplesmente porque ouviu. Não acredite em algo simplesmente porque todos falam a respeito. Não acredite em algo simplesmente porque está escrito em seus livros religiosos. Não acredite em algo só porque seus professores e mestres dizem que é verdade. Não acredite em tradições só porque foram passadas de geração em geração. Mas, depois de muita análise e observação, se você vê que algo concorda com a razão e que conduz ao bem e benefício de todos, aceite-o e viva-o.</p>
+              <img class="about-image" src="../../assets/person.svg" alt="pessoinhas">
 
-				<div class="container-button">
-					<button id="hire-button">Contrate-nos</button>
-					<button id="read-button">Veja mais</button>
-				</div>
+            <footer class="page-footer">
+                <div class="container">
+                  <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+              
+                    <div class="grow col-md-3 mb-2">
+                      <h6 class="text-uppercase">
+                        <a href="#!">HOME</a>
+                      </h6>
+                    </div>
+              
+                    <div class="grow col-md-3 mb-2">
+                      <h6 class="text-uppercase">
+                        <a href="#!">COMPANY</a>
+                      </h6>
+                    </div>
+    
+                    <div class="grow col-md-3 mb-2">
+                      <h6 class="text-uppercase">
+                        <a href="#!">Contact</a>
+                      </h6>
+                    </div>
+    
+                  </div>
+    
+                  <hr class="rgba-white-light" style="margin:10 100%;">
+    
+                  <div class="row text-center justify-content-center ">
+              
+                    <!-- Facebook -->
+                    <a class="fb-ic grow col-md-2 mb-2">
+                      <img src="../../assets/facebook-icon.svg" alt="facebook">
+                    </a>
+                    <!-- Email  -->
+                    <a class="Em-ic grow col-md-2 mb-2">
+                      <img src="../../assets/email-icon.svg" alt="email">
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic grow col-md-2 mb-2">
 
-				<img 
-					class="content-img img-fluid"
-					src="../../assets/main-content.svg"
-					alt="Homem usando computador" 
-					ondragstart="return false;"
-				/>
-			</main>
-
-			<p class="title-option">Escolha a melhor opção para <br> o seu negócio</p>
-
-			<div class="card-group">
-
-				<div class="card">
-					<div class="avatar">
-						<img src="../../assets/smartphone.svg">
-					</div>
-
-					<div class="card-body">
-
-						<h3 class="name">Mobile</h3>
-
-						<div class="value">12x
-							<div class="reverse-title">R$200</div>
-						</div>
-
-						<p class="price-text">à vista R$ 2000</p>
-
-						<br><br>
-
-						<h3 class="desc-card">Tenha uma experiência única mobile, aumente as vendas do seu negócio e amplie seus horizontes.</h3>
-
-						<div class="follow-btn-gray">
-							<button>Contrate-nos</button>
-						</div>
-					</div>
-				</div>
-
-				<div class="card-maior">
-
-					<div class="avatar">
-						<img src="../../assets/monitorsmartphone.svg">
-					</div>
-
-				<div class="card-body">
-
-					<h3 class="name">Web & <br>Mobile</h3>
-
-					<div class="value">12x
-						<div class="reverse-title">
-							R$200
-						</div>
-					</div>
-
-					<p class="price-text">à vista R$ 2000</p>
-					
-					<br><br>
-
-					<h3 class="desc-card">Junte sua experiência web e mobile em um só pacote, potencializando <br>suas vendas.</h3>
-
-					<div class="follow-btn">
-						<button>Contrate-nos</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="avatar">
-					<img src="../../assets/monitor.svg">
-				</div>
-				
-				<div class="card-body">
-
-					<h3 class="name">Web</h3>
-					
-					<div class="value">12x
-						<div class="reverse-title">
-							R$200
-						</div>
-					</div>
-
-					<p class="price-text">à vista R$ 2000</p>
-
-					<br><br>
-
-					<h3 class="desc-card">Adquira seu página web e passe uma imagem mais profissional  para os seu clientes.</h3>
-					
-					<div class="follow-btn-gray">
-						<button>Contrate-nos</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-			
-			<p class="title-history">Um pouco mais a hístoria da <br> nossa empresa</p>
-			<p class="about-history">Não acredite em algo simplesmente porque ouviu. Não acredite em algo simplesmente porque todos falam a respeito. Não acredite em algo simplesmente porque está escrito em seus livros religiosos. Não acredite em algo só porque seus professores e mestres dizem que é verdade. Não acredite em tradições só porque foram passadas de geração em geração. Mas, depois de muita análise e observação, se você vê que algo concorda com a razão e que conduz ao bem e benefício de todos, aceite-o e viva-o.</p>
-
-			<img class="about-image" src="../../assets/person.svg" alt="pessoinhas">
-
-			<footer class="page-footer">
-				<div class="container">
-					<div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-					<div class="grow col-md-4 mb-2">
-						<h6 class="text-uppercase">
-							<a href="#!">HOME</a>
-						</h6>
-					</div>
-
-					<div class="grow col-md-4 mb-2">
-						<h6 class="text-uppercase">
-							<a href="#!">COMPANY</a>
-						</h6>
-					</div>
-
-					<div class="grow col-md-4 mb-2">
-						<h6 class="text-uppercase">
-							<a href="#!">Contact</a>
-						</h6>
-					</div>
-				</div>
-
-				<hr class="rgba-white-light" style="margin:10 100%;">
-
-				<div class="row text-center justify-content-center ">
-					<a class="fb-ic grow col-md-2 mb-2">
-						<img src="../../assets/facebook-icon.svg" alt="facebook">
-					</a>
-
-					<a class="Em-ic grow col-md-2 mb-2">
-						<img src="../../assets/email-icon.svg" alt="email">
-					</a>
-
-					<a class="li-ic grow col-md-2 mb-2">
-						<img src="../../assets/linkedin-icon.svg" alt="linkedin">
-					</a>
-
-					<a class="ins-ic grow col-md-2 mb-2">
-						<img src="../../assets/instagram-icon.svg" alt="instagram">
-					</a>
-				</div>
-
-				<div class="footer-copyright text-center py-1">
-					Copyright ©  2020 - Todos direitos reservados
-				</div>
-			</footer>
-
-			<script>feather.replace()</script>
-
-		</div>
-	</body>
+                      <img src="../../assets/linkedin-icon.svg" alt="linkedin">
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic grow col-md-2 mb-2">
+                     <img src="../../assets/instagram-icon.svg" alt="instagram">
+                    </a>
+                    
+                  </div>
+              
+                <div class="footer-copyright text-center py-1">Copyright ©  2020 -
+                  <a>Todos direitos reservados </a>
+                </div>
+        
+            </footer>
+            
+            <script>feather.replace()</script>
+        </div>
+    </body>
 </html>
