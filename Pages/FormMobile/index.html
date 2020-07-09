@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mobile - Infinity Tech</title>
+		<link rel="icon" href="../../assets/logo.svg" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="index.js" charset="utf-8"></script>
+		<script src="./bootstrap.js" charset="utf-8"></script>
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body>
+		<main>
+			<div class="icon-back">
+				<img
+					src="../../assets/arrow-left.svg"
+					ondragstart="return false;"
+					alt="Seta para voltar"
+					class="arrow-icon"
+					onclick="window.location.href='../Login/index.html'"
+				/>
+			</div>
+
+				<div class="container-form">
+
+					<div class="prelog">
+						Informações do contrato
+					</div>
+
+					<div class="title">
+						<h1>Mobile</h1>
+					</div>
+
+					<div class="text">
+						<p class="price">até <b>12x R$200</b> ( ou R$ 1.000 à vista) </p>
+					</div>
+					
+					<p class="txt" >Adquira seu página web e passe uma imagem mais proficional para os seu clientes.</p>
+					<!--Formulário-->
+					<form>
+						<div class="form-group">
+							<label for="inputEmail">Descrição do pedido:</label>
+
+							<div class="input-group">
+								<textarea class="form-control"></textarea>
+							</div>
+
+							<button type="submit" id="login-button">Enviar</button>
+						</div>
+					</form>
+
+					<div class="tiny-message">
+						<img src="../../assets/mail.svg" class="img-footer" ondragstart="return false;" alt="Seta para voltar">
+						<p class="tiny">  Para futuro contato conosco, e possíveis alterações. </p>
+					</div>
+
+				</div>
+
+			</div>
+		</main>
+
+		<script>
+			feather.replace();
+		</script>
+	</body>
+</html>
