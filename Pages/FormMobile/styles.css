@@ -1,0 +1,146 @@
+body {
+	overflow-y: hidden;
+	font-family: "Montserrat", sans-serif;
+	background-color: #f4f4f4;
+	-webkit-font-smoothing: antialiased;
+	background-color: #f4f4f4;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 36px;
+	letter-spacing: -0.015em;
+	color: #25282b;
+	margin-bottom: 20%;
+	margin-top: -10%;
+}
+
+.arrow-icon {
+	filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.15));
+	margin-top: 1%;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+.txt {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.001em;
+	color: #303030;
+	text-align: center;
+	margin-bottom: 20%;
+}
+
+.bold-text {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 36px;
+}
+
+.price {
+	color: #303030;
+	letter-spacing: -0.015em;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	line-height: 36px;
+	margin-top: -85px;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 36px;
+	color: #25282b;
+	align-items: flex-end;
+	text-align: center;
+	letter-spacing: -0.015em;
+	margin-top: 1%;
+}
+
+main {
+	margin: 3% 4% 0% 3%;
+	background: #f4f4f4;
+	border-radius: 10px;
+	padding-bottom: 1px;
+	box-shadow: 0px 2px 80px rgba(0, 0, 0, 0.1);
+}
+
+.container-form {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	width: 500px;
+	margin: 0% 0% 20% 36.5%;
+	margin-bottom: 16%;
+}
+
+.prelog {
+	letter-spacing: -0.015em;
+	font-size: 18px;
+	line-height: 36px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	letter-spacing: 0.001em;
+}
+
+#login-button {
+	color: #f2f2f2;
+	width: 100%;
+	font-size: 20px;
+	border-color: #137cb4;
+	padding: 5px;
+	user-select: none;
+	border-style: none;
+	background: #137cb4;
+	box-shadow: 0px 8px 16px rgba(0, 126, 255, 0.16);
+	border-radius: 8px;
+	border-radius: 5px;
+	margin-top: 5%;
+	letter-spacing: 0.2px;
+	margin-bottom: 5%;
+	height: calc(1.5em + 0.75rem + 10px);
+}
+
+#login-button:hover {
+	background-color: #137cb4;
+	transition: 0.6s;
+}
+
+label {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+	color: #25282b;
+}
+
+input {
+	border: 1px solid #a0a4a8;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.tiny-message {
+	display: flex;
+	justify-content: center;
+}
+
+.img-footer {
+	margin-top: -15px;
+}
