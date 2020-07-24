@@ -99,6 +99,10 @@ a:link {
 	padding: none;
 }
 
+.settings {
+	margin-right: 1%;
+}
+
 .btn {
 	color: #ffffff;
 	background-color: #1072a8;
