@@ -15,7 +15,7 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="index.js" charset="utf-8"></script>
+		<script src="scripts.js" charset="utf-8"></script>
 		<script src="./bootstrap.js" charset="utf-8"></script>
 		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
@@ -25,32 +25,77 @@
 			ondragstart="return false;"
 			alt="Seta para voltar"
 			class="arrow-icon"
-			onclick="window.location.href='../Login/index.html'"
+			onclick="window.location.href='../home/index.html'"
 		/>
 
 		<div class="container-form-image">
+			<div id="orangeAlert" class="alert hide">
+				<div class="circle hide">
+					<span class="fas fa-exclamation-circle hide"></span>
+				</div>
+				<span class="msg-title hide"> Alerta !<br /></span>
+				<span class="msg hide">
+					Você precisa estar logado para completar a ação
+					anterior</span
+				>
+			</div>
+
+			<div id="greenAlert" class="conf hide">
+				<div id="greenCircle" class="circle-green hide">
+					<span
+						id="greenCheck"
+						class="fas fa-check-circle hide"
+					></span>
+				</div>
+				<span id="greenTitle" class="msg-title hide">
+					Feito !<br
+				/></span>
+				<span id="greenMessage" class="msg hide">
+					Cadastro efetuado com sucesso!</span
+				>
+			</div>
+
 			<div class="form">
 				<h1>Olá, faça seu cadastro</h1>
 
-				<div class="form-group">
-					<label for="inputName">Nome</label>
-					<input type="text" class="form-control" id="inputName" />
-				</div>
+				<form>
+					<div class="form-group">
+						<label for="inputName">Nome</label>
+						<input
+							type="text"
+							class="form-control"
+							id="inputName"
+							required
+						/>
+					</div>
 
-				<div class="form-group">
-					<label for="inputEmail">Email</label>
-					<input type="email" class="form-control" id="inputEmail" />
-				</div>
+					<div class="form-group">
+						<label for="inputEmail">Email</label>
+						<input
+							type="email"
+							class="form-control"
+							id="inputEmail"
+							required
+						/>
+					</div>
 
-				<div class="form-group">
-					<label for="exampleInputPassword1">Senha</label>
-					<input
-						type="password"
-						class="form-control"
-						id="exampleInputPassword1"
-					/>
-					<button type="submit" id="login-button">Cadastrar</button>
-				</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Senha</label>
+						<input
+							type="password"
+							class="form-control"
+							id="exampleInputPassword1"
+							required
+						/>
+
+						<input
+							type="button"
+							id="login-button"
+							value="Cadastrar"
+							onclick="greenAlert()"
+						/>
+					</div>
+				</form>
 
 				<img
 					src="../../assets/login-blue.svg"
@@ -63,28 +108,6 @@
 				<small>
 					<a href="../Login/index.html">Já tenho cadastro</a>
 				</small>
-			</div>
-
-			<div class="alert hide">
-				<div class="circle">
-					<span class="fas fa-exclamation-circle"></span>
-				</div>
-				<span class="msg-title"> Alerta !<br /></span>
-				<span class="msg">
-					Você precisa estar logado para completar a ação
-					anterior</span
-				>
-			</div>
-
-			<div class="conf hide">
-				<div class="circle-green">
-					<span class="fas fa-check-circle"></span>
-				</div>
-				<span class="msg-title"> Alerta !<br /></span>
-				<span class="msg">
-					Você precisa estar logado para completar a ação
-					anterior</span
-				>
 			</div>
 
 			<div class="image">
