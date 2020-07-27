@@ -105,12 +105,12 @@
 					o seu negócio
 				</p>
 
-				<div class="alert hide">
-					<div class="circle">
-						<span class="fas fa-exclamation-circle"></span>
+				<div id="orangeAlert" class="alert hide">
+					<div id="orangeCircle" class="circle hide">
+						<span id="orangeCheck" class="fas fa-exclamation-circle hide"></span>
 					</div>
-					<span class="msg-title"> Alerta !<br /></span>
-					<span class="msg">
+					<span id="orangeTitle" class="msg-title hide"> Alerta !<br /></span>
+					<span id="orangeMessage" class="msg hide">
 						Você precisa estar logado para completar a ação
 						anterior</span
 					>
@@ -137,9 +137,7 @@
 								vendas do seu negócio e amplie seus horizontes.
 							</h3>
 							<div class="follow-btn-gray">
-								<button
-									onclick="window.location.href='../Register/index.html'"
-								>
+								<button onclick="orangeAlert()">
 									Contrate-nos
 								</button>
 							</div>
@@ -166,7 +164,7 @@
 							</h3>
 							<div class="follow-btn">
 								<button
-									onclick="window.location.href='../Register/index.html'"
+									onclick="orangeAlert()"
 								>
 									Contrate-nos
 								</button>
@@ -194,7 +192,7 @@
 							</h3>
 							<div class="follow-btn-gray">
 								<button
-									onclick="window.location.href='../Register/index.html'"
+									onclick="orangeAlert()"
 								>
 									Contrate-nos
 								</button>

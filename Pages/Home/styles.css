@@ -99,6 +99,10 @@ a:link {
 	padding: none;
 }
 
+.transition {
+	opacity: 1;
+}
+
 .btn {
 	color: #ffffff;
 	background-color: #1072a8;
@@ -457,12 +461,24 @@ center {
 	padding: 20px 40px;
 	min-width: 420px;
 	position: absolute;
-	right: 0;
+	right: 36%;
+	margin-top: -48px;
 	padding-bottom: 1%;
 	border-radius: 4px;
 	overflow: hidden;
 	pointer-events: none;
+	opacity: 0.4;
+	-webkit-transition: opacity 06s linear;
+	-moz-transition: opacity 0.6s linear;
+	-ms-transition: opacity 0.6s linear;
+	-o-transition: opacity 0.6s linear;
+	transition: opacity 0.6s linear;
 }
+
+.transition {
+	opacity: 1;
+}
+
 .circle {
 	border-radius: 50%;
 	background-color: #f7aa3b;
@@ -509,4 +525,14 @@ center {
 	.sidenav-language a {
 		font-size: 18px;
 	}
+}
+
+.hide {
+	background-color: #f4f4f4;
+	color: #f4f4f4;
+	width: 0px;
+	height: 0px;
+	max-width: 0px;
+	min-width: 0px;
+	padding: 0px 0px 0px 0px;
 }
