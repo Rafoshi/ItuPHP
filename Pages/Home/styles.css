@@ -452,6 +452,54 @@ center {
 	padding-top: 5%;
 }
 
+.alert {
+	background: #ff9700;
+	padding: 20px 40px;
+	min-width: 420px;
+	position: absolute;
+	right: 0;
+	padding-bottom: 1%;
+	border-radius: 4px;
+	overflow: hidden;
+	pointer-events: none;
+}
+.circle {
+	border-radius: 50%;
+	background-color: #f7aa3b;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 60px;
+	height: 50px;
+	width: 50px;
+}
+.alert .fa-exclamation-circle {
+	display: flex;
+	padding-top: 20%;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 30px;
+}
+.alert .msg-title {
+	padding: 0 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.alert .msg {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0 30px;
+	color: #ffffff;
+}
+
 /*PARTE RESPONSIVA DO SITE*/
 
 @media screen and (max-height: 450px) {
