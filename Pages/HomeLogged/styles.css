@@ -103,6 +103,19 @@ a:link {
 	margin-right: 1%;
 }
 
+#down-icon {
+	cursor: pointer;
+}
+
+#settings-icon {
+	cursor: pointer;
+}
+
+#settings-icon:hover {
+	cursor: pointer;
+	animation: spin 0.7s;
+}
+
 .btn {
 	color: #ffffff;
 	background-color: #1072a8;
@@ -464,5 +477,22 @@ center {
 	}
 	.sidenav-language a {
 		font-size: 18px;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
 	}
 }
