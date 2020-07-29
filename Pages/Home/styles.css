@@ -99,6 +99,10 @@ a:link {
 	padding: none;
 }
 
+.transition {
+	opacity: 1;
+}
+
 .btn {
 	color: #ffffff;
 	background-color: #1072a8;
@@ -452,6 +456,65 @@ center {
 	padding-top: 5%;
 }
 
+.alert {
+	background: #ff9700;
+	padding: 20px 40px;
+	min-width: 420px;
+	position: absolute;
+	right: 36%;
+	margin-top: -48px;
+	padding-bottom: 1%;
+	border-radius: 4px;
+	overflow: hidden;
+	pointer-events: none;
+	opacity: 0.4;
+	-webkit-transition: opacity 06s linear;
+	-moz-transition: opacity 0.6s linear;
+	-ms-transition: opacity 0.6s linear;
+	-o-transition: opacity 0.6s linear;
+	transition: opacity 0.6s linear;
+}
+
+.transition {
+	opacity: 1;
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: #f7aa3b;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 60px;
+	height: 50px;
+	width: 50px;
+}
+.alert .fa-exclamation-circle {
+	display: flex;
+	padding-top: 20%;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 30px;
+}
+.alert .msg-title {
+	padding: 0 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.alert .msg {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0 30px;
+	color: #ffffff;
+}
 /*PARTE RESPONSIVA DO SITE*/
 
 @media screen and (max-height: 450px) {
@@ -461,4 +524,14 @@ center {
 	.sidenav-language a {
 		font-size: 18px;
 	}
+}
+
+.hide {
+	background-color: #f4f4f4;
+	color: #f4f4f4;
+	width: 0px;
+	height: 0px;
+	max-width: 0px;
+	min-width: 0px;
+	padding: 0px 0px 0px 0px;
 }

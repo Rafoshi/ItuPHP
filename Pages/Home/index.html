@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="bootstrap.css" />
 		<link rel="stylesheet" href="styles.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
@@ -104,6 +105,17 @@
 					o seu negócio
 				</p>
 
+				<div id="orangeAlert" class="alert hide">
+					<div id="orangeCircle" class="circle hide">
+						<span id="orangeCheck" class="fas fa-exclamation-circle hide"></span>
+					</div>
+					<span id="orangeTitle" class="msg-title hide"> Alerta !<br /></span>
+					<span id="orangeMessage" class="msg hide">
+						Você precisa estar logado para completar a ação
+						anterior</span
+					>
+				</div>
+
 				<div class="card-group">
 					<div class="card">
 						<div class="avatar">
@@ -125,9 +137,7 @@
 								vendas do seu negócio e amplie seus horizontes.
 							</h3>
 							<div class="follow-btn-gray">
-								<button
-									onclick="window.location.href='../Register/index.html'"
-								>
+								<button onclick="orangeAlert()">
 									Contrate-nos
 								</button>
 							</div>
@@ -154,7 +164,7 @@
 							</h3>
 							<div class="follow-btn">
 								<button
-									onclick="window.location.href='../Register/index.html'"
+									onclick="orangeAlert()"
 								>
 									Contrate-nos
 								</button>
@@ -182,7 +192,7 @@
 							</h3>
 							<div class="follow-btn-gray">
 								<button
-									onclick="window.location.href='../Register/index.html'"
+									onclick="orangeAlert()"
 								>
 									Contrate-nos
 								</button>
