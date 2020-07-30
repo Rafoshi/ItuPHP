@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login - Infinity Tech</title>
+		<link rel="icon" href="../../assets/logo.svg" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="home.html" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="scripts.js" charset="utf-8"></script>
+		<script src="./bootstrap.js" charset="utf-8"></script>
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body>
+		<img
+			src="../../assets/arrow-left.svg"
+			ondragstart="return false;"
+			alt="Seta para voltar"
+			class="arrow-icon"
+			onclick="window.location.href='../homeLogged/index.html'"
+		/>
+
+		<div class="container-form-image">
+			
+			<div id="greenAlert" class="conf hide">
+				<div id="greenCircle" class="circle-green hide">
+					<span
+						id="greenCheck"
+						class="fas fa-check-circle hide"
+					></span>
+				</div>
+				<span id="greenTitle" class="msg-title hide">
+					Feito !<br
+				/></span>
+				<span id="greenMessage" class="msg hide">
+					Cadastro efetuado com sucesso!</span
+				>
+			</div>
+
+			<div class="form">
+				<h1>Definir sua nova senha</h1>
+
+				<form name="form" action="#" onsubmit="greenAlert();return false">
+
+					<div class="form-group">
+
+						<label for="name">Nova senha</label>
+						<input type="text" class="form-control" id="name" name="name" minlength="7" required />
+		
+					</div>
+
+					<input type="submit" id="login-button" value="Alterar" ></input>
+
+				<img
+					src="../../assets/login-blue.svg"
+					alt="Login icone"
+					class="img-login"
+					onclick="window.location.href='../Login/index.html'"
+					ondragstart="return false;"
+				/>
+
+				<small>
+					<a href="../Login/index.html">Já tenho cadastro</a>
+				</small>
+			</div>
+
+			<div class="image">
+				<img
+					src="../../assets/edit.png"
+					alt="Homem com terno e engrenagem"					
+					class="img-fluid img"
+					ondragstart="return false;"
+				/>
+			</div>
+		</div>
+
+		<script>
+			feather.replace();
+		</script>
+	</body>
+</html>
