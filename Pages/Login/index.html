@@ -55,7 +55,7 @@
 					onclick="window.location.href='../Register/index.html'"
 					ondragstart="return false;"
 				/>
-				<small
+				<small id="account"
 					>Não tem conta?<u
 						><a href="../Register/index.html">clique aqui</a></u
 					></small
@@ -74,6 +74,15 @@
 
 		<script>
 			feather.replace();
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+		<script>
+			new TypeIt("#account", {
+				speed: 50,
+			})
+				.go()
+				.reset();
 		</script>
 	</body>
 </html>

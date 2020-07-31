@@ -77,7 +77,7 @@
 					ondragstart="return false;"
 				/>
 
-				<small>
+				<small id="register">
 					<a href="../Login/index.html">Já tenho cadastro</a>
 				</small>
 			</div>
@@ -94,6 +94,15 @@
 
 		<script>
 			feather.replace();
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+		<script>
+			new TypeIt("#register", {
+				speed: 20,
+			})
+				.go()
+				.reset();
 		</script>
 	</body>
 </html>

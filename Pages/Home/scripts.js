@@ -8,6 +8,18 @@ function closeNav() {
 	document.getElementById("main").style.marginLeft = "0";
 }
 
+function darkTheme() {
+	changeImage();
+}
+
+function changeImage() {
+	var image = document.getElementById("darkTheme");
+	if (image.src.match("toggle-left")) {
+		image.src = "../../assets/toggle-right.svg";
+	} else {
+		image.src = "../../assets/toggle-left.svg";
+	}
+}
 function orangeAlert() {
 	classRemove("orangeAlert", "hide");
 	classRemove("orangeCircle", "hide");
