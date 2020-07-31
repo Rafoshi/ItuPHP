@@ -33,10 +33,6 @@
 			<hr />
 			<a href="#">Nederlands</a>
 			<hr />
-			<div class="dark-theme">
-				Tema Escuro
-				<img src="../../assets/toggle-left.svg" id="darkTheme" onclick="darkTheme()" >
-			</div>
 		</div>
 
 		<div id="main">
@@ -77,7 +73,7 @@
 				<p class="title">
 					O seu sistema do que precisar,<br />
 					para o que precisar.
-				</>
+				</p>
 				<p id="subtitle" class="subtitle">
 					Faremos o sistema para o seu comércio,<br>
 					com as suas necessidades.
@@ -95,6 +91,7 @@
 				<img
 					class="content-img img-fluid"
 					src="../../assets/main-content.svg"
+					id="img-main"
 					alt="Homem usando computador"
 					ondragstart="return false;"
 				/>
@@ -121,6 +118,8 @@
 					<div class="card">
 						<div class="avatar">
 							<img
+								id="smartphone"
+								class=""
 								src="../../assets/smartphone.svg"
 								ondragstart="return false;"
 							/>
@@ -138,7 +137,7 @@
 								vendas do seu negócio e amplie seus horizontes.
 							</h3>
 							<div class="follow-btn-gray">
-								<button onclick="orangeAlert()">
+								<button onclick="errorPhone()">
 									Contrate-nos
 								</button>
 							</div>
@@ -147,6 +146,8 @@
 					<div class="card-maior">
 						<div class="avatar">
 							<img
+								class=""
+								id="webMobile"
 								src="../../assets/monitorsmartphone.svg"
 								ondragstart="return false;"
 							/>
@@ -164,8 +165,8 @@
 								pacote, potencializando <br />suas vendas.
 							</h3>
 							<div class="follow-btn">
-								<button
-									onclick="orangeAlert()"
+								<button id="main-button"
+									onclick="webMobile()"
 								>
 									Contrate-nos
 								</button>
@@ -175,6 +176,8 @@
 					<div class="card">
 						<div class="avatar">
 							<img
+								id="web"
+								class=""
 								src="../../assets/monitor.svg"
 								ondragstart="return false;"
 							/>
@@ -193,7 +196,7 @@
 							</h3>
 							<div class="follow-btn-gray">
 								<button
-									onclick="orangeAlert()"
+									onclick="errorWeb()"
 								>
 									Contrate-nos
 								</button>

@@ -35,7 +35,8 @@ input {
 }
 
 .form-control {
-	padding-right: 16.75rem !important;
+	padding-right: 100% !important;
+	max-width: 30vw;
 }
 
 main {
@@ -48,8 +49,8 @@ main {
 
 .data-grid {
 	background-color: #508db6;
-	width: 1600px;
-	height: 399px;
+	width: 75vw;
+	height: 50vh;
 }
 
 .arrow-icon {

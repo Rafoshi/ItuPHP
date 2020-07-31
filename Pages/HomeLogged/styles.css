@@ -471,6 +471,30 @@ center {
 .about-image {
 	bottom: 8.85%;
 	margin-top: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform 0.2s;
+}
+
+.about-image:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#main-button:hover {
+	background-color: #2a74d4;
+}
+
+#img-main {
+	transition: transform 0.2s;
+}
+
+#img-main:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .about-container {
@@ -503,6 +527,7 @@ nav .wrapper {
 nav .wrapper.show {
 	display: block;
 	display: flex;
+	z-index: 10;
 }
 .wrapper ul {
 	line-height: 55px;
