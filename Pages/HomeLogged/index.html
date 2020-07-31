@@ -12,6 +12,7 @@
         <script src="scripts.js" charset="utf-8" ></script>
         <script src="./bootstrap.js" charset="utf-8" ></script>
         <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body >
 
@@ -40,14 +41,59 @@
                     </div>
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="#">Início</a>
-                        <a class="nav-item nav-link" href="#">Preços</a>
+                        <a class="nav-item nav-link" href="#business">Preços</a>
                         <a class="nav-item nav-link" href="#">Portifólio</a>
                         <a class="nav-item nav-link" href="#">Sobre</a>
                     </div>
-                    
-                  <div class="settings">
-                    <i data-feather="chevron-down" onclick="config()" id="down-icon" ></i>
-                    <i data-feather="settings" id="settings-icon" ></i>
+                    <div class="drop-btn">
+                      <span class="fas fa-chevron-down" id="chevron-down" onclick="dropBox()"></span>
+                      <i data-feather="settings" id="settings-icon" ></i>
+                    </div>
+                    <nav class="dropDown">
+                      <div class="wrapper">
+                        <ul class="menu-bar">
+                          <li class="person-name">
+                            Olá, Vitor
+                          </li>
+                          <hr />
+                          <li class="clipbord">
+                            <a href="">
+                              <div class="icon">
+                                <span class="far fa-clipboard"></span>
+                              </div>
+                              Acompanhar pedido
+                            </a>
+                          </li>
+                          <li class="setting-item">
+                            <a href="">
+                              <div class="icon">
+                                <span class="far fa-user"></span>
+                              </div>
+                              Alterar senha
+                            </a>
+                          </li>
+                          <li class="help-item">
+                            <a href="">
+                              <div class="icon">
+                                <span
+                                  data-feather="log-out"
+                                  id="log-out"
+                                ></span>
+                              </div>
+                              Sair
+                            </a>
+                          </li>
+                          <li class="trash">
+                            <a href="">
+                              <div class="icon">
+                                <span class="far fa-trash-alt"></span>
+                              </div>
+                              Deletar conta
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
                   </div>
                             
                 </nav>
@@ -64,7 +110,9 @@
                 <img class="content-img img-fluid"src="../../assets/main-content.svg"  alt="Homem usando computador" ondragstart="return false;">
             </main>
 
+            <div id="business">
             <p class="title-option">Escolha a melhor opção para <br> o seu negócio</p>
+            
 
             <div class="card-group">
               <div class="card">
@@ -113,8 +161,8 @@
                 </div>
               </div>
             </div>
-
-			<br /><br />
+          </div> 
+		
 
 			<p class="title-history">Um pouco mais a hístoria da <br> nossa empresa</p>
 			<p class="about-history">Não acredite em algo simplesmente porque ouviu. Não acredite em algo simplesmente porque todos falam a respeito. Não acredite em algo simplesmente porque está escrito em seus livros religiosos. Não acredite em algo só porque seus professores e mestres dizem que é verdade. Não acredite em tradições só porque foram passadas de geração em geração. Mas, depois de muita análise e observação, se você vê que algo concorda com a razão e que conduz ao bem e benefício de todos, aceite-o e viva-o.</p>
