@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home - Infinity Tech</title>
 		<link rel="icon" href="../../assets/logo.svg" />
+		<script src="jquery-3.5.1.min.js"></script>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="bootstrap.css" />
 		<link rel="stylesheet" href="styles.css" />
@@ -34,7 +35,7 @@
 			<hr />
 			<div class="dark-theme">
 				Tema Escuro
-				<i data-feather="toggle-left" id="toggle-icon"></i>
+				<img src="../../assets/toggle-left.svg" id="darkTheme" onclick="darkTheme()" >
 			</div>
 		</div>
 
@@ -77,15 +78,15 @@
 					O seu sistema do que precisar,<br />
 					para o que precisar.
 				</p>
-				<p class="subtitle">
-					Faremos o sistema para o seu comércio,<br />
-					com as suas necessidades
+				<p id="subtitle" class="subtitle">
+					Faremos o sistema para o seu comércio,<br>
+					com as suas necessidades.
 				</p>
 
 				<div class="container-button">
 					<button
 						id="hire-button"
-						onclick="window.location.href='../Register/index.html'"
+						onclick="window.location.href='../Login/index.html'"
 					>
 						Contrate-nos
 					</button>
@@ -206,7 +207,6 @@
 
 			<p class="title-history">Um pouco mais a hístoria da <br> nossa empresa</p>
 			<p class="about-history">Não acredite em algo simplesmente porque ouviu. Não acredite em algo simplesmente porque todos falam a respeito. Não acredite em algo simplesmente porque está escrito em seus livros religiosos. Não acredite em algo só porque seus professores e mestres dizem que é verdade. Não acredite em tradições só porque foram passadas de geração em geração. Mas, depois de muita análise e observação, se você vê que algo concorda com a razão e que conduz ao bem e benefício de todos, aceite-o e viva-o.</p>
-
 			<div class="about-container">
 				<img class="about-image" src="../../assets/person.svg" alt="pessoinhas" ondragstart="return false;" >
 			</div>
@@ -214,6 +214,7 @@
 						<footer class="page-footer">
 						<div class="container">
 							<div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
 
 								<div class="grow col-md-3 mb-2">
 									<h6 class="text-uppercase">
@@ -271,9 +272,17 @@
 								<a>Todos direitos reservados </a>
 							</div>
 
-				         </footer>
-
-				         <script>feather.replace()
+					</footer>
+					
+			<script>feather.replace()</script>
+			
+			<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+			<script>
+				new TypeIt("#subtitle", {
+					speed: 30,
+				})
+					.go()
+					.reset();
 			</script>
 		</div>
 	</body>

@@ -161,6 +161,9 @@ main {
 	margin-top: 3%;
 	letter-spacing: -0.005em;
 	line-height: 120%;
+	-webkit-animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1)
+		both;
+	animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .subtitle {
@@ -593,5 +596,26 @@ hr {
 		-ms-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
 		transform: rotate(90deg);
+	}
+}
+
+@-webkit-keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
 	}
 }
