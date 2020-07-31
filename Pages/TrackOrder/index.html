@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login - Infinity Tech</title>
+		<link rel="icon" href="../../assets/logo.svg" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="home.html" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="scripts.js" charset="utf-8"></script>
+		<script src="./bootstrap.js" charset="utf-8"></script>
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body>
+		<img
+			src="../../assets/arrow-left.svg"
+			ondragstart="return false;"
+			alt="Seta para voltar"
+			class="arrow-icon"
+			onclick="window.location.href='../homeLogged/index.html'"
+		/>
+
+		<main>
+			<div class="search">
+				<h2>Acompanhar pedidos</h2>
+				<div class="search-container">
+					<i data-feather="search" id="search-icon"></i>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="search"
+							name="search"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="data-grid">
+				<p>DATA GRID AQUI SEI LA COMO</p>
+			</div>
+
+			<div class="button">
+				<button
+					id="hire-button"
+					onclick="window.location.href='../Register/index.html'"
+				>
+					Alterar
+				</button>
+			</div>
+		</main>
+
+		<script>
+			feather.replace();
+		</script>
+	</body>
+</html>

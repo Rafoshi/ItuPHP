@@ -28,25 +28,28 @@
 		<div class="container-form-image">
 			<div class="form">
 				<h1>Olá, faça seu login</h1>
-				<div class="form-group">
-					<label for="inputEmail">Email</label>
-					<input type="email" class="form-control" id="inputEmail" />
-				</div>
+
+				<form name="form" >
 
 				<div class="form-group">
-					<label for="exampleInputPassword1">Senha</label>
-					<input
-						type="password"
-						class="form-control"
-						id="exampleInputPassword1"
-					/>
-					<button
-						type="submit"
-						id="login-button"
-						onclick="window.location.href='../HomeLogged/index.html'"
-					>
-						Entrar
-					</button>
+
+
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" class="form-control" id="email" name="email" required />	
+					</div>
+
+					<div class="form-group">
+						<label for="pwd">Senha</label>
+						<input type="password" class="form-control" id="pwd" name="pwd" minlength="6" required />	
+					</div>
+
+					<input type="submit" id="login-button" value="Entrar" onclick="window.location.href='../HomeLogged/index.html'" ></input>
+
+					
+				</form>
+
+
 				</div>
 				<img
 					src="../../assets/login-blue.svg"

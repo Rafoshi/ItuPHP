@@ -539,3 +539,12 @@ center {
 	min-width: 0px;
 	padding: 0px 0px 0px 0px;
 }
+
+.day {
+	background-color: blue;
+	color: #000000;
+}
+.night {
+	background-color: orangered;
+	color: white;
+}

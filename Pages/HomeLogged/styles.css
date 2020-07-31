@@ -41,6 +41,9 @@ a:link {
 	color: #000000;
 }
 
+#img-main:hover {
+}
+
 .sidenav-language {
 	height: 100%;
 	width: 0;
@@ -120,9 +123,9 @@ a:link {
 }
 .btn {
 	color: #ffffff;
-	background-color: #1072a8;
+	background-color: #137cb4;
 	border-radius: 10px;
-	border-color: #1072a8;
+	border-color: #137cb4;
 	text-align: center;
 	vertical-align: middle;
 	margin-right: 3%;
@@ -173,7 +176,7 @@ main {
 	color: #f2f2f2;
 	font-size: 20px;
 	background: #208ac3;
-	border-color: #208ac3;
+	border-color: #137cb4;
 	border-radius: 10px;
 	padding: 5px;
 	user-select: none;
@@ -540,7 +543,6 @@ ul li a i {
 .wrapper ul.setting-drop,
 .wrapper ul.help-drop {
 	display: none;
-	cursor: pointer;
 }
 .person-name {
 	font-family: Montserrat;
@@ -588,10 +590,10 @@ hr {
 		transform: rotate(0deg);
 	}
 	to {
-		transform: rotate(-90deg);
-		-webkit-transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		-o-transform: rotate(-90deg);
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
 	}
 }
