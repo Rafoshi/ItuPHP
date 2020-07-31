@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #f4f4f4;
@@ -453,10 +456,9 @@ center {
 .about-image {
 	bottom: 8.85%;
 	margin-top: 5%;
-}
-
-.about-container {
-	margin-left: 37%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-footer {
