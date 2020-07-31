@@ -113,6 +113,10 @@ a:link {
 	margin-right: 3%;
 	font-weight: 400;
 }
+.btn:hover {
+	-webkit-transform: translateY(1px);
+	transform: translateY(1px);
+}
 
 #globe-icon {
 	color: #52575c;
@@ -464,7 +468,7 @@ center {
 	padding: 20px 40px;
 	min-width: 420px;
 	position: absolute;
-	right: 36%;
+	right: 10%;
 	margin-top: -48px;
 	padding-bottom: 1%;
 	border-radius: 4px;

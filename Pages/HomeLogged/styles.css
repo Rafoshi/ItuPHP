@@ -118,7 +118,9 @@ a:link {
 	cursor: pointer;
 	animation: spin 0.7s;
 }
-
+#chevron-down:hover {
+	cursor: pointer;
+}
 .btn {
 	color: #ffffff;
 	background-color: #137cb4;
