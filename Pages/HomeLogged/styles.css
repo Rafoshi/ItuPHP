@@ -576,6 +576,11 @@ ul li a i {
 .wrapper ul.help-drop {
 	display: none;
 }
+
+a {
+	cursor: pointer;
+}
+
 .person-name {
 	font-family: Montserrat;
 	font-style: normal;
