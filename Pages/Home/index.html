@@ -33,16 +33,16 @@
 			<hr />
 			<a href="#">Nederlands</a>
 			<hr />
-			<div class="dark-theme">
-				Tema Escuro
-				<img src="../../assets/toggle-left.svg" id="darkTheme" onclick="darkTheme()" >
-			</div>
 		</div>
-
 		<div id="main">
+
 			<header>
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="container-nav">
+				<div id="navigation-sticky">
+					<div
+					class="navbar bg-light navbar-light navbar-expand-lg sticky-top"
+					>
+
+					<div class="container">
 						<span
 							style="font-size: 30px; cursor: pointer;"
 							onclick="openNav()"
@@ -51,47 +51,70 @@
 								<i data-feather="globe" id="globe-icon"></i>
 							</button>
 						</span>
-						<img
-							src="../../assets/logo-title.svg"
-							class="img-fluid user-select-none"
-							alt="Logo"
-							ondragstart="return false;"
-						/>
+
+							<a href="index.html" class="navbar-brand"
+								><img src="../../assets/logo.svg" alt=""
+							/></a>
+
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarResponsive"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarResponsive">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item">
+										<a href="index.html" class="nav-link">Início</a>
+									</li>
+									<li class="nav-item" >
+										<a href="index.html" class="nav-link">Preços</a>
+									</li>
+									<li class="nav-item">
+										<a href="index.html" class="nav-link"
+											>Portifólio</a
+										>
+									</li>
+									<li class="nav-item">
+										<a href="index.html" class="nav-link">Sobre</a>
+									</li>
+								</ul>
+								<button
+									class="btn"
+									onclick="window.location.href='../Login/index.html'"
+								>
+									<img src="../../assets/login.svg" />Entrar
+								</button>
+							</div>
+						</div>
 					</div>
-					<div class="navbar-nav">
-						<a class="nav-item nav-link" href="#">Início</a>
-						<a class="nav-item nav-link" href="#business">Preços</a>
-						<a class="nav-item nav-link" href="#">Portifólio</a>
-						<a class="nav-item nav-link" href="#">Sobre</a>
+		
+					<p class="title">
+						O seu sistema do que precisar,<br />
+						para o que precisar.
+					</p>
+					<p id="subtitle" class="subtitle">
+						Faremos o sistema para o seu comércio,<br>
+						com as suas necessidades.
+					</p>
+	
+					<div class="container-button">
+						<button
+							id="hire-button"
+							onclick="window.location.href='../Login/index.html'"
+						>
+							Contrate-nos
+						</button>
+						<button id="read-button">Veja mais</button>
 					</div>
-					<button
-						class="btn"
-						onclick="window.location.href='../Login/index.html'"
-					>
-						<img src="../../assets/login.svg" />Entrar
-					</button>
-				</nav>
+		
+				</div>
+			</nav>
 			</header>
 
 			<main>
-				<p class="title">
-					O seu sistema do que precisar,<br />
-					para o que precisar.
-				</p>
-				<p id="subtitle" class="subtitle">
-					Faremos o sistema para o seu comércio,<br>
-					com as suas necessidades.
-				</p>
-
-				<div class="container-button">
-					<button
-						id="hire-button"
-						onclick="window.location.href='../Login/index.html'"
-					>
-						Contrate-nos
-					</button>
-					<button id="read-button">Veja mais</button>
-				</div>
 				<img
 					class="content-img img-fluid"
 					src="../../assets/main-content.svg"
@@ -99,7 +122,7 @@
 					ondragstart="return false;"
 				/>
 			</main>
-
+			
 			<div id="business" class="business">
 				<p class="title-option">
 					Escolha a melhor opção para <br />
