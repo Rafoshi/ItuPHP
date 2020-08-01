@@ -1,3 +1,7 @@
+html {
+	font-size: 62.5%;
+}
+
 html,
 body {
 	height: 100%;
@@ -38,7 +42,7 @@ h1 {
 
 label {
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 24px;
 	letter-spacing: 0.1px;
 	color: #25282b;
@@ -53,7 +57,7 @@ input {
 #login-button {
 	color: #f2f2f2;
 	width: 100%;
-	font-size: 20px;
+	font-size: 2rem;
 	background: #208ac3;
 	border-color: #208ac3;
 	padding: 5px;
@@ -80,7 +84,7 @@ input {
 small {
 	font-style: normal;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 36px;
 	letter-spacing: -0.015em;
 	color: #25282b;
@@ -128,7 +132,7 @@ h2 {
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 60px;
+	font-size: 6rem;
 	height: 50px;
 	width: 50px;
 }
@@ -137,14 +141,14 @@ h2 {
 	padding-top: 20%;
 	justify-content: center;
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 3rem;
 }
 .alert .msg-title {
 	padding: 0 30px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 18px;
+	font-size: 1.8rem;
 	color: #ffffff;
 }
 
@@ -152,7 +156,7 @@ h2 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 1.4rem;
 	line-height: 30px;
 	padding: 0 30px;
 	color: #ffffff;
@@ -188,7 +192,7 @@ h2 {
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 60px;
+	font-size: 6rem;
 	height: 50px;
 	width: 50px;
 }
@@ -197,14 +201,14 @@ h2 {
 	padding-top: 20%;
 	justify-content: center;
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 3rem;
 }
 .conf .msg-title {
 	padding: 0 30px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 18px;
+	font-size: 1.8rem;
 	color: #ffffff;
 }
 
@@ -212,7 +216,7 @@ h2 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 1.4rem;
 	line-height: 30px;
 	padding: 0 30px;
 	color: #ffffff;
