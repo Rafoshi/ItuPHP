@@ -662,3 +662,10 @@ p::selection {
 		transform: translateX(0px) rotate(0deg);
 	}
 }
+
+/* Lower than 1230 pixel the card broke */
+@media (max-width: 1230) {
+	html {
+		font-size: 50%;
+	}
+}
