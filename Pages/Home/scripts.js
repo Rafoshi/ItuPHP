@@ -8,18 +8,6 @@ function closeNav() {
 	document.getElementById("main").style.marginLeft = "0";
 }
 
-function darkTheme() {
-	changeImage();
-}
-
-function changeImage() {
-	var image = document.getElementById("darkTheme");
-	if (image.src.match("toggle-left")) {
-		image.src = "../../assets/toggle-right.svg";
-	} else {
-		image.src = "../../assets/toggle-left.svg";
-	}
-}
 function orangeAlert() {
 	classRemove("orangeAlert", "hide");
 	classRemove("orangeCircle", "hide");
@@ -31,6 +19,33 @@ function orangeAlert() {
 
 	setTimeout(() => {
 		classAdd("orangeAlert", "hide");
+	}, 2500);
+}
+
+function errorPhone() {
+	orangeAlert();
+	classAdd("smartphone", "buzz");
+
+	setTimeout(() => {
+		classRemove("smartphone", "buzz");
+	}, 2500);
+}
+
+function errorWeb() {
+	orangeAlert();
+	classAdd("web", "buzz");
+
+	setTimeout(() => {
+		classRemove("web", "buzz");
+	}, 2500);
+}
+
+function webMobile() {
+	orangeAlert();
+	classAdd("webMobile", "buzz");
+
+	setTimeout(() => {
+		classRemove("webMobile", "buzz");
 	}, 2500);
 }
 
