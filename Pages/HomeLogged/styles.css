@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 
 body {
@@ -7,6 +8,10 @@ body {
 	background-color: #f4f4f4;
 	-webkit-font-smoothing: antialiased;
 	max-height: 100%;
+}
+
+a {
+	font-size: 1.4rem;
 }
 
 a:link {
@@ -67,7 +72,7 @@ a:link {
 	padding: 4px 4px 0px 10px;
 	font-weight: 600;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 2.5rem;
 	color: #303030;
 	display: block;
 	transition: 0.3s;
@@ -86,7 +91,7 @@ a:link {
 	position: absolute;
 	top: 0;
 	right: 25px;
-	font-size: 36px;
+	font-size: 3.6rem;
 	margin-left: 50px;
 }
 
@@ -162,7 +167,7 @@ main {
 .title {
 	color: #25282b;
 	font-weight: 500;
-	font-size: 54px;
+	font-size: 5.4rem;
 	text-align: center;
 	margin-top: 3%;
 	letter-spacing: -0.005em;
@@ -174,21 +179,23 @@ main {
 
 .subtitle {
 	font-weight: 300;
-	font-size: 24px;
+	font-size: 2.4rem;
 	text-align: center;
 	letter-spacing: 0.035em;
 	line-height: 133.5%;
 }
 #hire-button {
 	color: #f2f2f2;
-	font-size: 20px;
+	font-size: 2rem;
 	background: #208ac3;
-	border-color: #137cb4;
+	border-color: #208ac3;
 	border-radius: 10px;
 	padding: 5px;
 	user-select: none;
 	border-style: none;
 	box-shadow: 0px 3px 4px rgba(136, 136, 136, 0.25);
+	height: 41.08px;
+	font-size: 2rem;
 	margin-right: 15px;
 }
 
@@ -196,8 +203,8 @@ main {
 	background-color: transparent;
 	border-radius: 10px;
 	border-color: #01508a;
+	font-size: 2rem;
 	color: #01508a;
-	font-size: 20px;
 	border-radius: 10px;
 	box-shadow: 0px 3px 4px rgba(136, 136, 136, 0.25);
 	padding: 5px;
@@ -210,7 +217,10 @@ main {
 }
 
 .container-button {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 3%;
+	justify-content: center;
 }
 
 .content-img {
@@ -288,8 +298,8 @@ h5 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 36px;
-	line-height: 36px;
+	font-size: 3.6rem;
+	line-height: 3.6rem;
 	letter-spacing: -0.015em;
 	color: #25282b;
 	margin-top: 20px;
@@ -301,8 +311,8 @@ h5 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 36px;
+	font-size: 2.4rem;
+	line-height: 3.6rem;
 	letter-spacing: -0.015em;
 	color: #25282b;
 }
@@ -311,8 +321,8 @@ h5 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 16px;
-	line-height: 36px;
+	font-size: 1.6rem;
+	line-height: 3.6rem;
 	letter-spacing: -0.015em;
 	color: #000000;
 	display: flex;
@@ -325,7 +335,7 @@ h5 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 10.667px;
+	font-size: 1rem;
 	line-height: 5px;
 	letter-spacing: -0.015em;
 	color: #52575c;
@@ -335,8 +345,8 @@ h5 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
 	text-align: center;
 	letter-spacing: 0.001em;
 	color: #303030;
@@ -361,8 +371,8 @@ h5 {
 	font-style: normal;
 	align-items: center;
 	font-weight: 600;
-	font-size: 14px;
-	line-height: 36px;
+	font-size: 1.4rem;
+	line-height: 3.6rem;
 }
 
 .follow-btn-gray {
@@ -391,8 +401,8 @@ h5 {
 	align-items: center;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 14px;
-	line-height: 36px;
+	font-size: 1.4rem;
+	line-height: 3.6rem;
 }
 
 .follow-btn :hover {
@@ -414,8 +424,8 @@ h5 {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 48px;
-	line-height: 72px;
+	font-size: 4.8rem;
+	line-height: 7.2rem;
 	margin-top: 5%;
 	margin-left: 10%;
 
@@ -427,8 +437,8 @@ center {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 48px;
-	line-height: 59px;
+	font-size: 4.8rem;
+	line-height: 5.9rem;
 	text-align: center;
 	letter-spacing: 0.002em;
 
@@ -437,15 +447,13 @@ center {
 }
 .title-history {
 	margin: 0 auto;
-	width: 700px;
-	height: 98px;
 	justify-items: center;
 
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 48px;
-	line-height: 59px;
+	font-size: 4.8rem;
+	line-height: 5.9rem;
 	text-align: center;
 	letter-spacing: 0.002em;
 	/* H1 */
@@ -458,8 +466,8 @@ center {
 	text-align: center;
 	letter-spacing: 0.001em;
 	font-weight: normal;
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
 	margin-top: 73px;
 	display: flex;
 	align-items: flex-end;
@@ -509,7 +517,6 @@ center {
 }
 nav .wrapper {
 	position: absolute;
-	left: 76%;
 	border-radius: 2px;
 	top: 65px;
 	width: 280px;
@@ -527,10 +534,11 @@ nav .wrapper {
 nav .wrapper.show {
 	display: block;
 	display: flex;
+	right: 0;
 	z-index: 10;
 }
 .wrapper ul {
-	line-height: 55px;
+	line-height: 5.5rem;
 	width: 400px;
 	list-style: none;
 	padding: 10px;
@@ -542,7 +550,7 @@ nav .wrapper.show {
 .wrapper ul li a {
 	position: relative;
 	color: #303030;
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
@@ -564,23 +572,28 @@ ul li a .icon {
 }
 ul li a .icon span {
 	line-height: 40px;
-	font-size: 20px;
+	font-size: 2rem;
 	color: #545454;
 }
 ul li a i {
 	position: absolute;
-	font-size: 25px;
+	font-size: 2.5rem;
 	pointer-events: none;
 }
 .wrapper ul.setting-drop,
 .wrapper ul.help-drop {
 	display: none;
 }
+
+a {
+	cursor: pointer;
+}
+
 .person-name {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 17px;
+	font-size: 1.7rem;
 	display: grid;
 	place-items: center;
 	color: #4f4f4f;
@@ -609,7 +622,7 @@ hr {
 		padding-top: 15px;
 	}
 	.sidenav-language a {
-		font-size: 18px;
+		font-size: 1.8rem;
 	}
 }
 
