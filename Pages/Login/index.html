@@ -17,13 +17,23 @@
 		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
-		<img
-			src="../../assets/arrow-left.svg"
-			alt="Seta para voltar"
-			class="arrow-icon"
-			ondragstart="return false;"
-			onclick="window.location.href='../Home/index.html'"
-		/>
+		<picture>
+			<source
+				srcset="../../assets/arrow-left-white.svg"
+				media="(prefers-color-scheme: dark)"
+				ondragstart="return false;"
+				alt="Seta para voltar"
+				class="arrow-icon"
+				onclick="window.location.href='../Home/index.html'"
+			/>
+			<img
+				src="../../assets/arrow-left.svg"
+				ondragstart="return false;"
+				alt="Seta para voltar"
+				class="arrow-icon"
+				onclick="window.location.href='../Home/index.html'"
+			/>
+		</picture>
 
 		<div class="container-form-image">
 			<div class="form">
@@ -70,6 +80,7 @@
 					src="../../assets/jigsaw-group.svg"
 					alt="Um grupo de pessoals montando quebra cabeça"
 					class="img-fluid"
+					id="jigsaw"
 					ondragstart="return false;"
 				/>
 			</div>
