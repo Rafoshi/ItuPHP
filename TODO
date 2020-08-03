@@ -8,7 +8,13 @@ domingo{
     Ioshi
     []darktheme i
         [x]home
-        [x]FormMobile
+        [x]todos forms
+        [x]editaccount
+        [x]trackorders
+        [x]myorders
+        [x]login
+        [x]register
+        []homeLogged
     [x]aumentar fonte editaccount i
     [x]Links on home i
     [x]Hover images on login % register i

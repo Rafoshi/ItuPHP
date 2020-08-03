@@ -19,13 +19,23 @@
 		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
-		<img
-			src="../../assets/arrow-left.svg"
-			ondragstart="return false;"
-			alt="Seta para voltar"
-			class="arrow-icon"
-			onclick="window.location.href='../homeLogged/index.html'"
-		/>
+		<picture>
+			<source
+				srcset="../../assets/arrow-left-white.svg"
+				media="(prefers-color-scheme: dark)"
+				ondragstart="return false;"
+				alt="Seta para voltar"
+				class="arrow-icon"
+				onclick="window.location.href='../HomeLogged/index.html'"
+			/>
+			<img
+				src="../../assets/arrow-left.svg"
+				ondragstart="return false;"
+				alt="Seta para voltar"
+				class="arrow-icon"
+				onclick="window.location.href='../HomeLogged/index.html'"
+			/>
+		</picture>
 
 		<div class="container-form-image">
 			<div id="greenAlert" class="conf hide">
@@ -86,17 +96,6 @@
 						/>
 					</div>
 				</form>
-				<img
-					src="../../assets/login-blue.svg"
-					alt="Login icone"
-					class="img-login"
-					onclick="window.location.href='../Login/index.html'"
-					ondragstart="return false;"
-				/>
-
-				<small>
-					<a href="../Login/index.html">Já tenho cadastro</a>
-				</small>
 			</div>
 
 			<div class="image">
