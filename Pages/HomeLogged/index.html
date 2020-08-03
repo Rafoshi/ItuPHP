@@ -1,245 +1,383 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Infinity Tech</title>
-        <link rel="icon" href="../../assets/logo.svg">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="bootstrap.css">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-        <script src="scripts.js" charset="utf-8" ></script>
-        <script src="./bootstrap.js" charset="utf-8" ></script>
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    </head>
-    <body >
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home - Infinity Tech</title>
+		<link rel="icon" href="../../assets/logo.svg" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="scripts.js" charset="utf-8"></script>
+		<script src="./bootstrap.js" charset="utf-8"></script>
+		<script src="https://unpkg.com/feather-icons"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav-language">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="#"
+				>Português<i data-feather="check-circle" id="check-icon"></i
+			></a>
+			<hr />
+			<a href="#">English</a>
+			<hr />
+			<a href="#">Français</a>
+			<hr />
+			<a href="#">Nederlands</a>
+			<hr />
+		</div>
 
-        <div id="mySidenav" class="sidenav-language">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
-            <a href="#">Português<i data-feather="check-circle" id="check-icon"></i></a><hr/>
-            <a href="#">English</a><hr/>
-            <a href="#">Français</a><hr/>
-            <a href="#">Nederlands</a><hr/>
-          </div>
+		<div id="main">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container-nav">
+						<span
+							style="font-size: 30px; cursor: pointer;"
+							onclick="openNav()"
+						>
+							<button class="btn-language">
+								<i data-feather="globe" id="globe-icon"></i>
+							</button>
+						</span>
+						<img
+							src="../../assets/logo-title.svg"
+							id="img-main"
+							class="img-fluid user-select-none"
+							alt="Logo"
+							ondragstart="return false;"
+						/>
+					</div>
+					<div class="navbar-nav">
+						<a class="nav-item nav-link" href="#home">Início</a>
+						<a class="nav-item nav-link" href="#business">Preços</a>
+						<a class="nav-item nav-link" href="#">Portifólio</a>
+						<a class="nav-item nav-link" href="#history">Sobre</a>
+					</div>
+					<div class="drop-btn">
+						<span
+							class="fas fa-chevron-down"
+							id="chevron-down"
+							onclick="dropBox()"
+						></span>
+						<i data-feather="settings" id="settings-icon"></i>
+					</div>
+					<div class="wrapper">
+						<ul class="menu-bar">
+							<li class="person-name">
+								Olá, Vitor
+							</li>
+							<hr />
+							<li
+								class="clipbord"
+								onclick="window.location.href='../trackorder/index.html'"
+							>
+								<a
+									onclick="window.location.href='../trackorder/index.html'"
+								>
+									<div
+										class="icon"
+										onclick="window.location.href='../trackorder/index.html'"
+									>
+										<span
+											class="far fa-clipboard"
+											onclick="window.location.href='../trackorder/index.html'"
+										></span>
+									</div>
+									Acompanhar pedido
+								</a>
+							</li>
+							<li
+								class="setting-item"
+								onclick="window.location.href='../editAccount/index.html'"
+							>
+								<a
+									onclick="window.location.href='../editAccount/index.html'"
+								>
+									<div
+										class="icon"
+										onclick="window.location.href='../editAccount/index.html'"
+									>
+										<span
+											class="far fa-user"
+											onclick="window.location.href='../editAccount/index.html'"
+										></span>
+									</div>
+									Alterar senha
+								</a>
+							</li>
+							<li
+								class="help-item"
+								onclick="window.location.href='../Home/index.html'"
+							>
+								<a
+									onclick="window.location.href='../Home/index.html'"
+								>
+									<div
+										class="icon"
+										onclick="window.location.href='../Home/index.html'"
+									>
+										<span
+											data-feather="log-out"
+											id="log-out"
+											onclick="window.location.href='../Home/index.html'"
+										></span>
+									</div>
+									Sair
+								</a>
+							</li>
+							<li class="trash">
+								<a href="">
+									<div class="icon">
+										<span class="far fa-trash-alt"></span>
+									</div>
+									Deletar conta
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
 
-        <div id="main">
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-nav">
-                        <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">
-                            <button class="btn-language">
-                                <i data-feather="globe" id="globe-icon"></i>
-                            </button>
-                        </span>
-                        <img src="../../assets/logo-title.svg" id="img-main"class="img-fluid user-select-none" alt="Logo" ondragstart="return false;" >
-                    </div>
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Início</a>
-                        <a class="nav-item nav-link" href="#business">Preços</a>
-                        <a class="nav-item nav-link" href="#">Portifólio</a>
-                        <a class="nav-item nav-link" href="#">Sobre</a>
-                    </div>
-                    <div class="drop-btn">
-                      <span class="fas fa-chevron-down" id="chevron-down" onclick="dropBox()"></span>
-                      <i data-feather="settings" id="settings-icon" ></i>
-                    </div>
-                      <div class="wrapper">
-                        <ul class="menu-bar">
-                          <li class="person-name">
-                            Olá, Vitor
-                          </li>
-                          <hr />
-                          <li class="clipbord" onclick="window.location.href='../trackorder/index.html'">
-                            <a onclick="window.location.href='../trackorder/index.html'">
-                              <div class="icon" onclick="window.location.href='../trackorder/index.html'" >
-                                <span class="far fa-clipboard" onclick="window.location.href='../trackorder/index.html'" ></span>
-                              </div>
-                              Acompanhar pedido
-                            </a>
-                          </li>
-                          <li class="setting-item" onclick="window.location.href='../editAccount/index.html'">
-                            <a onclick="window.location.href='../editAccount/index.html'">
-                              <div class="icon" onclick="window.location.href='../editAccount/index.html'">
-                                <span class="far fa-user" onclick="window.location.href='../editAccount/index.html'"></span>
-                              </div>
-                              Alterar senha
-                            </a>
-                          </li>
-                          <li class="help-item" onclick="window.location.href='../Home/index.html'" >
-                            <a onclick="window.location.href='../Home/index.html'">
-                              <div class="icon" onclick="window.location.href='../Home/index.html'">
-                                <span
-                                  data-feather="log-out"
-                                  id="log-out"
-                                  onclick="window.location.href='../Home/index.html'"
-                                ></span>
-                              </div>
-                              Sair
-                            </a>
-                          </li>
-                          <li class="trash">
-                            <a href="">
-                              <div class="icon">
-                                <span class="far fa-trash-alt"></span>
-                              </div>
-                              Deletar conta
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </nav>
-                  </div>
-                            
-                </nav>
-            </header>
+			<main>
+				<p id="home" class="title">
+					O seu sistema do que precisar,<br />
+					para o que precisar.
+				</p>
+				<p id="subtitle" class="subtitle">
+					Faremos o sistema para o seu comércio,<br />
+					com as suas necessidades
+				</p>
 
-            <main>
-                <p class="title">O seu sistema do que precisar,<br> para o que precisar.</p>
-                <p id="subtitle" class="subtitle">Faremos o sistema  para o seu comércio,<br> com as suas necessidades</p>
+				<div class="container-button">
+					<button
+						id="hire-button"
+						onclick="window.location.href='../HomeLogged/index.html#business'"
+					>
+						Contrate-nos
+					</button>
+					<button id="read-button">Veja mais</button>
+				</div>
+				<img
+					id="img-main"
+					class="content-img img-fluid"
+					src="../../assets/main-content.svg"
+					alt="Homem usando computador"
+					ondragstart="return false;"
+				/>
+			</main>
 
-                <div class="container-button">
-                    <button id="hire-button" onclick="window.location.href='../HomeLogged/index.html#business'" >Contrate-nos</button>
-                    <button id="read-button">Veja mais</button>
-                </div>
-                <img id="img-main" class="content-img img-fluid"src="../../assets/main-content.svg"  alt="Homem usando computador" ondragstart="return false;">
-            </main>
+			<div id="business">
+				<p class="title-option">
+					Escolha a melhor opção para <br />
+					o seu negócio
+				</p>
 
-            <div id="business">
-            <p class="title-option">Escolha a melhor opção para <br> o seu negócio</p>
-            
+				<div class="card-group">
+					<div class="card">
+						<div class="avatar">
+							<img
+								src="../../assets/smartphone.svg"
+								ondragstart="return false;"
+							/>
+						</div>
+						<div class="card-body">
+							<h3 class="name">Mobile</h3>
+							<div class="value">
+								12x
+								<div class="reverse-title">R$200</div>
+							</div>
+							<p class="price-text">à vista R$ 2000</p>
+							<br /><br />
+							<h3 class="desc-card">
+								Tenha uma experiência única mobile, aumente as
+								vendas do seu negócio e amplie seus horizontes.
+							</h3>
+							<div class="follow-btn-gray">
+								<button
+									onclick="window.location.href='../FormMobile/index.html'"
+								>
+									Contrate-nos
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="card-maior">
+						<div class="avatar">
+							<img
+								src="../../assets/monitorsmartphone.svg"
+								ondragstart="return false;"
+							/>
+						</div>
+						<div class="card-body">
+							<h3 class="name">Web & <br />Mobile</h3>
+							<div class="value">
+								12x
+								<div class="reverse-title">R$200</div>
+							</div>
+							<p class="price-text">à vista R$ 2000</p>
+							<br /><br />
+							<h3 class="desc-card">
+								Junte sua experiência web e mobile em um só
+								pacote, potencializando <br />suas vendas.
+							</h3>
+							<div class="follow-btn">
+								<button
+									id="main-button"
+									onclick="window.location.href='../FormWebMobile/index.html'"
+								>
+									Contrate-nos
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="avatar">
+							<img
+								src="../../assets/monitor.svg"
+								ondragstart="return false;"
+							/>
+						</div>
+						<div class="card-body">
+							<h3 class="name">Web</h3>
+							<div class="value">
+								12x
+								<div class="reverse-title">R$200</div>
+							</div>
+							<p class="price-text">à vista R$ 2000</p>
+							<br /><br />
+							<h3 class="desc-card">
+								Adquira seu página web e passe uma imagem mais
+								profissional para os seu clientes.
+							</h3>
+							<div class="follow-btn-gray">
+								<button
+									onclick="window.location.href='../FormWeb/index.html'"
+								>
+									Contrate-nos
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <div class="card-group">
-              <div class="card">
-                <div class="avatar">
-                  <img src="../../assets/smartphone.svg" ondragstart="return false;" >
-                </div>
-                <div class="card-body">
-                  <h3 class="name">Mobile</h3>
-                  <div class="value">12x<div class="reverse-title">R$200</div></div>
-                  <p class="price-text">à vista R$ 2000</p>
-                  <br><br>
-                  <h3 class="desc-card">Tenha uma experiência única mobile, aumente as vendas do seu negócio e amplie seus horizontes.</h3>
-                  <div class="follow-btn-gray">
-                    <button onclick="window.location.href='../FormMobile/index.html'" >Contrate-nos</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card-maior">
-                <div class="avatar">
-                  <img src="../../assets/monitorsmartphone.svg" ondragstart="return false;" >
-                </div>
-                <div class="card-body">
-                  <h3 class="name">Web & <br>Mobile</h3>
-                  <div class="value">12x<div class="reverse-title">R$200</div></div>
-                  <p class="price-text">à vista R$ 2000</p>
-                  <br><br>
-                  <h3 class="desc-card">Junte sua experiência web e mobile em um só pacote, potencializando <br>suas vendas.</h3>
-                  <div class="follow-btn">
-                    <button id="main-button" onclick="window.location.href='../FormWebMobile/index.html'" >Contrate-nos</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="avatar">
-                  <img src="../../assets/monitor.svg" ondragstart="return false;" >
-                </div>
-                <div class="card-body">
-                  <h3 class="name">Web</h3>
-                  <div class="value">12x<div class="reverse-title">R$200</div></div>
-                  <p class="price-text">à vista R$ 2000</p>
-                  <br><br>
-                  <h3 class="desc-card">Adquira seu página web e passe uma imagem mais profissional  para os seu clientes.</h3>
-                  <div class="follow-btn-gray">
-                    <button onclick="window.location.href='../FormWeb/index.html'" >Contrate-nos</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-		
+			<p id="history" class="title-history">
+				Um pouco mais a hístoria da <br />
+				nossa empresa
+			</p>
+			<p class="about-history">
+				Não acredite em algo simplesmente porque ouviu. Não acredite em
+				algo simplesmente porque todos falam a respeito. Não acredite em
+				algo simplesmente porque está escrito em seus livros religiosos.
+				Não acredite em algo só porque seus professores e mestres dizem
+				que é verdade. Não acredite em tradições só porque foram
+				passadas de geração em geração. Mas, depois de muita análise e
+				observação, se você vê que algo concorda com a razão e que
+				conduz ao bem e benefício de todos, aceite-o e viva-o.
+			</p>
 
-			<p class="title-history">Um pouco mais a hístoria da <br> nossa empresa</p>
-			<p class="about-history">Não acredite em algo simplesmente porque ouviu. Não acredite em algo simplesmente porque todos falam a respeito. Não acredite em algo simplesmente porque está escrito em seus livros religiosos. Não acredite em algo só porque seus professores e mestres dizem que é verdade. Não acredite em tradições só porque foram passadas de geração em geração. Mas, depois de muita análise e observação, se você vê que algo concorda com a razão e que conduz ao bem e benefício de todos, aceite-o e viva-o.</p>
+			<img
+				class="about-image"
+				src="../../assets/person.svg"
+				alt="pessoinhas"
+				ondragstart="return false;"
+			/>
 
-			<img class="about-image" src="../../assets/person.svg" alt="pessoinhas" ondragstart="return false;" >
-    
-      <footer class="page-footer">
-                <div class="container">
-                  <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-              
+			<footer class="page-footer">
+				<div class="container">
+					<div
+						class="row text-center d-flex justify-content-center pt-5 mb-3"
+					>
+						<div class="grow col-md-3 mb-2">
+							<h6 class="text-uppercase">
+								<a href="#home">Início</a>
+							</h6>
+						</div>
 
-                    <div class="grow col-md-3 mb-2">
-                      <h6 class="text-uppercase">
-                        <a href="#!">Início</a>
-                      </h6>
-                    </div>
-    
-                    <div class="grow col-md-3 mb-2">
-                      <h6 class="text-uppercase">
-                        <a href="#!">Preços</a>
-                      </h6>
-                    </div>
-    
-                    <div class="grow col-md-3 mb-2">
-                      <h6 class="text-uppercase">
-                        <a href="#!">Portifólio</a>
-                      </h6>
-                    </div>
-                    
-                    <div class="grow col-md-3 mb-2">
-                      <h6 class="text-uppercase">
-                        <a href="#!">Sobre</a>
-                      </h6>
-                  </div>	
-                  
-				  </div>
-				  
-                  <hr class="rgba-white-light" style="margin:10 100%;">
-	
-				  <br />
+						<div class="grow col-md-3 mb-2">
+							<h6 class="text-uppercase">
+								<a href="#business">Preços</a>
+							</h6>
+						</div>
 
-                  <div class="row text-center justify-content-center ">
-              
-                    <a class="fb-ic grow col-md-2 mb-2">
-                      <img src="../../assets/facebook-icon.svg" alt="facebook" ondragstart="return false;" >
-                    </a>
+						<div class="grow col-md-3 mb-2">
+							<h6 class="text-uppercase">
+								<a href="#business">Portifólio</a>
+							</h6>
+						</div>
 
-                    <a class="Em-ic grow col-md-2 mb-2">
-                      <img src="../../assets/email-icon.svg" alt="email" ondragstart="return false;" >
-                    </a>
+						<div class="grow col-md-3 mb-2">
+							<h6 class="text-uppercase">
+								<a href="#history">Sobre</a>
+							</h6>
+						</div>
+					</div>
 
-                    <a class="li-ic grow col-md-2 mb-2">
-                      <img src="../../assets/linkedin-icon.svg" alt="linkedin" ondragstart="return false;" >
-                    </a>
+					<hr class="rgba-white-light" style="margin: 10 100%;" />
 
-                    <a class="ins-ic grow col-md-2 mb-2">
-                     <img src="../../assets/instagram-icon.svg" alt="instagram" ondragstart="return false;" >
-                    </a>
-      
-                  </div>
-			  
-				  <br />
+					<br />
 
-                <div class="footer-copyright text-center py-1">Copyright ©  2020 -
-                  <a>Todos direitos reservados </a>
-                </div>
-        
-            </footer>
-            
-            <script>feather.replace()</script>
-            
-        </div>
+					<div class="row text-center justify-content-center">
+						<a class="fb-ic grow col-md-2 mb-2">
+							<img
+								src="../../assets/facebook-icon.svg"
+								alt="facebook"
+								ondragstart="return false;"
+							/>
+						</a>
 
-        <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-        <script>
-          new TypeIt("#subtitle", {
-            speed: 30,
-          })
-            .go()
-            .reset();
-        </script>
-        
-    </body>
+						<a class="Em-ic grow col-md-2 mb-2">
+							<img
+								src="../../assets/email-icon.svg"
+								alt="email"
+								ondragstart="return false;"
+							/>
+						</a>
+
+						<a class="li-ic grow col-md-2 mb-2">
+							<img
+								src="../../assets/linkedin-icon.svg"
+								alt="linkedin"
+								ondragstart="return false;"
+							/>
+						</a>
+
+						<a class="ins-ic grow col-md-2 mb-2">
+							<img
+								src="../../assets/instagram-icon.svg"
+								alt="instagram"
+								ondragstart="return false;"
+							/>
+						</a>
+					</div>
+
+					<br />
+
+					<div class="footer-copyright text-center py-1">
+						<a>Copyright © 2020 - Todos direitos reservados </a>
+					</div>
+
+					<script>
+						feather.replace();
+					</script>
+				</div>
+
+				<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+				<script>
+					new TypeIt("#subtitle", {
+						speed: 30,
+					})
+						.go()
+						.reset();
+				</script>
+			</footer>
+		</div>
+	</body>
 </html>

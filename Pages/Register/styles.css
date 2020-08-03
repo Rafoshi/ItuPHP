@@ -44,10 +44,24 @@ label {
 	color: #25282b;
 }
 
+#netbook {
+	transition: transform 0.2s;
+}
+
+#netbook:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
 input {
 	border: 1px solid #a0a4a8;
 	box-sizing: border-box;
 	border-radius: 5px;
+}
+
+#title {
+	font-size: 4rem;
 }
 
 #login-button {

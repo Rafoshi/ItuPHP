@@ -67,6 +67,16 @@ input {
 	cursor: pointer;
 }
 
+#jigsaw {
+	transition: transform 0.2s;
+}
+
+#jigsaw:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
 small {
 	font-style: normal;
 	font-weight: 600;

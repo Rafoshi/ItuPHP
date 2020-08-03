@@ -1,8 +1,3 @@
-
-
-
-
-
 domingo{
     Vitor
     []Navbar homeLogged v
@@ -12,9 +7,11 @@ domingo{
 
     Ioshi
     []darktheme i
-    []aumentar fonte editaccount i
-    []Links on home i
-    []Hover images on login % register i
+        [x]home
+        [x]FormMobile
+    [x]aumentar fonte editaccount i
+    [x]Links on home i
+    [x]Hover images on login % register i
 }
 
 segunda{
