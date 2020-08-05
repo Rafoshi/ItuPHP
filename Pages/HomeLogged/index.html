@@ -5,17 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home - Infinity Tech</title>
 		<link rel="icon" href="../../assets/logo.svg" />
+		<script src="jquery-3.5.1.min.js"></script>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="bootstrap.css" />
 		<link rel="stylesheet" href="styles.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet prefetch"
+			href="https://npmcdn.com/basscss@8.0.0/css/basscss.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="scripts.js" charset="utf-8"></script>
 		<script src="./bootstrap.js" charset="utf-8"></script>
 		<script src="https://unpkg.com/feather-icons"></script>
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	<body>
 		<div id="mySidenav" class="sidenav-language">
@@ -33,11 +39,15 @@
 			<a href="#">Nederlands</a>
 			<hr />
 		</div>
-
 		<div id="main">
+
 			<header>
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="container-nav">
+				<div id="navigation-sticky">
+					<div
+					class="navbar bg-light navbar-light navbar-expand-lg sticky-top"
+					>
+
+					<div class="container">
 						<span
 							style="font-size: 30px; cursor: pointer;"
 							onclick="openNav()"
@@ -46,380 +56,301 @@
 								<i data-feather="globe" id="globe-icon"></i>
 							</button>
 						</span>
-						<img
-							src="../../assets/logo-title.svg"
-							id="img-main"
-							class="img-fluid user-select-none"
-							alt="Logo"
-							ondragstart="return false;"
-						/>
-					</div>
-					<div class="navbar-nav">
-						<a class="nav-item nav-link" href="#home">Início</a>
-						<a class="nav-item nav-link" href="#business">Preços</a>
-						<a class="nav-item nav-link" href="#">Portifólio</a>
-						<a class="nav-item nav-link" href="#history">Sobre</a>
-					</div>
-					<div class="drop-btn">
-						<span
-							class="fas fa-chevron-down"
-							id="chevron-down"
-							onclick="dropBox()"
-						></span>
-						<i data-feather="settings" id="settings-icon"></i>
-					</div>
-					<div class="wrapper">
-						<ul class="menu-bar">
-							<li class="person-name">
-								Olá, Vitor
-							</li>
-							<hr />
-							<li
-								class="clipbord"
-								onclick="window.location.href='../trackorder/index.html'"
-							>
-								<a
-									onclick="window.location.href='../trackorder/index.html'"
+
+							<a href="index.html" class="navbar-brand"
 								>
-									<div
-										class="icon"
-										onclick="window.location.href='../trackorder/index.html'"
-									>
-										<span
-											class="far fa-clipboard"
-											onclick="window.location.href='../trackorder/index.html'"
-										></span>
-									</div>
-									Acompanhar pedido
-								</a>
-							</li>
-							<li
-								class="setting-item"
-								onclick="window.location.href='../editAccount/index.html'"
+						
+								<picture>
+									<source srcset="../../assets/logo-white.png" media="(prefers-color-scheme: dark)">
+									<img src="../../assets/logo.png" alt="logo"/>
+								</picture>
+								
+						
+						</a>
+
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarResponsive"
 							>
-								<a
-									onclick="window.location.href='../editAccount/index.html'"
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarResponsive">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item">
+										<a href="#home" class="nav-link">Início</a>
+									</li>
+									<li class="nav-item" >
+										<a href="#business" class="nav-link">Preços</a>
+									</li>
+									<li class="nav-item">
+										<a href="index.html" class="nav-link"
+											>Portifólio</a
+										>
+									</li>
+									<li class="nav-item">
+										<a href="#history" class="nav-link">Sobre</a>
+									</li>
+								</ul>
+								<button
+									class="btn-login"
+									onclick="window.location.href='../Login/index.html'"
 								>
-									<div
-										class="icon"
-										onclick="window.location.href='../editAccount/index.html'"
-									>
-										<span
-											class="far fa-user"
-											onclick="window.location.href='../editAccount/index.html'"
-										></span>
-									</div>
-									Alterar senha
-								</a>
-							</li>
-							<li
-								class="help-item"
-								onclick="window.location.href='../Home/index.html'"
-							>
-								<a
-									onclick="window.location.href='../Home/index.html'"
-								>
-									<div
-										class="icon"
-										onclick="window.location.href='../Home/index.html'"
-									>
-										<span
-											data-feather="log-out"
-											id="log-out"
-											onclick="window.location.href='../Home/index.html'"
-										></span>
-									</div>
-									Sair
-								</a>
-							</li>
-							<li class="trash">
-								<a href="">
-									<div class="icon">
-										<span class="far fa-trash-alt"></span>
-									</div>
-									Deletar conta
-								</a>
-							</li>
-						</ul>
+									<img src="../../assets/login.svg" />Entrar
+								</button>
+							</div>
+						</div>
 					</div>
-				</nav>
+		
+					<p id="home" class="title">
+						O seu sistema do que precisar,<br />
+						para o que precisar.
+					</p>
+					<p id="subtitle" class="subtitle">
+						Faremos o sistema para o seu comércio,<br>
+						com as suas necessidades.
+					</p>
+	
+					<div class="container-button">
+						<button
+							id="hire-button"
+							onclick="window.location.href='../Login/index.html'"
+						>
+							Contrate-nos
+						</button>
+						<button id="read-button">Veja mais</button>
+					</div>
+		
+				</div>
+			</nav>
 			</header>
 
 			<main>
-				<p id="home" class="title">
-					O seu sistema do que precisar,<br />
-					para o que precisar.
-				</p>
-				<p id="subtitle" class="subtitle">
-					Faremos o sistema para o seu comércio,<br />
-					com as suas necessidades
-				</p>
-
-				<div class="container-button">
-					<button
-						id="hire-button"
-						onclick="window.location.href='../HomeLogged/index.html#business'"
-					>
-						Contrate-nos
-					</button>
-					<button id="read-button">Veja mais</button>
-				</div>
 				<img
-					id="img-main"
 					class="content-img img-fluid"
 					src="../../assets/main-content.svg"
+					id="img-main"
 					alt="Homem usando computador"
 					ondragstart="return false;"
 				/>
 			</main>
-
-			<div id="business">
+			
+			<div id="business" class="business">
 				<p class="title-option">
 					Escolha a melhor opção para <br />
 					o seu negócio
 				</p>
 
-				<div class="card-group">
-					<div class="card">
-						<div class="avatar">
-							<img
-								src="../../assets/smartphone.svg"
-								ondragstart="return false;"
-							/>
-						</div>
-						<div class="card-body">
-							<h3 class="name">Mobile</h3>
-							<div class="value">
-								12x
-								<div class="reverse-title">R$200</div>
-							</div>
-							<p class="price-text">à vista R$ 2000</p>
-							<br /><br />
-							<h3 class="desc-card">
-								Tenha uma experiência única mobile, aumente as
-								vendas do seu negócio e amplie seus horizontes.
-							</h3>
-							<div class="follow-btn-gray">
-								<button
-									onclick="window.location.href='../FormMobile/index.html'"
-								>
-									Contrate-nos
-								</button>
-							</div>
-						</div>
+				<div id="orangeAlert" class="alert hide">
+					<div id="orangeCircle" class="circle hide">
+						<span id="orangeCheck" class="fas fa-exclamation-circle hide"></span>
 					</div>
-					<div class="card-maior">
-						<div class="avatar">
-							<img
-								src="../../assets/monitorsmartphone.svg"
-								ondragstart="return false;"
-							/>
-						</div>
-						<div class="card-body">
-							<h3 class="name">Web & <br />Mobile</h3>
+					<span id="orangeTitle" class="msg-title hide"> Alerta !<br /></span>
+					<span id="orangeMessage" class="msg hide">
+						Você precisa estar logado para completar a ação
+						anterior</span
+					>
+				</div>
+				<div class="wrapper">
+					<div class="card-grup">
+						<div class="card">
+							<div class="avatar" class="errorPhone">
+								<img src="../../assets/smartphone.svg" alt="smartphone" id="smartphone" />
+							</div>
+							<h3>Mobile</h3>
 							<div class="value">
 								12x
-								<div class="reverse-title">R$200</div>
+								<p class="reverse-title">R$200</p>
 							</div>
 							<p class="price-text">à vista R$ 2000</p>
-							<br /><br />
-							<h3 class="desc-card">
-								Junte sua experiência web e mobile em um só
-								pacote, potencializando <br />suas vendas.
-							</h3>
-							<div class="follow-btn">
-								<button
-									id="main-button"
-									onclick="window.location.href='../FormWebMobile/index.html'"
-								>
-									Contrate-nos
-								</button>
+							<p class="info-text">
+								Tenha uma experiência única mobile, aumentando as vendas do
+								seu negócio.
+							</p>
+							<button onclick="errorPhone()">Contrate-nos</button>
+						</div>
+						<div class="card-bigger">
+						<div class="card">
+							<div class="avatar">
+								<img
+									src="../../assets/monitorsmartphone.svg"
+									alt="monitorsmartphone"
+									id="webMobile"
+								/>
 							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="avatar">
-							<img
-								src="../../assets/monitor.svg"
-								ondragstart="return false;"
-							/>
-						</div>
-						<div class="card-body">
-							<h3 class="name">Web</h3>
+							<h3>Web & <br />Mobile</h3>
 							<div class="value">
 								12x
-								<div class="reverse-title">R$200</div>
+								<p class="reverse-title">R$200</p>
 							</div>
 							<p class="price-text">à vista R$ 2000</p>
-							<br /><br />
-							<h3 class="desc-card">
+							<p class="info-text">
+								Junte sua experiência web e mobile em um só pacote,
+								potencializando suas vendas.
+							</p>
+							<button class="btn-blue" onclick="webMobile()">Contrate-nos</button>
+						</div>
+						</div>
+						<div class="card">
+							<div class="avatar">
+								<img src="../../assets/monitor.svg" alt="monitor" id="web"/>
+							</div>
+							<h3>Web</h3>
+							<div class="value">
+								12x
+								<p class="reverse-title">R$200</p>
+							</div>
+							<p class="price-text">à vista R$ 2000</p>
+							<p class="info-text">
 								Adquira seu página web e passe uma imagem mais
 								profissional para os seu clientes.
-							</h3>
-							<div class="follow-btn-gray">
-								<button
-									onclick="window.location.href='../FormWeb/index.html'"
-								>
-									Contrate-nos
-								</button>
-							</div>
+							</p>
+							<button onclick="errorWeb()">Contrate-nos</button>
 						</div>
 					</div>
 				</div>
+
+				<h1 class="title-port">Nossos projetos</h1>
+				<div class="toolbar mb2 mt2">
+				  <button class="fil-cat btn-portifolio" href="" data-rel="all">Tudo</button>
+				  <button class="fil-cat btn-portifolio" data-rel="web">Web</button>
+				  <button class="fil-cat btn-portifolio" data-rel="flyers">Mobile</button>
+				</div>
+			
+				<div id="portfolio">
+				  <div class="tile scale-anm web all">
+					<img src="../../assets/HomeBe-the-hero.png" alt="" />
+				  </div>
+				  <div class="tile scale-anm bcards all">
+					<img src="" alt="" />
+				  </div>
+				  <div class="tile scale-anm web all">
+					<img src="../../assets/HomeEcolata.png" alt="" />
+				  </div>
+				  <div class="tile scale-anm web all">
+					<img src="../../assets/HomeProffy.png" alt="" />
+				  </div>
+				  <div class="tile scale-anm flyers all">
+					<img src="../../assets/mobileEcoleta.png" alt="" />
+				  </div>
+				  <div class="tile scale-anm bcards all">
+					<img src="" alt="" />
+				  </div>
+				  <div class="tile scale-anm flyers all">
+					<img src="../../assets/MobileBe-thehoro.png" alt="" />
+				  </div>
+				  <div class="tile scale-anm flyers all">
+					<img src="" alt="" />
+				  </div>
+				  <div class="tile scale-anm web all">
+					<img src="" alt="" />
+				  </div>
+				  <div class="tile scale-anm flyers all">
+					<img src="" alt="" />
+				  </div>
+				  <div class="tile scale-anm web all">
+					<img src="" alt="" />
+				  </div>
+				</div>
+				<div style="clear: both;"></div>
+
 			</div>
 
-			<p id="history" class="title-history">
-				Um pouco mais a hístoria da <br />
-				nossa empresa
-			</p>
-			<p class="about-history">
-				Não acredite em algo simplesmente porque ouviu. Não acredite em
-				algo simplesmente porque todos falam a respeito. Não acredite em
-				algo simplesmente porque está escrito em seus livros religiosos.
-				Não acredite em algo só porque seus professores e mestres dizem
-				que é verdade. Não acredite em tradições só porque foram
-				passadas de geração em geração. Mas, depois de muita análise e
-				observação, se você vê que algo concorda com a razão e que
-				conduz ao bem e benefício de todos, aceite-o e viva-o.
-			</p>
+			<br /><br />
 
-			<img
-				class="about-image"
-				src="../../assets/person.svg"
-				alt="pessoinhas"
-				ondragstart="return false;"
-			/>
+			<p id="history" class="title-history">Um pouco mais a hístoria da <br> nossa empresa</p>
+			<p class="about-history"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sint fuga esse quo unde omnis rem, laudantium dolores consectetur deleniti culpa numquam dolorem repudiandae aliquid voluptas facere nihil modi ea, ipsam dicta tempore? Mollitia quisquam rerum velit ea, fuga ad impedit voluptatem pariatur quae nisi suscipit quo, est maxime, modi ipsam odio qui sunt tempora corporis perferendis laboriosam distinctio culpa. Aperiam iste facere aspernatur inventore? Itaque, voluptatem modi. Enim, non! Expedita itaque inventore laborum non, recusandae quod, tempora labore molestiae reprehenderit quibusdam deserunt voluptatibus. Sapiente quam nulla numquam voluptatibus quis. </p>
+				
+			<img class="about-image" src="../../assets/person.svg" alt="pessoinhas" ondragstart="return false;" >
 
-			<footer class="page-footer">
-				<div class="container" id="footer">
-					<div
-						class="row text-center d-flex justify-content-center pt-5 mb-3"
-					>
-						<div class="grow col-md-3 mb-2">
-							<h6 class="text-uppercase">
-								<a href="#home">Início</a>
-							</h6>
+						<footer class="page-footer">
+						<div class="container" id="footer">
+							<div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+
+								<div class="grow col-md-3 mb-2">
+									<h6 class="text-uppercase">
+										<a href="#home">Início</a>
+									</h6>
+								</div>
+
+								<div class="grow col-md-3 mb-2">
+									<h6 class="text-uppercase">
+										<a href="#business">Preços</a>
+									</h6>
+								</div>
+
+								<div class="grow col-md-3 mb-2">
+									<h6 class="text-uppercase">
+										<a href="#business">Portifólio</a>
+									</h6>
+								</div>
+								
+								<div class="grow col-md-3 mb-2">
+									<h6 class="text-uppercase">
+										<a id="about-a" href="#history">Sobre</a>
+									</h6>
+								</div>	
+
 						</div>
 
-						<div class="grow col-md-3 mb-2">
-							<h6 class="text-uppercase">
-								<a href="#business">Preços</a>
-							</h6>
-						</div>
+							<hr class="rgba-white-light" style="margin:10 100%;">
 
-						<div class="grow col-md-3 mb-2">
-							<h6 class="text-uppercase">
-								<a href="#business">Portifólio</a>
-							</h6>
-						</div>
+							<br />
 
-						<div class="grow col-md-3 mb-2">
-							<h6 class="text-uppercase">
-								<a id="about-a" href="#history">Sobre</a>
-							</h6>
-						</div>
-					</div>
+							<div class="row text-center justify-content-center ">
 
-					<hr class="rgba-white-light" style="margin: 10 100%;" />
+								<a class="fb-ic grow col-md-2 mb-2" href="https://www.facebook.com/Infinity-Tech-Us-105581197550643
+								" target="_blank">
+									<picture>
+										<source srcset="../../assets/facebook-white.svg" media="(prefers-color-scheme: dark)">
+										<img src="../../assets/facebook-icon.svg" alt="facebook" ondragstart="return false;" >
+									</picture>
+								</a>
 
-					<br />
+								<a class="Em-ic grow col-md-2 mb-2" href="mailto:itu.etec@gmail.com" target="_blank">
+									<picture>
+										<source srcset="../../assets/mail-white.svg" media="(prefers-color-scheme: dark)">
+										<img src="../../assets/email-icon.svg" alt="email" ondragstart="return false;" >
+									</picture>
+								</a>
 
-					<div class="row text-center justify-content-center">
-						<a
-							class="fb-ic grow col-md-2 mb-2"
-							href="https://www.facebook.com/Infinity-Tech-Us-105581197550643
-						"
-							target="_blank"
-						>
-							<picture>
-								<source
-									srcset="../../assets/facebook-white.svg"
-									media="(prefers-color-scheme: dark)"
-								/>
-								<img
-									src="../../assets/facebook-icon.svg"
-									alt="facebook"
-									ondragstart="return false;"
-								/>
-							</picture>
-						</a>
+								<a class="li-ic grow col-md-2 mb-2" href="https://www.linkedin.com/in/infinity-tech-us-266980195/
+								" target="_blank" >
+									<picture>
+										<source srcset="../../assets/linkedin-white.svg" media="(prefers-color-scheme: dark)"  >
+										<img src="../../assets/linkedin-icon.svg" alt="linkedin" ondragstart="return false;"  >
+									</picture>
+								</a>
 
-						<a
-							class="Em-ic grow col-md-2 mb-2"
-							href="mailto:itu.etec@gmail.com"
-							target="_blank"
-						>
-							<picture>
-								<source
-									srcset="../../assets/mail-white.svg"
-									media="(prefers-color-scheme: dark)"
-								/>
-								<img
-									src="../../assets/email-icon.svg"
-									alt="email"
-									ondragstart="return false;"
-								/>
-							</picture>
-						</a>
+								<a class="ins-ic grow col-md-2 mb-2" href="https://www.instagram.com/itu_it/?hl=sr" target="_blank" >
+									<picture>
+										<source srcset="../../assets/instagram-white.svg" media="(prefers-color-scheme: dark)">
+										<img src="../../assets/instagram-icon.svg" alt="instagram" ondragstart="return false;" >
+									</picture>
+								</a>
 
-						<a
-							class="li-ic grow col-md-2 mb-2"
-							href="https://www.linkedin.com/in/infinity-tech-us-266980195/
-						"
-							target="_blank"
-						>
-							<picture>
-								<source
-									srcset="../../assets/linkedin-white.svg"
-									media="(prefers-color-scheme: dark)"
-								/>
-								<img
-									src="../../assets/linkedin-icon.svg"
-									alt="linkedin"
-									ondragstart="return false;"
-								/>
-							</picture>
-						</a>
+							</div>
 
-						<a
-							class="ins-ic grow col-md-2 mb-2"
-							href="https://www.instagram.com/itu_it/?hl=sr"
-							target="_blank"
-						>
-							<picture>
-								<source
-									srcset="../../assets/instagram-white.svg"
-									media="(prefers-color-scheme: dark)"
-								/>
-								<img
-									src="../../assets/instagram-icon.svg"
-									alt="instagram"
-									ondragstart="return false;"
-								/>
-							</picture>
-						</a>
-					</div>
+							<br />
 
-					<br />
+							<div class="footer-copyright text-center py-1">
+								<a>Copyright ©  2020 - Todos direitos reservados </a>
+							</div>
 
-					<div class="footer-copyright text-center py-1">
-						<a>Copyright © 2020 - Todos direitos reservados </a>
-					</div>
-
-					<script>
-						feather.replace();
-					</script>
-				</div>
-
-				<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-				<script>
-					new TypeIt("#subtitle", {
-						speed: 30,
-					})
-						.go()
-						.reset();
-				</script>
-			</footer>
+					</footer>
+					
+			<script>feather.replace()</script>
+			
+			<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+			<script>
+				new TypeIt("#subtitle", {
+					speed: 30,
+				})
+					.go()
+					.reset();
+			</script>
 		</div>
 	</body>
 </html>
