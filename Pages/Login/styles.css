@@ -1,24 +1,11 @@
-:root {
-	--background-color: #f4f4f4;
-	--input-color: #a0a4a8;
-	--white: #f2f2f2;
-	--black: #25282b;
-	--button-color: #208ac3;
-	--second-black: #303030;
-	--background-color-dark-theme: #282830;
-	--text-color-dark-theme: #d6d6d6;
-	--background-btn: #137cb4;
-	--background-btn-hover: #126b9b;
-}
-
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: var(--background-color);
+	background-color: #f4f4f4;
 	-webkit-font-smoothing: antialiased;
 }
 
 a:link {
-	color: black;
+	color: #000000;
 	text-decoration: none;
 }
 
@@ -34,7 +21,7 @@ h1 {
 	font-weight: 500;
 	line-height: 36px;
 	letter-spacing: -0.015em;
-	color: var(--black);
+	color: #25282b;
 	margin-bottom: 20%;
 	margin-top: -10%;
 }
@@ -44,25 +31,25 @@ label {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.1px;
-	color: var(--black);
+	color: #25282b;
 }
 
 input {
-	border: 1px solid var(--input-color);
+	border: 1px solid #a0a4a8;
 	box-sizing: border-box;
 	border-radius: 5px;
 }
 
 #login-button {
-	color: var(--white);
+	color: #f2f2f2;
 	width: 100%;
 	font-size: 20px;
-	background: var(--button-color);
-	border-color: var(--button-color);
+	background: #208ac3;
+	border-color: #208ac3;
 	padding: 5px;
 	user-select: none;
 	border-style: none;
-	background: var(--button-color);
+	background: #208ac3;
 	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	margin-top: 5%;
@@ -71,7 +58,7 @@ input {
 }
 
 #login-button:hover {
-	background-color: var(--background-btn-hover);
+	background-color: #137cb4;
 	transition: 0.6s;
 }
 
@@ -80,23 +67,13 @@ input {
 	cursor: pointer;
 }
 
-#jigsaw {
-	transition: transform 0.2s;
-}
-
-#jigsaw:hover {
-	-ms-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
-
 small {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 36px;
 	letter-spacing: -0.015em;
-	color: var(--black);
+	color: #25282b;
 	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -109,21 +86,4 @@ u {
 	margin-top: 1%;
 	margin-left: 2%;
 	cursor: pointer;
-}
-
-@media (prefers-color-scheme: dark) {
-	html,
-	main,
-	html main,
-	body {
-		background-color: var(--background-color-dark-theme);
-	}
-
-	#account,
-	a,
-	a:hover,
-	label,
-	h1 {
-		color: white;
-	}
 }
