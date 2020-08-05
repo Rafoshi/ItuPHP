@@ -4580,7 +4580,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-	color: #495057;
+	color: #1c1c1c;
 	background-color: #fff;
 	border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4649,14 +4649,12 @@ input[type="button"].btn-block {
 	-ms-flex-align: center;
 	align-items: center;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
 }
 
 .navbar-brand {
 	display: inline-block;
 	padding-top: 0.3125rem;
-	padding-bottom: 0.3125rem;
-	margin-right: 1rem;
+	margin-right: 10rem;
 	font-size: 1.25rem;
 	line-height: inherit;
 	white-space: nowrap;
@@ -4673,8 +4671,10 @@ input[type="button"].btn-block {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	padding-left: 0;
+	padding-right: 15rem;
 	margin-bottom: 0;
 	list-style: none;
+	padding-right: 40rem;
 }
 
 .navbar-nav .nav-link {
@@ -4709,6 +4709,8 @@ input[type="button"].btn-block {
 	background-color: transparent;
 	border: 1px solid transparent;
 	border-radius: 0.25rem;
+	position: absolute;
+	margin: auto 90%;
 }
 
 .navbar-toggler:hover,
@@ -4838,7 +4840,7 @@ input[type="button"].btn-block {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1186px) {
 	.navbar-expand-lg {
 		-ms-flex-flow: row nowrap;
 		flex-flow: row nowrap;
@@ -4852,8 +4854,8 @@ input[type="button"].btn-block {
 		position: absolute;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-right: 0.5rem;
-		padding-left: 0.5rem;
+		padding-right: 0.9rem;
+		padding-left: 0.8rem;
 	}
 	.navbar-expand-lg > .container,
 	.navbar-expand-lg > .container-fluid,
@@ -10672,7 +10674,7 @@ a.text-dark:focus {
 		min-width: 992px !important;
 	}
 	.container {
-		min-width: 992px !important;
+		min-width: 1120px !important;
 	}
 	.navbar {
 		display: none;

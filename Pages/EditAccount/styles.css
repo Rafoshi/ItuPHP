@@ -1,20 +1,3 @@
-:root {
-	--background-color: #f4f4f4;
-	--input-color: #a0a4a8;
-	--white: #f2f2f2;
-	--black: #25282b;
-	--second-black: #303030;
-	--background-color-dark-theme: #282830;
-	--text-color-dark-theme: #d6d6d6;
-	--green-background: #64d08f;
-	--conf-color: #2ac769;
-	--login-button: #208ac3;
-	--tooltip-error: #f7aa3b;
-	--background-alert: #ff9700;
-	--background-btn: #137cb4;
-	--background-btn-hover: #126b9b;
-}
-
 html {
 	font-size: 62.5%;
 }
@@ -25,13 +8,13 @@ body {
 }
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: var(--background-color);
+	background-color: #f4f4f4;
 	-webkit-font-smoothing: antialiased;
 	overflow: hidden;
 }
 
 a:link {
-	color: black;
+	color: #000000;
 	text-decoration: none;
 }
 
@@ -52,7 +35,7 @@ h1 {
 	font-weight: 500;
 	line-height: 3.6rem;
 	letter-spacing: -0.015em;
-	color: var(--black);
+	color: #25282b;
 	margin-bottom: 20%;
 	margin-top: -10%;
 }
@@ -62,25 +45,25 @@ label {
 	font-size: 1.6rem;
 	line-height: 2.4rem;
 	letter-spacing: 0.1px;
-	color: var(--black);
+	color: #25282b;
 }
 
 input {
-	border: 1px solid var(--input-color);
+	border: 1px solid #a0a4a8;
 	box-sizing: border-box;
 	border-radius: 5px;
 }
 
 #login-button {
-	color: var(--white);
+	color: #f2f2f2;
 	width: 100%;
 	font-size: 2rem;
-	background: var(--login-button);
-	border-color: var(--login-button);
+	background: #208ac3;
+	border-color: #208ac3;
 	padding: 5px;
 	user-select: none;
 	border-style: none;
-	background: var(--login-button);
+	background: #208ac3;
 	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	margin-top: 5%;
@@ -93,7 +76,7 @@ input {
 }
 
 #login-button:hover {
-	background-color: var(--background-btn);
+	background-color: #137cb4;
 	transition: 0.6s;
 }
 
@@ -108,7 +91,7 @@ small {
 	font-size: 1.6rem;
 	line-height: 3.6rem;
 	letter-spacing: -0.015em;
-	color: var(--black);
+	color: #25282b;
 	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -136,7 +119,7 @@ h2 {
 	margin-bottom: 10%;
 }
 .alert {
-	background: var(--background-alert);
+	background: #ff9700;
 	padding: 20px 40px;
 	min-width: 420px;
 	position: absolute;
@@ -148,7 +131,7 @@ h2 {
 }
 .circle {
 	border-radius: 50%;
-	background-color: var(--tooltip-error);
+	background-color: #f7aa3b;
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -161,7 +144,7 @@ h2 {
 	display: flex;
 	padding-top: 20%;
 	justify-content: center;
-	color: white;
+	color: #ffffff;
 	font-size: 3rem;
 }
 .alert .msg-title {
@@ -170,7 +153,7 @@ h2 {
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8rem;
-	color: white;
+	color: #ffffff;
 }
 
 .alert .msg {
@@ -180,11 +163,11 @@ h2 {
 	font-size: 1.4rem;
 	line-height: 3rem;
 	padding: 0 30px;
-	color: white;
+	color: #ffffff;
 }
 
 .conf {
-	background: var(--conf-color);
+	background: #2ac769;
 	padding: 20px 40px;
 	min-width: 50%;
 	position: absolute;
@@ -208,7 +191,7 @@ h2 {
 
 .circle-green {
 	border-radius: 50%;
-	background-color: var(--green-background);
+	background-color: #64d08f;
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -221,7 +204,7 @@ h2 {
 	display: flex;
 	padding-top: 20%;
 	justify-content: center;
-	color: white;
+	color: #ffffff;
 	font-size: 3rem;
 }
 .conf .msg-title {
@@ -230,7 +213,7 @@ h2 {
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8rem;
-	color: white;
+	color: #ffffff;
 }
 
 .conf .msg {
@@ -240,30 +223,15 @@ h2 {
 	font-size: 1.4rem;
 	line-height: 3rem;
 	padding: 0 30px;
-	color: white;
+	color: #ffffff;
 }
 
 .hide {
-	background-color: var(--background-color);
-	color: var(--background-color);
+	background-color: #f4f4f4;
+	color: #f4f4f4;
 	width: 0px;
 	height: 0px;
 	max-width: 0px;
 	min-width: 0px;
 	padding: 0px 0px 0px 0px;
-}
-
-@media (prefers-color-scheme: dark) {
-	html,
-	main,
-	html main,
-	body {
-		background-color: var(--background-color-dark-theme);
-	}
-
-	small a,
-	h1,
-	label {
-		color: white;
-	}
 }
