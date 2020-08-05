@@ -54,18 +54,18 @@ a:link {
 }
 
 .grow:hover {
-	color: black;
+	color: #000000;
 	-webkit-transform: scale(1.04);
 	-ms-transform: scale(1.04);
 	transform: scale(1.04);
 }
 
 .bg-light {
-	background-color: var(--white-second-color) !important;
+	background-color: #efefef !important;
 }
 
 .navbar-brand img {
-	height: 3rem;
+	height: 4.5rem;
 }
 header .containe {
 	display: flex;
@@ -101,13 +101,37 @@ header .containe {
 	color: black;
 }
 .nav-link:hover {
-	color: black;
+	color: #000000;
 }
 .navbar-toggler-icon {
 	cursor: pointer;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-	color: black;
+	color: #000000;
+}
+
+.btn {
+	font-size: 1.6;
+	color: var(--black-second-color);
+}
+
+.login-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.login-btn p {
+	margin: 0;
+	font-size: 1.8rem;
+}
+
+.container-button-login {
+	position: absolute;
+	right: 0;
+	margin-right: 1vw;
 }
 
 .sidenav-language {
@@ -310,21 +334,6 @@ main {
 	border-top: 7px solid var(--card-border);
 }
 
-.avatar {
-	border-radius: 50%;
-	background-color: white;
-	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1), 1px 2px 4px rgba(0, 0, 0, 0.1),
-		0px 4px 4px rgba(0, 0, 0, 0.1);
-	top: -65px;
-	margin-left: -75px;
-	left: 53%;
-	position: absolute;
-	width: 130px;
-	height: 130px;
-	display: flex;
-	justify-content: center;
-}
-
 .avatar img {
 	display: flex;
 	justify-content: center;
@@ -496,6 +505,7 @@ center {
 	letter-spacing: 0.002em;
 	margin-top: -220px;
 	color: var(--black-second-color);
+	padding-top: 15%;
 }
 
 .about-history {
@@ -620,10 +630,10 @@ p::selection {
 }
 #portfolio {
 	justify-content: center;
-	margin: 1rem 0;
 	-webkit-column-count: 3;
 	-moz-column-count: 3;
 	column-count: 3;
+	width: 90%;
 	-webkit-column-gap: 1rem;
 	-moz-column-gap: 1rem;
 	column-gap: 1rem;
@@ -631,7 +641,9 @@ p::selection {
 	-moz-column-width: 33.33333333333333%;
 	column-width: 33.33333333333333%;
 	max-width: 900px;
-	margin: auto;
+	margin-bottom: 10vh;
+	margin-left: auto;
+	margin-right: auto;
 }
 .tile {
 	-webkit-transform: scale(0);
@@ -690,6 +702,139 @@ p::selection {
 	border-color: var(--darken-2);
 	box-shadow: 0 0 0 3px var(--darken-3);
 }
+.wrapper {
+	margin-top: 10%;
+}
+
+.card-grup {
+	display: flex;
+	justify-content: center;
+	width: auto;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.card-grup .card {
+	background: #fff;
+	margin-top: 50px;
+	padding: 40px;
+	width: 350px;
+	height: 480px;
+	line-height: 20px;
+	color: #8e8b8b;
+	position: relative;
+	align-items: center;
+	border-radius: 6px;
+	border-style: none;
+	margin-left: 27px;
+}
+.card-grup .card-bigger .card {
+	border-top: 7px solid #008fff;
+}
+
+.card-grup .card h3 {
+	font: 800 3.6rem Montserrat;
+	letter-spacing: -0.015em;
+	color: #25282b;
+	margin-top: 20px;
+}
+.card-grup .card p.info-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	letter-spacing: 0.001em;
+	color: #303030;
+	margin-top: 10%;
+}
+.card-grup .card p.role {
+	color: #ccc;
+	margin: 12px 0;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.card-grup .card .avatar {
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1), 1px 2px 4px rgba(0, 0, 0, 0.1),
+		0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-grup .card .avatar img {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+.card-grup .card button {
+	align-items: center;
+	background: #52575c;
+	color: #fff;
+	margin-top: 50%;
+	border-radius: 5px;
+	border: none;
+	width: 159px;
+	height: 44px;
+	font: 600 14px Montserrat;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.card-grup .card button.btn-blue {
+	background: #2f80ed;
+	margin-top: 31%;
+}
+.value {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 3.6rem;
+	letter-spacing: -0.015em;
+	color: #000000;
+	display: flex;
+	justify-content: center;
+}
+.price-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 5px;
+	letter-spacing: -0.015em;
+	color: #52575c;
+}
+.reverse-title {
+	word-spacing: 5px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+	letter-spacing: -0.015em;
+	color: #25282b;
+}
+
+.follow-btn :hover {
+	background-color: #2f80ed; /*
+	-webkit-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	transform: scale(1.01);*/
+}
+.follow-btn-gray :hover {
+	background-color: #3b4146; /*
+	-webkit-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	transform: scale(1.01);*/
+}
+
 /*PARTE RESPONSIVA DO SITE*/
 
 .hide {
@@ -758,20 +903,6 @@ p::selection {
 }
 
 /* Lower than 1230 pixel the card broke */
-@media (max-width: 1230) {
-	html {
-		font-size: 50%;
-	}
-}
-
-@media screen and (max-height: 450px) {
-	.sidenav-language {
-		padding-top: 15px;
-	}
-	.sidenav-language a {
-		font-size: 18px;
-	}
-}
 
 @media (prefers-color-scheme: dark) {
 	html {
@@ -791,6 +922,8 @@ p::selection {
 	a,
 	.desc-card,
 	.value,
+	.card-grup .card h3,
+	.card-grup .card p.info-text,
 	.reverse-title,
 	.price-text,
 	.nav-item,
@@ -863,5 +996,90 @@ p::selection {
 
 	.bg-light {
 		background-color: var(--second-color-base-dark-theme) !important;
+	}
+
+	.card-grup .card {
+		background: var(--navbar-background-dark-theme);
+	}
+
+	.card-grup .card .avatar {
+		background: var(--avatar-color-dark-theme);
+	}
+}
+
+@media (max-width: 1440px) {
+	html {
+		font-size: 50%;
+	}
+
+	.container-button-login {
+		position: initial;
+	}
+}
+
+@media (max-width: 700px) {
+	.alert {
+		margin-top: -48px;
+	}
+	.circle {
+		left: 10px;
+		top: 35%;
+		height: 10px;
+		width: 10px;
+	}
+
+	header .btn {
+		width: 75.56px;
+		height: 33px;
+	}
+}
+
+@media (max-width: 480px) {
+	p {
+		text-align: center;
+	}
+
+	.title-option {
+		text-align: initial;
+	}
+
+	#portfolio {
+		width: 90%;
+		max-width: 460px;
+		margin-bottom: 43%;
+	}
+
+	.alert {
+		padding: 0;
+	}
+
+	.circle {
+		left: 12px;
+		top: 8px;
+		width: 0px;
+		height: 0px;
+	}
+}
+
+@media (max-width: 400px) {
+	html {
+		font-size: 40%;
+	}
+
+	.card-grup .card {
+		width: 260px;
+		height: 355px;
+	}
+
+	.card-grup .card button {
+		margin-top: 10%;
+	}
+
+	.card-grup .card button.btn-blue {
+		margin-top: 10%;
+	}
+
+	.navbar-toggler {
+		position: unset;
 	}
 }

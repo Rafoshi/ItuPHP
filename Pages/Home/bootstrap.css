@@ -4649,13 +4649,11 @@ input[type="button"].btn-block {
 	-ms-flex-align: center;
 	align-items: center;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
 }
 
 .navbar-brand {
 	display: inline-block;
 	padding-top: 0.3125rem;
-	padding-bottom: 0.3125rem;
 	margin-right: 10rem;
 	font-size: 1.25rem;
 	line-height: inherit;
@@ -4676,6 +4674,7 @@ input[type="button"].btn-block {
 	padding-right: 15rem;
 	margin-bottom: 0;
 	list-style: none;
+	padding-right: 40rem;
 }
 
 .navbar-nav .nav-link {
@@ -4855,8 +4854,8 @@ input[type="button"].btn-block {
 		position: absolute;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-right: 0.5rem;
-		padding-left: 0.5rem;
+		padding-right: 0.9rem;
+		padding-left: 0.8rem;
 	}
 	.navbar-expand-lg > .container,
 	.navbar-expand-lg > .container-fluid,
@@ -10675,7 +10674,7 @@ a.text-dark:focus {
 		min-width: 992px !important;
 	}
 	.container {
-		min-width: 992px !important;
+		min-width: 1120px !important;
 	}
 	.navbar {
 		display: none;
