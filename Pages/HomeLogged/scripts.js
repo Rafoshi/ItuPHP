@@ -13,6 +13,5 @@ function dropBox() {
 
 	drop_btn.onclick = () => {
 		menu_wrapper.classList.toggle("show");
-		tooltip.classList.toggle("show");
 	};
 }
