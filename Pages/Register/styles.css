@@ -275,3 +275,14 @@ h2 {
 		color: white;
 	}
 }
+
+@media (max-width: 500px) {
+	.container-form-image {
+		display: inline;
+		flex-direction: column;
+	}
+	.arrow-icon {
+		display: block;
+		margin-bottom: 13%;
+	}
+}

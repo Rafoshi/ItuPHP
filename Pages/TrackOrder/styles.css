@@ -57,6 +57,7 @@ input {
 
 .form-control {
 	padding-right: 16.75rem !important;
+	width: 30vw;
 }
 
 main {
@@ -69,7 +70,7 @@ main {
 
 .data-grid {
 	background-color: #508db6;
-	width: 1600px;
+	width: 80vw;
 	height: 399px;
 }
 
@@ -116,5 +117,13 @@ main {
 
 	#search-icon {
 		color: white;
+	}
+}
+@media (max-width: 800px) {
+	.search {
+		flex-direction: column;
+	}
+	.search-container {
+		margin-left: 0;
 	}
 }
