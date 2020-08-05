@@ -127,3 +127,12 @@ u {
 		color: white;
 	}
 }
+
+@media (max-width: 500px) {
+	.container-form-image {
+		flex-direction: column;
+	}
+	#jigsaw {
+		order: 0;
+	}
+}

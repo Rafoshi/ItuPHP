@@ -15,7 +15,6 @@ html {
 }
 
 body {
-	overflow-y: hidden;
 	font-family: "Montserrat", sans-serif;
 	background-color: var(--background-color);
 	-webkit-font-smoothing: antialiased;
@@ -91,6 +90,8 @@ main {
 	border-radius: 10px;
 	padding-bottom: 1px;
 	box-shadow: 0px 2px 80px rgba(0, 0, 0, 0.1);
+	height: 95vh;
+	width: 95vw;
 }
 
 .container-form {
@@ -101,7 +102,9 @@ main {
 	margin: 0% 0% 20% 36.5%;
 	margin-bottom: 16%;
 }
-
+textarea {
+	font-size: 1.6rem;
+}
 .prelog {
 	letter-spacing: -0.015em;
 	font-size: 1.8rem;

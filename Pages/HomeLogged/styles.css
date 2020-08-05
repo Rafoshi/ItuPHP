@@ -588,6 +588,8 @@ p::selection {
 .drop-btn {
 	position: absolute;
 	right: 0;
+	margin-right: 4vw;
+	display: flex;
 }
 .settings {
 	margin-right: 60%;
@@ -781,25 +783,20 @@ hr {
 	border-color: var(--darken-2);
 	box-shadow: 0 0 0 3px var(--darken-3);
 }
-.delete-card {
-	margin-top: 10%;
-}
 
 .delete {
-	display: flex;
-	justify-content: center;
-	width: auto;
 	text-align: center;
-	flex-wrap: wrap;
+	margin: 24px 0 12px 0;
+	position: relative;
 }
 
 .delete .delete-group {
 	background: #fff;
-	position: absolute;
-	left: 50%;
+	position: fixed;
 	top: 50%;
-	margin-left: 50%;
-	margin-top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
 	width: 400px;
 	height: 254px;
 	padding: 20px;
@@ -807,6 +804,7 @@ hr {
 	color: #8e8b8b;
 	border-top: 7px solid red;
 	border-radius: 5px;
+	z-index: 10;
 }
 
 .delete .delete-group h3 {
@@ -879,6 +877,11 @@ hr {
 	letter-spacing: -0.015em;
 	color: #828282;
 	padding-top: 10px;
+}
+
+.ml-auto,
+.mx-auto {
+	margin-left: 0 !important;
 }
 
 ::-moz-focus-inner {
@@ -1115,5 +1118,81 @@ hr {
 
 	#btn-white {
 		border: 2px solid white;
+	}
+}
+@media (max-width: 1440px) {
+	html {
+		font-size: 50%;
+	}
+
+	.container-button-login {
+		position: initial;
+	}
+}
+
+@media (max-width: 700px) {
+	.alert {
+		margin-top: -48px;
+	}
+	.circle {
+		left: 10px;
+		top: 35%;
+		height: 10px;
+		width: 10px;
+	}
+
+	header .btn {
+		width: 75.56px;
+		height: 33px;
+	}
+}
+
+@media (max-width: 480px) {
+	p {
+		text-align: center;
+	}
+
+	.title-option {
+		text-align: initial;
+	}
+
+	#portfolio {
+		width: 90%;
+		max-width: 460px;
+		margin-bottom: 43%;
+	}
+
+	.alert {
+		padding: 0;
+	}
+
+	.circle {
+		left: 12px;
+		top: 8px;
+		width: 0px;
+		height: 0px;
+	}
+}
+
+@media (max-width: 400px) {
+	html {
+		font-size: 40%;
+	}
+
+	.card-grup .card {
+		width: 260px;
+		height: 355px;
+	}
+
+	.card-grup .card button {
+		margin-top: 10%;
+	}
+
+	.card-grup .card button.btn-blue {
+		margin-top: 10%;
+	}
+
+	.navbar-toggler {
+		position: unset;
 	}
 }

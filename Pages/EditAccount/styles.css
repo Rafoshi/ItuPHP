@@ -267,3 +267,13 @@ h2 {
 		color: white;
 	}
 }
+
+@media (max-width: 1238px) {
+	.container-form-image {
+		flex-direction: column;
+	}
+	.image {
+		display: flex;
+		justify-content: center;
+	}
+}
