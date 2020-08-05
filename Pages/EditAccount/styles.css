@@ -1,3 +1,20 @@
+:root {
+	--background-color: #f4f4f4;
+	--input-color: #a0a4a8;
+	--white: #f2f2f2;
+	--black: #25282b;
+	--second-black: #303030;
+	--background-color-dark-theme: #282830;
+	--text-color-dark-theme: #d6d6d6;
+	--green-background: #64d08f;
+	--conf-color: #2ac769;
+	--login-button: #208ac3;
+	--tooltip-error: #f7aa3b;
+	--background-alert: #ff9700;
+	--background-btn: #137cb4;
+	--background-btn-hover: #126b9b;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -8,13 +25,13 @@ body {
 }
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: #f4f4f4;
+	background-color: var(--background-color);
 	-webkit-font-smoothing: antialiased;
 	overflow: hidden;
 }
 
 a:link {
-	color: #000000;
+	color: black;
 	text-decoration: none;
 }
 
@@ -35,7 +52,7 @@ h1 {
 	font-weight: 500;
 	line-height: 3.6rem;
 	letter-spacing: -0.015em;
-	color: #25282b;
+	color: var(--black);
 	margin-bottom: 20%;
 	margin-top: -10%;
 }
@@ -45,25 +62,25 @@ label {
 	font-size: 1.6rem;
 	line-height: 2.4rem;
 	letter-spacing: 0.1px;
-	color: #25282b;
+	color: var(--black);
 }
 
 input {
-	border: 1px solid #a0a4a8;
+	border: 1px solid var(--input-color);
 	box-sizing: border-box;
 	border-radius: 5px;
 }
 
 #login-button {
-	color: #f2f2f2;
+	color: var(--white);
 	width: 100%;
 	font-size: 2rem;
-	background: #208ac3;
-	border-color: #208ac3;
+	background: var(--login-button);
+	border-color: var(--login-button);
 	padding: 5px;
 	user-select: none;
 	border-style: none;
-	background: #208ac3;
+	background: var(--login-button);
 	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	margin-top: 5%;
@@ -76,7 +93,7 @@ input {
 }
 
 #login-button:hover {
-	background-color: #137cb4;
+	background-color: var(--background-btn);
 	transition: 0.6s;
 }
 
@@ -91,7 +108,7 @@ small {
 	font-size: 1.6rem;
 	line-height: 3.6rem;
 	letter-spacing: -0.015em;
-	color: #25282b;
+	color: var(--black);
 	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -119,7 +136,7 @@ h2 {
 	margin-bottom: 10%;
 }
 .alert {
-	background: #ff9700;
+	background: var(--background-alert);
 	padding: 20px 40px;
 	min-width: 420px;
 	position: absolute;
@@ -131,7 +148,7 @@ h2 {
 }
 .circle {
 	border-radius: 50%;
-	background-color: #f7aa3b;
+	background-color: var(--tooltip-error);
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -144,7 +161,7 @@ h2 {
 	display: flex;
 	padding-top: 20%;
 	justify-content: center;
-	color: #ffffff;
+	color: white;
 	font-size: 3rem;
 }
 .alert .msg-title {
@@ -153,7 +170,7 @@ h2 {
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8rem;
-	color: #ffffff;
+	color: white;
 }
 
 .alert .msg {
@@ -163,11 +180,11 @@ h2 {
 	font-size: 1.4rem;
 	line-height: 3rem;
 	padding: 0 30px;
-	color: #ffffff;
+	color: white;
 }
 
 .conf {
-	background: #2ac769;
+	background: var(--conf-color);
 	padding: 20px 40px;
 	min-width: 50%;
 	position: absolute;
@@ -191,7 +208,7 @@ h2 {
 
 .circle-green {
 	border-radius: 50%;
-	background-color: #64d08f;
+	background-color: var(--green-background);
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -204,7 +221,7 @@ h2 {
 	display: flex;
 	padding-top: 20%;
 	justify-content: center;
-	color: #ffffff;
+	color: white;
 	font-size: 3rem;
 }
 .conf .msg-title {
@@ -213,7 +230,7 @@ h2 {
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8rem;
-	color: #ffffff;
+	color: white;
 }
 
 .conf .msg {
@@ -223,15 +240,30 @@ h2 {
 	font-size: 1.4rem;
 	line-height: 3rem;
 	padding: 0 30px;
-	color: #ffffff;
+	color: white;
 }
 
 .hide {
-	background-color: #f4f4f4;
-	color: #f4f4f4;
+	background-color: var(--background-color);
+	color: var(--background-color);
 	width: 0px;
 	height: 0px;
 	max-width: 0px;
 	min-width: 0px;
 	padding: 0px 0px 0px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+	html,
+	main,
+	html main,
+	body {
+		background-color: var(--background-color-dark-theme);
+	}
+
+	small a,
+	h1,
+	label {
+		color: white;
+	}
 }
