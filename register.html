@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login - Infinity Tech</title>
+		<link rel="icon" href="./images/logo-icon.svg" />
+		<link rel="stylesheet" href="./styles/vendors/reset.css" />
+		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="./styles/partials/register.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./scripts/main.js" defer></script>
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body>
+		<picture>
+			<source
+				srcset="./images/arrow-left-white.svg"
+				media="(prefers-color-scheme: dark)"
+				ondragstart="return false;"
+				alt="Seta para voltar"
+				class="arrow-icon"
+				onclick="window.location.href='./index.html'"
+			/>
+			<img
+				src="./images/arrow-left.svg"
+				ondragstart="return false;"
+				alt="Seta para voltar"
+				class="arrow-icon"
+				onclick="window.location.href='./index.html'"
+			/>
+		</picture>
+
+		<div class="container-form-image">
+			
+			<div id="greenAlert" class="conf hide">
+				<div id="greenCircle" class="circle-green hide">
+					<span
+						id="greenCheck"
+						class="fas fa-check-circle hide"
+					></span>
+				</div>
+				<span id="greenTitle" class="msg-title hide">
+					Feito !<br
+				/></span>
+				<span id="greenMessage" class="msg hide">
+					Cadastro efetuado com sucesso!</span
+				>
+			</div>
+
+			<div class="form">
+				<h1>Olá, faça seu cadastro</h1>
+
+				<form name="form" action="#" onsubmit="greenAlert();return false">
+
+					<div class="form-group">
+
+						<label for="name">Nome</label>
+						<input type="text" class="form-control" id="name" name="name" minlength="7" required />
+		
+					</div>
+
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" class="form-control" id="email" name="email" required />	
+					</div>
+
+					<div class="form-group">
+						<label for="pwd">Senha</label>
+						<input type="password" class="form-control" id="pwd" name="pwd" minlength="6" required />	
+					</div>
+
+					<input type="submit" id="login-button" value="Cadastrar" ></input>
+
+				<img
+					src="./images/login-blue.svg"
+					alt="Login icone"
+					class="img-login"
+					onclick="window.location.href='../Login/index.html'"
+					ondragstart="return false;"
+				/>
+
+				<small id="register">
+					<a href="./Login.html">Já tenho cadastro</a>
+				</small>
+			</div>
+
+			<div class="image">
+				<img
+					src="./images/321.svg"
+					alt="Uma mulher voando com um netbook"
+					class="img-fluid"
+					id="netbook"
+					ondragstart="return false;"
+				/>
+			</div>
+		</div>
+
+		<script>
+			feather.replace();
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+		<script>
+			new TypeIt("#register", {
+				speed: 20,
+			})
+				.go()
+				.reset();
+		</script>
+	</body>
+</html>

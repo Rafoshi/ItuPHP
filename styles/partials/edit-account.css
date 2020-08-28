@@ -1,0 +1,297 @@
+:root {
+	--background-color: #f4f4f4;
+	--input-color: #a0a4a8;
+	--white: #f2f2f2;
+	--black: #25282b;
+	--second-black: #303030;
+	--background-color-dark-theme: #282830;
+	--text-color-dark-theme: #d6d6d6;
+	--green-background: #64d08f;
+	--conf-color: #2ac769;
+	--login-button: #208ac3;
+	--tooltip-error: #f7aa3b;
+	--background-alert: #ff9700;
+	--background-btn: #137cb4;
+	--background-btn-hover: #126b9b;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--background-color);
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.container-form-image {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10%;
+	align-items: center;
+	align-content: center;
+}
+
+image {
+	margin-top: -10%;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 3.6rem;
+	letter-spacing: -0.015em;
+	color: var(--black);
+	margin-bottom: 20%;
+	margin-top: -10%;
+}
+
+label {
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	letter-spacing: 0.1px;
+	color: var(--black);
+}
+
+input {
+	border: 1px solid var(--input-color);
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.form-group label {
+	font-size: 1.8rem;
+}
+
+#netbook {
+	transition: transform 0.2s;
+}
+
+#netbook:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.form-group input {
+	font-size: 1.6rem;
+}
+
+#login-button {
+	color: var(--white);
+	width: 100%;
+	font-size: 2rem;
+	background: var(--login-button);
+	border-color: var(--login-button);
+	padding: 5px;
+	user-select: none;
+	border-style: none;
+	background: var(--login-button);
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: calc(1.5em + 0.75rem + 10px);
+}
+
+.img {
+	max-width: 60%;
+}
+
+#login-button:hover {
+	background-color: var(--background-btn);
+	transition: 0.6s;
+}
+
+.img-login {
+	filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.15));
+	cursor: pointer;
+}
+
+small {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 3.6rem;
+	letter-spacing: -0.015em;
+	color: var(--black);
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+u {
+	cursor: pointer;
+}
+
+.arrow-icon {
+	filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.15));
+	margin-top: 1%;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+.img-logo {
+	margin-bottom: 10%;
+	margin-top: -30%;
+}
+
+p {
+	margin-bottom: 35%;
+}
+
+h2 {
+	margin-bottom: 10%;
+}
+.alert {
+	background: var(--background-alert);
+	padding: 20px 40px;
+	min-width: 420px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+	border-radius: 4px;
+	overflow: hidden;
+	pointer-events: none;
+}
+.circle {
+	border-radius: 50%;
+	background-color: var(--tooltip-error);
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 6rem;
+	height: 50px;
+	width: 50px;
+}
+.alert .fa-exclamation-circle {
+	display: flex;
+	padding-top: 20%;
+	justify-content: center;
+	color: white;
+	font-size: 3rem;
+}
+.alert .msg-title {
+	padding: 0 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 1.8rem;
+	color: white;
+}
+
+.alert .msg {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.4rem;
+	line-height: 3rem;
+	padding: 0 30px;
+	color: white;
+}
+
+.conf {
+	background: var(--conf-color);
+	padding: 20px 40px;
+	min-width: 50%;
+	position: absolute;
+	right: 25%;
+	top: 1%;
+	max-width: 80%;
+	border-radius: 4px;
+	overflow: hidden;
+	opacity: 0.4;
+	pointer-events: none;
+	-webkit-transition: opacity 06s linear;
+	-moz-transition: opacity 0.6s linear;
+	-ms-transition: opacity 0.6s linear;
+	-o-transition: opacity 0.6s linear;
+	transition: opacity 0.6s linear;
+}
+
+.transition {
+	opacity: 1;
+}
+
+.circle-green {
+	border-radius: 50%;
+	background-color: var(--green-background);
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 6rem;
+	height: 50px;
+	width: 50px;
+}
+.conf .fa-check-circle {
+	display: flex;
+	padding-top: 20%;
+	justify-content: center;
+	color: white;
+	font-size: 3rem;
+}
+.conf .msg-title {
+	padding: 0 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 1.8rem;
+	color: white;
+}
+
+.conf .msg {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.4rem;
+	line-height: 3rem;
+	padding: 0 30px;
+	color: white;
+}
+
+.hide {
+	background-color: var(--background-color);
+	color: var(--background-color);
+	width: 0px;
+	height: 0px;
+	max-width: 0px;
+	min-width: 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+	html,
+	main,
+	html main,
+	body {
+		background-color: var(--background-color-dark-theme);
+	}
+
+	small a,
+	h1,
+	label {
+		color: white;
+	}
+}
+
+@media (max-width: 1238px) {
+	.container-form-image {
+		flex-direction: column;
+	}
+	.image {
+		display: flex;
+		justify-content: center;
+	}
+}
