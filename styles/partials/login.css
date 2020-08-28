@@ -15,6 +15,8 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: var(--background-color);
 	-webkit-font-smoothing: antialiased;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 
 a:link {
@@ -32,7 +34,6 @@ a:link {
 h1 {
 	font-style: normal;
 	font-weight: 500;
-	line-height: 36px;
 	letter-spacing: -0.015em;
 	color: var(--black);
 	margin-bottom: 20%;

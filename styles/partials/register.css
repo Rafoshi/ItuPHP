@@ -18,6 +18,8 @@
 html,
 body {
 	height: 100%;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 body {
 	font-family: "Montserrat", sans-serif;
@@ -46,7 +48,6 @@ image {
 h1 {
 	font-style: normal;
 	font-weight: 500;
-	line-height: 36px;
 	letter-spacing: -0.015em;
 	color: var(--black);
 	margin-bottom: 20%;

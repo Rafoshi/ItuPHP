@@ -293,7 +293,8 @@ header {
 	margin-top: 3%;
 	letter-spacing: -0.005em;
 	line-height: 120%;
-	-webkit-animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+	-webkit-animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1)
+		both;
 	animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
@@ -416,7 +417,6 @@ a {
 	align-items: center;
 	border-radius: 6px;
 	border-style: none;
-	margin-left: 27px;
 }
 .card-grup .card-bigger .card {
 	border-top: 7px solid #008fff;
@@ -454,7 +454,8 @@ a {
 	height: 100px;
 	border-radius: 50%;
 	background: #fff;
-	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1), 1px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1), 1px 2px 4px rgba(0, 0, 0, 0.1),
+		0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card-grup .card .avatar img {
@@ -926,7 +927,8 @@ hr {
 	height: 50px;
 	border-radius: 50%;
 	background: red;
-	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1), 1px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1), 1px 2px 4px rgba(0, 0, 0, 0.1),
+		0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .delete .delete-group .delete-icon img {
