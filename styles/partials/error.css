@@ -26,3 +26,15 @@ p{
     height: auto;
     width: 56%;
 }
+
+@media (prefers-color-scheme: dark) {
+	html,
+	main,
+	html main,
+	body {
+		background-color: #282830;
+    }
+    p{
+        color: white;
+    }
+}

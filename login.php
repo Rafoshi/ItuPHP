@@ -39,23 +39,21 @@
 			<div class="form">
 				<h1>Olá, faça seu login</h1>
 
-				<form name="form" >
-
-				<div class="form-group">
-
+				<form name="login" method="POST" action="/ituphp/php/userValidation.php">
 
 					<div class="form-group">
-						<label for="email">E-mail</label>
-						<input type="email" class="form-control" id="email" name="email" required />	
-					</div>
+						<div class="form-group">
+							<label for="email">E-mail</label>
+							<input type="email" class="form-control" id="email" name="email" required />	
+						</div>
 
-					<div class="form-group">
-						<label for="pwd">Senha</label>
-						<input type="password" class="form-control" id="pwd" name="pwd" minlength="6" required />	
-					</div>
+						<div class="form-group">
+							<label for="pwd">Senha</label>
+							<input type="password" class="form-control" id="pwd" name="pwd" minlength="6" required />	
+						</div>
 
-					<input type="submit" id="login-button" value="Entrar" onclick="window.location.href='./home-logged-admin.html'" ></input>
-
+						<input type="submit" id="login-button" value="Entrar" onsubmit="window.location.href='./home-logged-admin.html'" ></input>
+					
 					
 				</form>
 
