@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    max-width: 74rem;
+    border-radius: 0.8rem;
+    margin: -3.2rem auto 3.2rem; 
+    padding: 4%;
+}
+
+.arrow-left{
+    margin: 1%;
+}
+
+
+p{
+    margin: 0;
+    font: 500 140% Montserrat ;
+    color: #06394e;
+}
+
+.img-error {
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    height: auto;
+    width: 56%;
+}
+
+@media (prefers-color-scheme: dark) {
+	html,
+	main,
+	html main,
+	body {
+		background-color: #282830;
+    }
+    p{
+        color: white;
+    }
+}

@@ -4,13 +4,19 @@
     <title>Test</title>
 </head>
 <body>
-    <?php
+        <?php
         include 'connection.php';
-        $query = $cn -> query('select * from vw_all');
+
+        session_start();
+        $userID = $_SESSION['ID'];
+
+        $query = $cn -> query("SELECT user_name FROM tbl_user where user_id = $userID ");
 
         $show = $query -> fetch(PDO::FETCH_ASSOC);
 
-        echo $show['user_email'];
-    ?>
+        ?>
+        <li class="person-name">
+        Olá, <?php echo $show['user_name'] ?>
+        </li>
 </body>
 </html>

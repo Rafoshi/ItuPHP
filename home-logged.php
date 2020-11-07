@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home Admin - Infinity Tech</title>
+		<title>Home | User - Infinity Tech</title>
 		<link rel="icon" href="./images/logo-icon.svg" />
 		<script src="jquery-3.5.1.min.js"></script>
 		<link rel="stylesheet" href="./styles/vendors/reset.css" />
@@ -106,9 +106,20 @@
 						
 						<div id="combo-box" class="combo-box">
 							<ul class="menu-bar">
+								<?php
+									include './php/connection.php';
+
+									session_start();
+									$userID = $_SESSION['ID'];
+
+									$query = $cn -> query("SELECT user_name FROM tbl_user where user_id = $userID ");
+
+									$show = $query -> fetch(PDO::FETCH_ASSOC);
+								?>
 								<li class="person-name">
-									Olá, Vitor
+									Olá, <?php echo $show['user_name'] ?>
 								</li>
+
 								<hr />
 								<li
 									class="clipbord"
@@ -162,7 +173,7 @@
 											<span
 												data-feather="log-out"
 												id="log-out"
-												onclick="window.location.href='./index.html'"
+												onclick="window.location.href='./php/logout.php'"
 											></span>
 										</div>
 										Sair
