@@ -54,9 +54,51 @@
 						/>
 					</div>
 				</div>
-			</div>
+			</div> 
+
+			<?php
+				include '/ituphp/php/connection.php';
+
+				session_start();
+				$userID = $_SESSION['ID'];
+
+				$query = $cn -> query("SELECT user_name FROM tbl_user where user_id = $userID ");
+
+				$show = $query -> fetch(PDO::FETCH_ASSOC);
+			?>
+
 			<div class="data-grid">
-				<p>DATA GRID AQUI SEI LA COMO</p>
+				<table class="table">
+					<thead class="thead-dark">
+					  <tr>
+						<th scope="col"> </th>
+						<th scope="col">Tipo</th>
+						<th scope="col">Descrição</th>
+						<th scope="col">Status</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<th scope="row"> </th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row"> </th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					  </tr>
+					  <tr>
+						<th scope="row"> </th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					  </tr>
+					</tbody>
+
+				  </table>
 			</div>
 
 			<div class="button">

@@ -123,18 +123,18 @@
 								<hr />
 								<li
 									class="clipbord"
-									onclick="window.location.href='track-order.html'"
+									onclick="window.location.href='track-order.php'"
 								>
 									<a
-										onclick="window.location.href='track-order.html'"
+										onclick="window.location.href='track-order.php'"
 									>
 										<div
 											class="icon"
-											onclick="window.location.href='track-order.html'"
+											onclick="window.location.href='track-order.php'"
 										>
 											<span
 												class="far fa-clipboard"
-												onclick="window.location.href='track-order.html'"
+												onclick="window.location.href='track-order.php'"
 											></span>
 										</div>
 										Acompanhar pedido
