@@ -69,9 +69,8 @@ main {
 }
 
 .data-grid {
-	background-color: #508db6;
+	background-color: #ffffff;
 	width: 80vw;
-	height: 399px;
 }
 
 .arrow-icon {
@@ -104,6 +103,10 @@ main {
 	border-style: none;
 	box-shadow: 0px 3px 4px rgba(136, 136, 136, 0.25);
 	margin-right: 15px;
+}
+
+th,td{
+	font-size: 1.6rem;
 }
 
 @media (prefers-color-scheme: dark) {
