@@ -21,7 +21,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
-	<body>
+	<body >
 		<picture>
 			<source
 				srcset="./images/arrow-left-white.svg"
@@ -29,14 +29,14 @@
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./home-logged-admin.html'"
+				onclick="window.location.href='./home-logged.php'"
 			/>
 			<img
 				src="./images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./home-logged-admin.html'"
+				onclick="window.location.href='./home-logged.php'"
 			/>
 		</picture>
 
@@ -56,49 +56,32 @@
 				</div>
 			</div> 
 
-			<?php
-				include '/ituphp/php/connection.php';
-
-				session_start();
-				$userID = $_SESSION['ID'];
-
-				$query = $cn -> query("SELECT user_name FROM tbl_user where user_id = $userID ");
-
-				$show = $query -> fetch(PDO::FETCH_ASSOC);
-			?>
-
 			<div class="data-grid">
 				<table class="table">
 					<thead class="thead-dark">
-					  <tr>
+						<tr>
 						<th scope="col"> </th>
 						<th scope="col">Tipo</th>
 						<th scope="col">Descrição</th>
 						<th scope="col">Status</th>
-					  </tr>
+						<th scope="col">Cliente</th>
+						</tr>
 					</thead>
 					<tbody>
-					  <tr>
-						<th scope="row"> </th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-					  </tr>
-					  <tr>
-						<th scope="row"> </th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-					  </tr>
-					  <tr>
-						<th scope="row"> </th>
-						<td>Larry</td>
-						<td>the Bird</td>
-						<td>@twitter</td>
-					  </tr>
-					</tbody>
+						<?php
+							include './php/connection.php';
 
-				  </table>
+							session_start();
+							$userID = $_SESSION['ID'];
+
+							$result = $cn -> query("SELECT o.order_type, o.order_desc, o.order_status, o.fk_user_id, o.order_id,u.user_name FROM infityphp.tbl_order as o join tbl_user as u on u.user_id = o.fk_user_id;");
+
+							while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
+								echo '<th scope="row">'.'</th>'."<td>".$row['order_type']."</td><td>".$row['order_desc']."</td><td>".$row['order_status']."</td><td>".$row['user_name']."</td></tr>";
+							}
+						?>
+					</tbody>
+				</table>
 			</div>
 
 			<div class="button">

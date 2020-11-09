@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Meus Pedidos - Infinity Tech</title>
+		<title>Acompanhar Pedidos - Infinity Tech</title>
 		<link rel="icon" href="./images/logo-icon.svg" />
 		<link rel="stylesheet" href="./styles/vendors/reset.css" />
 		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
@@ -21,7 +21,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
-	<body>
+	<body >
 		<picture>
 			<source
 				srcset="./images/arrow-left-white.svg"
@@ -29,20 +29,20 @@
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./home-logged-admin.html'"
+				onclick="window.location.href='./home-logged.php'"
 			/>
 			<img
 				src="./images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./home-logged-admin.html'"
+				onclick="window.location.href='./home-logged.php'"
 			/>
 		</picture>
 
 		<main>
 			<div class="search">
-				<h2>Seus pedidos</h2>
+				<h2>Acompanhar pedidos</h2>
 				<div class="search-container">
 					<i data-feather="search" id="search-icon"></i>
 					<div class="form-group">
@@ -54,9 +54,33 @@
 						/>
 					</div>
 				</div>
-			</div>
+			</div> 
+
 			<div class="data-grid">
-				<p>DATA GRID AQUI SEI LA COMO</p>
+				<table class="table">
+					<thead class="thead-dark">
+						<tr>
+						<th scope="col"> </th>
+						<th scope="col">Tipo</th>
+						<th scope="col">Descrição</th>
+						<th scope="col">Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+							include './php/connection.php';
+
+							session_start();
+							$userID = $_SESSION['ID'];
+
+							$result = $cn -> query("SELECT order_type, order_desc, order_status, fk_user_id, order_id FROM infityphp.tbl_order where fk_user_id = $userID;");
+
+							while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
+								echo '<tr>'.'<th scope="row">'.'</th>'."<td>".$row['order_type']."</td><td>".$row['order_desc']."</td><td>".$row['order_status']."</td></tr>";
+							}
+						?>
+					</tbody>
+				</table>
 			</div>
 
 			<div class="button">
