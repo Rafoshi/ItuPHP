@@ -109,6 +109,10 @@ th,td{
 	font-size: 1.6rem;
 }
 
+.area-text{
+    font-size: 1.6rem;
+}
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--background-color-dark-theme);

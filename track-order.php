@@ -22,6 +22,17 @@
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	<body >
+
+	<?php
+	function runMyFunction() {
+		echo 'I just ran a php function';
+		echo '<script>alert("jean top1")</script>';
+	}
+
+	if (isset($_GET['check'])) {
+		runMyFunction();
+	}
+	?>
 		<picture>
 			<source
 				srcset="./images/arrow-left-white.svg"
@@ -77,7 +88,7 @@
 							$result = $cn -> query("SELECT o.order_type, o.order_desc, o.order_status, o.fk_user_id, o.order_id,u.user_name FROM infityphp.tbl_order as o join tbl_user as u on u.user_id = o.fk_user_id;");
 
 							while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
-								echo '<th scope="row">'.'</th>'."<td>".$row['order_type']."</td><td>".$row['order_desc']."</td><td>".$row['order_status']."</td><td>".$row['user_name']."</td></tr>";
+								echo '<th scope="row">'.'</th>'."<td>".$row['order_type']."</td><td>".$row['order_desc']."</td><td>"."<a onclick='track-order.php?check=true'>".$row['order_status']."</a>"."</td><td>".$row['user_name']."</td></tr>";
 							}
 						?>
 					</tbody>
@@ -85,12 +96,9 @@
 			</div>
 
 			<div class="button">
-				<button
-					id="hire-button"
-					onclick="window.location.href='../Register/index.html'"
-				>
-					Alterar
-				</button>
+				<form action="track-order.php?check=true">
+					<button id="hire-button" type="submit">Alterar</button>
+				</form>
 			</div>
 		</main>
 
