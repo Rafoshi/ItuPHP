@@ -83,14 +83,6 @@
 				</table>
 			</div>
 
-			<div class="button">
-				<button
-					id="hire-button"
-					onclick="window.location.href='../Register/index.html'"
-				>
-					Alterar
-				</button>
-			</div>
 		</main>
 
 		<script>
