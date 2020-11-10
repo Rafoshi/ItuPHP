@@ -30,7 +30,6 @@
 					ondragstart="return false;"
 					alt="Seta para voltar"
 					class="arrow-icon"
-					onclick="window.location.href='./home-logged.php'"
 				/>
 				<img
 					src="./images/arrow-left.svg"
@@ -68,7 +67,7 @@
 					<label for="inputEmail">Descrição do pedido:</label>
 
 					<div class="input-group">
-						<textarea id="desc" class="form-control area-text" name="desc" required ></textarea>
+						<textarea id="desc" class="form-control area-text" name="desc" class="font-size: 1.8rem;" required ></textarea>
 					</div>
 
 					<button type="submit" id="login-button">Enviar</button>

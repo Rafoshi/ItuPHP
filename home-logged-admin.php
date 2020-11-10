@@ -325,7 +325,7 @@
 								</p>
 								<button
 									class="btn-blue"
-									onclick="window.location.href='./form-web-mobile.html'"
+									onclick="window.location.href='./form-web-mobile.php'"
 								>
 									Contrate-nos
 								</button>

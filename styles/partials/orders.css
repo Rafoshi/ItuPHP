@@ -113,6 +113,34 @@ th,td{
     font-size: 1.6rem;
 }
 
+.check{
+	outline: none;
+	border: none;
+	border-style: none;
+	background: transparent;
+}
+
+.check:hover{
+	cursor: pointer;
+}
+
+#check-button{
+	outline: none;
+	border: none;
+	border-style: none;
+	background: transparent;
+}
+
+#check-button:hover{
+	cursor: pointer;
+}
+
+
+#track{
+	font-size: 1.4rem;
+    font-weight: 600;
+}
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--background-color-dark-theme);
