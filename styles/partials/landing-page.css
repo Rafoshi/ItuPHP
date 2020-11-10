@@ -749,7 +749,7 @@ p::selection {
 
 .card-grup {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	width: auto;
 	text-align: center;
 	flex-wrap: wrap;

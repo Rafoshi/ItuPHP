@@ -30,14 +30,14 @@
 					ondragstart="return false;"
 					alt="Seta para voltar"
 					class="arrow-icon"
-					onclick="window.location.href='./home-logged-admin.html'"
+					onclick="window.location.href='./home-logged.php'"
 				/>
 				<img
 					src="./images/arrow-left.svg"
 					ondragstart="return false;"
 					alt="Seta para voltar"
 					class="arrow-icon"
-					onclick="window.location.href='./home-logged-admin.html'"
+					onclick="window.location.href='./home-logged.php'"
 				/>
 			</picture>
 		</div>
@@ -63,15 +63,16 @@
 				</p>
 			</div>
 
-			<form>
+			<form name="webmobile" method="POST" action="/ituphp/php/orderRegister.php">
 				<div class="form-group">
 					<label for="inputEmail">Descrição do pedido:</label>
 
 					<div class="input-group">
-						<textarea id="textarea" class="form-control"></textarea>
+						<textarea id="desc" class="form-control area-text" name="desc" required ></textarea>
 					</div>
 
 					<button type="submit" id="login-button">Enviar</button>
+					<input type="hidden" name="type" value="Web&Mobile">
 				</div>
 			</form>
 
