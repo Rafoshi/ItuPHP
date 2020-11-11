@@ -137,9 +137,8 @@ textarea {
 	height: 12vh;
 }
 
-#textarea {
-	font-size: 1.6rem;
-	height: 12vh;
+.area-text {
+	font-size: 1.8rem;
 }
 
 .prelog {

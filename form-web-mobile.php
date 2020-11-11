@@ -68,10 +68,10 @@
 					<label for="inputEmail">Descrição do pedido:</label>
 
 					<div class="input-group">
-						<textarea id="desc" class="form-control area-text" name="desc" required ></textarea>
+						<textarea id="desc" class="form-control area-text" name="desc" class="font-size: 1.8rem;" required ></textarea>
 					</div>
 
-					<button type="sumbit" id="login-button">Enviar</button>
+					<button type="submit" id="login-button">Enviar</button>
 					<input type="hidden" name="type" value="Web&Mobile">
 				</div>
 			</form>
