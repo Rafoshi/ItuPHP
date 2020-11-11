@@ -179,6 +179,7 @@
 										Sair
 									</a>
 								</li>
+							
 								<li class="trash">
 									<a onclick="deleteAccount()">
 										<div class="icon">

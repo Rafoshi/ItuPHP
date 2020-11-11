@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Web & Mobile - Infinity Tech</title>
+		<title>Web - Infinity Tech</title>
 		<link rel="icon" href="./images/logo-icon.svg" />
 		<link rel="stylesheet" href="./styles/vendors/reset.css" />
 		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="./styles/partials/register.css" />
 		<link rel="stylesheet" href="./styles/partials/forms.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
@@ -41,12 +42,12 @@
 				/>
 			</picture>
 		</div>
-
+    
 		<div class="container-form">
 			<div class="prelog">
 				Informações do contrato
 
-				<p id="title">Web & Mobile</p>
+				<p id="title">Web</p>
 			</div>
 
 			<div class="text">
@@ -55,24 +56,25 @@
 
 			<div class="container-text">
 				<p class="txt">
-					Tenha a melhor experiência dos pacote completo, assim
-					possibitando a melhor dos dois mundos. Trará o que seu
-					cliente preferir, e também estará mais fácil de achar seja
-					aonde for Com suporte de 12 meses todos os dias úteis após a
-					finalização do app e site.
+					Adquira seu página web e passe uma imagem mais proficional
+					para os seu clientes. Assim fazendo que todas as pessoas
+					possam facilmente visualizar a sua empresa com mais
+					agilidade de qualquer dispositivo.Com suporte de 12 meses
+					todos os dias úteis após a finalização do site.
 				</p>
 			</div>
 
-			<form name="webmobile" method="POST" action="/ituphp/php/orderRegister.php">
+			<form name="web" method="POST" action="/ituphp/php/orderRegisterWeb.php">
 				<div class="form-group">
+					<p class='sucess-order'>OK, pedido feito com sucesso</p>
 					<label for="inputEmail">Descrição do pedido:</label>
 
 					<div class="input-group">
-						<textarea id="desc" class="form-control area-text" name="desc" class="font-size: 1.8rem;" required ></textarea>
+						<textarea id="desc" class="form-control area-text" name="desc" required ></textarea>
 					</div>
 
 					<button type="submit" id="login-button">Enviar</button>
-					<input type="hidden" name="type" value="Web&Mobile">
+					<input type="hidden" name="type" value="Web">
 				</div>
 			</form>
 

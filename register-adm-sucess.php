@@ -23,38 +23,35 @@
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./index.html'"
+				onclick="window.location.href='./home-logged-admin.php'"
 			/>
 			<img
 				src="./images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./index.html'"
+				onclick="window.location.href='./home-logged-admin.php'"
 			/>
 		</picture>
 
-		<div class="container-form-image">
-			
-			<div id="greenAlert" class="conf hide">
+		<div id="greenAlert" class="conf ">
 				<div id="greenCircle" class="circle-green ">
-					<span
-						id="greenCheck"
-						class="fas fa-check-circle "
-					></span>
+					<span id="greenCheck" class="fas fa-check-circle"></span>
 				</div>
-				<span id="greenTitle" class="msg-title">
+				<span id="greenTitle" class="msg-title ">
 					Feito !<br
-				/></span>
-				<span id="greenMessage" class="msg ">
+                /></span>
+				<span id="greenMessage" class="msg">
 					Cadastro efetuado com sucesso!</span
-				>
-			</div>
+                >
+			</div> 
+	
 
-			<div class="form"  >
-				<h1>Olá, faça seu cadastro</h1>
+		<div class="container-form-image">
+			<div class="form">
+				<h1>Registre um adminstrador</h1>
 
-				<form name="formRegister" action="/ituphp/php/registerInsert.php" method="POST" >
+				<form name="formRegister" action="/ituphp/php/registerNewAdm.php" method="POST" >
 
 					<div class="form-group">
 
@@ -73,21 +70,10 @@
 						<input type="password" class="form-control" id="pwd" name="pwd" minlength="6" required />	
 					</div>
 
-					<input type="submit" id="login-button" value="Cadastrar" ></input>
+					<input type="submit" id="login-button" value="Cadastrar" class="cad-button"></input>
 
-				<img
-					src="./images/login-blue.svg"
-					alt="Login icone"
-					class="img-login"
-					onclick="window.location.href='../Login/index.html'"
-					ondragstart="return false;"
-				/>
-
-				<small id="register">
-					<a href="./Login.php">Já tenho cadastro</a>
-				</small>
 			</div>
-
+			
 			<div class="image">
 				<img
 					src="./images/321.svg"
@@ -98,7 +84,7 @@
 				/>
 			</div>
 		</div>
-
+		
 		<script>
 			feather.replace();
 		</script>

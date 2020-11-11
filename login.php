@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="pt_br">
 	<head>
@@ -34,13 +37,20 @@
 				onclick="window.location.href='./index.html'"
 			/>
 		</picture>
-
+		
 		<div class="container-form-image">
 			<div class="form">
 				<h1>Olá, faça seu login</h1>
-
+				
 				<form name="login" method="POST" action="/ituphp/php/userValidation.php">
-
+				<?php
+					if(isset($_SESSION['not_authenticated'])):
+				?>
+				<p id="error-message">Erro: Usuário ou senha inválidos</p>
+				<?php
+				endif;
+				unset($_SESSION['not_authenticated']);
+				?>
 					<div class="form-group">
 						<div class="form-group">
 							<label for="email">E-mail</label>
@@ -53,8 +63,6 @@
 						</div>
 
 						<input type="submit" id="login-button" value="Entrar" onsubmit="window.location.href='./home-logged-admin.html'" ></input>
-					
-					
 				</form>
 
 
