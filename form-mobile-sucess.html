@@ -7,6 +7,7 @@
 		<link rel="icon" href="./images/logo-icon.svg" />
 		<link rel="stylesheet" href="./styles/vendors/reset.css" />
 		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="./styles/partials/register.css" />
 		<link rel="stylesheet" href="./styles/partials/forms.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
@@ -41,7 +42,7 @@
 				/>
 			</picture>
 		</div>
-
+    
 		<div class="container-form">
 			<div class="prelog">
 				Informações do contrato
@@ -65,12 +66,14 @@
 
 			<form name="mobile" method="POST" action="/ituphp/php/orderRegister.php">
 				<div class="form-group">
+                    <p class='sucess-order'>OK, pedido feito com sucesso</p>
 					<label for="inputEmail">Descrição do pedido:</label>
 
 					<div class="input-group">
 						<textarea id="desc" class="form-control area-text" name="desc" required ></textarea>
 					</div>
-					<button type="Mobile" id="login-button">Enviar</button>
+
+					<button type="submit" id="login-button">Enviar</button>
 					<input type="hidden" name="type" value="Mobile">
 				</div>
 			</form>

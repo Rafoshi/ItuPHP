@@ -1,12 +1,13 @@
 <?php
-    include 'connection.php';
-
     session_start();
+    include 'connection.php';
 
     $login = $_POST['email'];
     $password = $_POST['pwd'];
 
+  
     $query = $cn -> query("select * from tbl_user where user_email = '$login' and user_password = '$password';");
+
 
     if($query -> rowCount() == 1) {
         $show = $query -> fetch(PDO::FETCH_ASSOC);
@@ -23,9 +24,11 @@
 
             header('location:/ituphp/home-logged.php');
         }
-
     }
     else{
-        header('location:/ituphp/userNotFound.html');
+        $_SESSION['not_authenticated'] = true;
+        header('location:/ituphp/login.php');
+        exit();
     }
+    
 ?>

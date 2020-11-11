@@ -722,7 +722,7 @@ p::selection {
 	z-index: 10;
 }
 .combo-box ul {
-	line-height: 5.5rem;
+	line-height: 4.8rem;
 	width: 400px;
 	list-style: none;
 	padding-top: 10px;
@@ -796,7 +796,7 @@ hr {
 	padding-top: 40px;
 }
 .clipbord {
-	padding-top: 15px;
+	padding-top: 0px;
 }
 /*Portifolio*/
 .title-port {

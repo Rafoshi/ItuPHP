@@ -171,6 +171,13 @@ h2 {
 	color: white;
 	font-size: 30px;
 }
+.sucess-order{
+	font-family: Montserrat;
+	font-style: normal;
+	font-size: 18px;
+	color:var(--conf-color);
+};
+
 .alert .msg-title {
 	padding: 0 30px;
 	font-family: Montserrat;

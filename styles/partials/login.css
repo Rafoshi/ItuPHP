@@ -105,6 +105,10 @@ u {
 	cursor: pointer;
 }
 
+#error-message{
+	color: darkred;
+}
+
 .arrow-icon {
 	filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.15));
 	margin-top: 1%;
@@ -118,6 +122,10 @@ u {
 	html main,
 	body {
 		background-color: var(--background-color-dark-theme);
+	}
+
+	#error-message{
+		color: darkred;
 	}
 
 	#account,

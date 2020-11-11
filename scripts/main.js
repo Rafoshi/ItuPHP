@@ -33,19 +33,23 @@ function orangeAlert() {
 	}, 2500);
 }
 
-function greenAlert() {
-	classRemove("greenAlert", "hide");
-	classRemove("greenCircle", "hide");
-	classRemove("greenCheck", "hide");
-	classRemove("greenTitle", "hide");
-	classRemove("greenMessage", "hide");
+window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 2000);
 
-	classAdd("greenAlert", "transition");
-
-	setTimeout(() => {
-		classAdd("greenAlert", "hide");
-	}, 2500);
-}
+//Grean alert
+var botao=document.querySelector("#login-button")
+      botao.addEventListener("click",function(){
+        $('.alert').addClass("show");
+        $('.alert').removeClass("hide");
+        $('.alert').addClass("showAlert");
+        setTimeout(function(){
+          $('.alert').removeClass("show");
+          $('.alert').addClass("hide");
+        },2000);
+      });
 
 // It's a block of errors animations cards
 function errorPhone() {

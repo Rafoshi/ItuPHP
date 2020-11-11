@@ -180,6 +180,26 @@
 										Sair
 									</a>
 								</li>
+								<li
+									class="help-item"
+									onclick="window.location.href='./register-adm.php'"
+								>
+									<a
+										onclick="window.location.href='./register-adm.php'"
+									>
+										<div
+											class="icon"
+											onclick="window.location.href='./register-adm.php'"
+										>
+											<span
+												data-feather="user-plus"
+												id="log-out"
+												onclick="window.location.href='./register-adm.php'"
+											></span>
+										</div>
+										Cadastrar Adm
+									</a>
+								</li>
 								<li class="trash">
 									<a onclick="deleteAccount()">
 										<div class="icon">

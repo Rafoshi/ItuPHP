@@ -108,6 +108,13 @@ main {
 	width: 95vw;
 }
 
+.sucess-order{
+	font-family: Montserrat;
+	font-style: normal;
+	font-size: 18px;
+	color:var(--conf-color);
+}
+
 #title {
 	font-size: 3.8rem;
 	font-weight: 900;
