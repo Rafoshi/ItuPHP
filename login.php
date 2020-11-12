@@ -54,12 +54,12 @@ session_start()
 					<div class="form-group">
 						<div class="form-group">
 							<label for="email">E-mail</label>
-							<input type="email" class="form-control" id="email" name="email" required />	
+							<input type="email" class="form-control login-input" id="email" name="email" required />	
 						</div>
 
 						<div class="form-group">
 							<label for="pwd">Senha</label>
-							<input type="password" class="form-control" id="pwd" name="pwd" minlength="6" required />	
+							<input type="password" class="form-control login-input" id="pwd" name="pwd" minlength="6" required />	
 						</div>
 
 						<input type="submit" id="login-button" value="Entrar" onsubmit="window.location.href='./home-logged-admin.html'" ></input>
