@@ -116,6 +116,10 @@ u {
 	cursor: pointer;
 }
 
+.login-input{
+	font-size: 1.2rem;
+}
+
 @media (prefers-color-scheme: dark) {
 	html,
 	main,
