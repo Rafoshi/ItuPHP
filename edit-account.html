@@ -37,7 +37,7 @@
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./home-logged-admin.html'"
+				onclick="window.location.href='./home-logged-admin.php'"
 			/>
 		</picture>
 
@@ -57,10 +57,7 @@
 				>
 			</div>
 
-			<!--
-
-			-->
-			<div class="form">
+			<div name="edit-account" method="POST" action="/ituphp/php/newPassword.php">
 				<h1 id="title" style="font-size: 4rem;">
 					Definir sua nova senha
 				</h1>
@@ -87,7 +84,7 @@
 						<input
 							type="text"
 							class="form-control"
-							id="confirm_password"
+							id="repassword"
 							name="repassword"
 							minlength="7"
 							required
