@@ -45,14 +45,15 @@
 				<h2>Acompanhar pedidos</h2>
 				<div class="search-container">
 					<i data-feather="search" id="search-icon"></i>
-					<div class="form-group">
+					<form class="form-group" role="search" method="get" action="my-orders.php">
 						<input
 							class="form-control"
 							type="text"
 							id="search"
-							name="search"
+							name="busca"
+							value=""
 						/>
-					</div>
+					</form>
 				</div>
 			</div> 
 
@@ -67,14 +68,13 @@
 						</tr>
 					</thead>
 					<tbody>
-						<?php
-							include './php/connection.php';
-
+					<?php
 							session_start();
+							include './php/connection.php';
+							
 							$userID = $_SESSION['ID'];
-
-							$result = $cn -> query("SELECT order_type, order_desc, order_status, fk_user_id, order_id FROM infityphp.tbl_order where fk_user_id = $userID;");
-
+							$keyword = $_GET['busca'];
+							$result = $cn -> query("SELECT order_type, order_desc, order_status, fk_user_id, order_id FROM infityphp.tbl_order where order_type like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_status like concat('%','$keyword','%');");
 							while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
 								echo '<tr>'.'<th scope="row">'.'</th>'."<td>".$row['order_type']."</td><td>".$row['order_desc']."</td><td>".$row['order_status']."</td></tr>";
 							}
