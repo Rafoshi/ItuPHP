@@ -50,7 +50,7 @@
 							class="form-control"
 							type="text"
 							id="search"
-							name="search"
+							name="busca"
 						/>
 					</div>
 				</div>
@@ -76,9 +76,8 @@
 
 							session_start();
 							$userID = $_SESSION['ID'];
-
-							$result = $cn -> query("SELECT o.order_type, o.order_desc, o.order_status, o.fk_user_id, o.order_id,u.user_name FROM infityphp.tbl_order as o join tbl_user as u on u.user_id = o.fk_user_id;");
-
+							$keyword = $_GET['busca'];
+							$result = $cn -> query("SELECT * FROM infityphp.tbl_all where order_type like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_status like concat('%','$keyword','%');");
 							while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
 								$orderID = $row['order_id'];
 								echo '<th scope="row">'.
@@ -97,6 +96,7 @@
 								"</input>".
 								"</td></tr>";
 							}
+							
 						?>
 					</tbody>
 				</table>
