@@ -89,10 +89,12 @@ header nav ul li a {
 }
 
 #login-button {
-	margin-top: auto;
+    margin-top: 0.80%;
 	margin-bottom: auto;
 	padding-left: 6rem;
 	padding-right: 6rem;
+	position: absolute;
+    right: 0;
 }
 
 .button {
