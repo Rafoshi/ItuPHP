@@ -57,14 +57,14 @@
 				>
 			</div>
 
-			<div name="edit-account" method="POST" action="/ituphp/php/newPassword.php">
+			<div name="edit-account">
 				<h1 id="title" style="font-size: 4rem;">
 					Definir sua nova senha
 				</h1>
 
 				<form
 					name="form"
-					action="#"
+					action="php/newPassword.php"
 					onsubmit="validateForm();return false"
 				>
 					<div class="form-group">
@@ -74,7 +74,7 @@
 							class="form-control"
 							id="password"
 							name="password"
-							minlength="7"
+							minlength="6"
 							required
 						/>
 					</div>
@@ -86,7 +86,7 @@
 							class="form-control"
 							id="repassword"
 							name="repassword"
-							minlength="7"
+							minlength="6"
 							required
 						/>
 
