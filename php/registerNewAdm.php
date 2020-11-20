@@ -8,9 +8,9 @@
     $password = md5($_POST['pwd']);
 
 
-    $consulta = $cn -> query("select user_email from tbl_user where user_email = '$email'");
+    $queries = $cn -> query("select user_email from tbl_user where user_email = '$email'");
     
-    if($consulta -> rowCount() >= 1){
+    if($queries -> rowCount() >= 1){
         header('location:/ituphp/register-adm-error.html');
     }
     else{

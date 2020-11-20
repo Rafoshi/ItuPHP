@@ -241,7 +241,7 @@
 								</button>
 								<button
 									id="delete-account-button"
-									onclick="deleteAnimation()"
+									onclick="window.location.href='./php/deleteAccount.php'"
 								>
 									Deletar conta
 								</button>
