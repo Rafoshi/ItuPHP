@@ -143,18 +143,18 @@
 								</li>
 								<li
 									class="setting-item"
-									onclick="window.location.href='./edit-account.html'"
+									onclick="window.location.href='./edit-account.php'"
 								>
 									<a
-										onclick="window.location.href='./edit-account.html'"
+										onclick="window.location.href='./edit-account.php'"
 									>
 										<div
 											class="icon"
-											onclick="window.location.href='./edit-account.html'"
+											onclick="window.location.href='./edit-account.php'"
 										>
 											<span
 												class="far fa-user"
-												onclick="window.location.href='./edit-account.html'"
+												onclick="window.location.href='./edit-account.php'"
 											></span>
 										</div>
 										Alterar senha

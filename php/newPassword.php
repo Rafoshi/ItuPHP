@@ -12,6 +12,7 @@ var_dump($repassword);
 
 if ($password == $repassword) {
     getConnection()->query("UPDATE `infityphp`.`tbl_user` SET `user_password` = '$password' WHERE (`user_id` = '$userID');");
+    header("location:../edit-account-success.php");
 } else {
     echo '<script>alert("As senhas não são compatíveis");</script>';
 }

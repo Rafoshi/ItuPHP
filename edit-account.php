@@ -30,7 +30,16 @@
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
-				onclick="window.location.href='./home-logged-admin.html'"
+				<?php
+					session_start();
+					$userID = $_SESSION['ID'];
+					if($userID == '1' || $userID = 1){
+						echo `onclick="window.location.href='./home-logged-admin.php'"`;
+					}
+					else{
+						echo `onclick="window.location.href='./home-logged.php'"`;
+					}
+				?>
 			/>
 			<img
 				src="./images/arrow-left.svg"
