@@ -77,7 +77,7 @@
 							session_start();
 							$userID = $_SESSION['ID'];
 							$keyword = $_GET['busca'];
-							$result = $cn -> query("SELECT * FROM infityphp.tbl_all where order_type like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_status like concat('%','$keyword','%');");
+							$result = getConnection() -> query("SELECT * FROM infityphp.tbl_all where order_type like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_status like concat('%','$keyword','%');");
 							while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
 								$orderID = $row['order_id'];
 								echo '<th scope="row">'.
