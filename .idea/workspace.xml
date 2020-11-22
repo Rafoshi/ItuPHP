@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd40559f-df2f-4c2c-95ae-0ff3c06441ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/my-orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/checkOrders.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/checkOrders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/deleteAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/deleteAccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/orderRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/orderRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/registerInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/registerInsert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/registerNewAdm.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/registerNewAdm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/userValidation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/userValidation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/track-order.php" beforeDir="false" afterPath="$PROJECT_DIR$/track-order.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +46,8 @@
       <updated>1605899935831</updated>
       <workItem from="1605899940897" duration="5842000" />
       <workItem from="1606075286026" duration="2207000" />
+      <workItem from="1606079601024" duration="560000" />
+      <workItem from="1606080395683" duration="242000" />
     </task>
     <servers />
   </component>
