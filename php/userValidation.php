@@ -6,7 +6,7 @@
     $password = $_POST['pwd'];
 
   
-    $query = $cn -> query("select * from tbl_user where user_email = '$login' and user_password = '$password';");
+    $query = getConnection()-> query("select * from tbl_user where user_email = '$login' and user_password = '$password';");
 
 
     if($query -> rowCount() == 1) {
