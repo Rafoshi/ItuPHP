@@ -211,7 +211,7 @@ h2 {
 	max-width: 80%;
 	border-radius: 4px;
 	overflow: hidden;
-	opacity: 0.4;
+	opacity: 1;
 	pointer-events: none;
 	-webkit-transition: opacity 06s linear;
 	-moz-transition: opacity 0.6s linear;
