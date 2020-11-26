@@ -20,6 +20,7 @@
 		/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="./scripts/timer.js"></script>
 	</head>
 	<body >
 		<picture>
@@ -45,13 +46,12 @@
 				<h2>Acompanhar pedidos</h2>
 				<div class="search-container">
 					<i data-feather="search" id="search-icon"></i>
-					<form class="form-group" role="search" method="get" action="my-orders.php">
+					<form class="form-group" role="search" method="Post" >
 						<input
 							class="form-control"
 							type="text"
-							id="search"
+							id="busca"
 							name="busca"
-							value=""
 						/>
 					</form>
 				</div>
@@ -67,22 +67,19 @@
 						<th scope="col">Status</th>
 						</tr>
 					</thead>
-					<tbody>
-					<?php
-							session_start();
-							include './php/connection.php';
-							
-							$userID = $_SESSION['ID'];
-							$keyword = $_GET['busca'];
-							$result = getConnection() -> query("SELECT order_type, order_desc, order_status, fk_user_id, order_id FROM infityphp.tbl_order where order_type like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_status like concat('%','$keyword','%');");
-							while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
-								echo '<tr>'.'<th scope="row">'.'</th>'."<td>".$row['order_type']."</td><td>".$row['order_desc']."</td><td>".$row['order_status']."</td></tr>";
-							}
-						?>
+					<tbody id="teste">
+
 					</tbody>
 				</table>
 			</div>
-
+		<script>
+			$('#busca').keyup(function(){
+				var busca = $("#busca").val();
+				$.post('./php/search.php', {busca: busca},function(data){
+					$("#teste").html(data);
+				});
+			});
+		</script>
 		</main>
 
 		<script>
