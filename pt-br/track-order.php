@@ -50,7 +50,7 @@
                         class="form-control"
                         type="text"
                         id="search"
-                        name="busca"
+                        name="search"
                 />
             </div>
         </div>
@@ -65,42 +65,24 @@
                 <th scope="col"> </th>
                 <th scope="col">Tipo</th>
                 <th scope="col">Descrição</th>
-                <th scope="col">Status</th>
                 <th scope="col">Cliente</th>
+                <th scope="col">Status</th>
                 <th scope="col">Código</th>
             </tr>
             </thead>
-            <tbody>
-            <?php
-            include './php/connection.php';
+            <tbody id="test">
 
-            session_start();
-            $userID = $_SESSION['ID'];
-            $keyword = $_GET['busca'];
-            $result = getConnection() -> query("SELECT * FROM infityphp.vw_all where order_type like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_status like concat('%','$keyword','%');");
-            while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
-                $orderID = $row['order_id'];
-                echo '<th scope="row">'.
-                    '</th>'.
-                    "<td>".
-                    $row['order_type'].
-                    "</td><td>".
-                    $row['order_desc'].
-                    "</td><td>".
-                    $row['user_name'].
-                    "</td><td>".
-                    "<form method='post' action='php/checkOrders.php'>".
-                    $row['order_status'].
-                    "</td><td>".
-                    "<input type='submit' name='check-button' id='check-button' value='$orderID' >".
-                    "</input>".
-                    "</td></tr>";
-            }
-
-            ?>
             </tbody>
         </table>
     </div>
+    <script>
+			$('#search').keyup(function(){
+				var search = $("#search").val();
+				$.post('./php/searchadm.php', {search: search},function(data){
+					$("#test").html(data);
+				});
+			});
+	</script>
 </main>
 
 <script>
