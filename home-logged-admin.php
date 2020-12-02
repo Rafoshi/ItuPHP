@@ -23,6 +23,15 @@
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	<body>
+		<?php 
+			include './php/connection.php';
+			session_start();
+			$userID = $_SESSION['ID'];
+
+			if(empty($_SESSION['ID'])){
+				echo "<html><script>location.href='../index.html'</script></html>";
+			} 
+		?>
 		<div id="mySidenav" class="sidenav-language">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
 				>&times;</a
@@ -108,11 +117,7 @@
 							<ul class="menu-bar">
 								
 							<?php
-								include './php/connection.php';
-
-								session_start();
-								$userID = $_SESSION['ID'];
-
+								   
 								$query = $cn -> query("SELECT user_name FROM tbl_user where user_id = $userID ");
 
 								$show = $query -> fetch(PDO::FETCH_ASSOC);

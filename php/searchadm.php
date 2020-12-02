@@ -1,8 +1,8 @@
 <?php
     include './connection.php';
-
     session_start();
     $keyword = $_POST['search'];
+
 
 
     $result = getConnection() -> query("SELECT * FROM infityphp.vw_all where user_name like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_type like concat ('%','$keyword','%') or order_status like concat('%','$keyword','%') or order_id like concat ('%','$keyword','%');");
