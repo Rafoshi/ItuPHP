@@ -4,15 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Track Orders - Infinity Tech</title>
-		<link rel="icon" href="./images/logo-icon.svg" />
-		<link rel="stylesheet" href="./styles/vendors/reset.css" />
-		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
-		<link rel="stylesheet" href="./styles/partials/orders.css" />
+		<link rel="icon" href="../images/logo-icon.svg" />
+		<link rel="stylesheet" href="../styles/vendors/reset.css" />
+		<link rel="stylesheet" href="../styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/partials/orders.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./scripts/main.js" defer></script>
+		<script src="../scripts/main.js" defer></script>
 		<script src="https://unpkg.com/feather-icons"></script>
 		<link
 			rel="stylesheet prefetch"
@@ -24,7 +24,7 @@
 	<body >
 		<picture>
 			<source
-				srcset="./images/arrow-left-white.svg"
+				srcset="../images/arrow-left-white.svg"
 				media="(prefers-color-scheme: dark)"
 				ondragstart="return false;"
 				alt="Seta para voltar"
@@ -32,7 +32,7 @@
 				onclick="window.location.href='./home-logged.php'"
 			/>
 			<img
-				src="./images/arrow-left.svg"
+				src="../images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
@@ -70,7 +70,7 @@
 					<tbody>
 					<?php
 							session_start();
-							include './php/connection.php';
+							include '../php/connection.php';
 							
 							$userID = $_SESSION['ID'];
 							$keyword = $_GET['busca'];

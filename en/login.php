@@ -7,22 +7,22 @@ session_start()
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Login - Infinity Tech</title>
-		<link rel="icon" href="./images/logo-icon.svg" />
-		<link rel="stylesheet" href="./styles/vendors/reset.css" />
-		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
-		<link rel="stylesheet" href="./styles/partials/login.css" />
+		<link rel="icon" href="../images/logo-icon.svg" />
+		<link rel="stylesheet" href="../styles/vendors/reset.css" />
+		<link rel="stylesheet" href="../styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/partials/login.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./scripts/main.js" defer></script>
+		<script src="../scripts/main.js" defer></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
 		<picture>
 			<source
-				srcset="./images/arrow-left-white.svg"
+				srcset="../images/arrow-left-white.svg"
 				media="(prefers-color-scheme: dark)"
 				ondragstart="return false;"
 				alt="Seta para voltar"
@@ -30,7 +30,7 @@ session_start()
 				onclick="window.location.href='./index.html'"
 			/>
 			<img
-				src="./images/arrow-left.svg"
+				src="../images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
@@ -42,7 +42,7 @@ session_start()
 			<div class="form">
 				<h1>Hello, sign in</h1>
 				
-				<form name="login" method="POST" action="/ituphp/php/userValidation.php">
+				<form name="login" method="POST" action="/ituphp/php/userValidationEn.php">
 				<?php
 					if(isset($_SESSION['not_authenticated'])):
 				?>
@@ -62,13 +62,13 @@ session_start()
 							<input type="password" class="form-control login-input" id="pwd" name="pwd" minlength="6" required />	
 						</div>
 
-						<input type="submit" id="login-button" value="Entrar" onsubmit="window.location.href='./home-logged-admin.html'" ></input>
+						<input type="submit" id="login-button" value="Log in" onsubmit="window.location.href='./home-logged-admin.html'" ></input>
 				</form>
 
 
 				</div>
 				<img
-					src="./images/login-blue.svg"
+					src="../images/login-blue.svg"
 					alt="Login icone"
 					class="img-login"
 					onclick="window.location.href='./register.html'"
@@ -83,7 +83,7 @@ session_start()
 
 			<div class="image">
 				<img
-					src="./images/jigsaw-group.svg"
+					src="../images/jigsaw-group.svg"
 					alt="Um grupo de pessoals montando quebra cabeça"
 					class="img-fluid"
 					id="jigsaw"

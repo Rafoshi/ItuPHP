@@ -16,18 +16,18 @@
             $_SESSION['Acess'] = $show['user_lvl'];
             $_SESSION['ID'] = $show['user_id'];
 
-            header('location:/ituphp/home-logged-admin.php');
+            header('location:/ituphp/pt-br/home-logged-admin.php');
         }
         else{
             $_SESSION['Acess'] = $show['user_lvl'];
             $_SESSION['ID'] = $show['user_id'];
 
-            header('location:/ituphp/home-logged.php');
+            header('location:/ituphp/pt-br/home-logged.php');
         }
     }
     else{
         $_SESSION['not_authenticated'] = true;
-        header('location:/ituphp/login.php');
+        header('location:/ituphp/pt-br/login.php');
         exit();
     }
     

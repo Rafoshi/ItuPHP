@@ -4,16 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Edit account - Infinity Tech</title>
-		<link rel="icon" href="./images/logo-icon.svg" />
-		<link rel="stylesheet" href="./styles/vendors/reset.css" />
-		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
-		<link rel="stylesheet" href="./styles/partials/edit-account.css" />
+		<link rel="icon" href="../images/logo-icon.svg" />
+		<link rel="stylesheet" href="../styles/vendors/reset.css" />
+		<link rel="stylesheet" href="../styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/partials/edit-account.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./scripts/main.js" defer></script>
-		<script src="./scripts/partials/passwordCheck.js" defer></script>
+		<script src="../scripts/main.js" defer></script>
+		<script src="../scripts/partials/passwordCheck.js" defer></script>
 		<script src="https://unpkg.com/feather-icons"></script>
 		<link
 			rel="stylesheet prefetch"
@@ -25,7 +25,7 @@
 	<body>
 		<picture>
 			<source
-				srcset="./images/arrow-left-white.svg"
+				srcset="../images/arrow-left-white.svg"
 				media="(prefers-color-scheme: dark)"
 				ondragstart="return false;"
 				alt="Seta para voltar"
@@ -42,7 +42,7 @@
 				?>
 			/>
 			<img
-				src="./images/arrow-left.svg"
+				src="../images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
@@ -73,13 +73,13 @@
 
 				<form
 					name="form"
-					action="php/newPassword.php"
+					action="../php/newPasswordEn.php"
 					onsubmit="validateForm();return false"
 				>
 					<div class="form-group">
 						<label for="password">New password</label>
 						<input
-							type="text"
+							type="password"
 							class="form-control"
 							id="password"
 							name="password"
@@ -91,7 +91,7 @@
 					<div class="form-group">
 						<label for="repassword">Confirm your password</label>
 						<input
-							type="text"
+							type="password"
 							class="form-control"
 							id="repassword"
 							name="repassword"
@@ -110,7 +110,7 @@
 
 			<div class="image">
 				<img
-					src="./images/edit.png"
+					src="../images/edit.png"
 					id="netbook"
 					alt="Homem com terno e engrenagem"
 					class="img-fluid img"
