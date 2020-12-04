@@ -4,12 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home | User - Infinity Tech</title>
-		<link rel="icon" href="./images/logo-icon.svg" />
+		<link rel="icon" href="../images/logo-icon.svg" />
 		<script src="jquery-3.5.1.min.js"></script>
-		<link rel="stylesheet" href="./styles/vendors/reset.css" />
-		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
-		<link rel="stylesheet" href="./styles/partials/home-looged-admin.css" />
-		<link rel="stylesheet" href="./styles/partials/responsive-nav.css">
+		<link rel="stylesheet" href="../styles/vendors/reset.css" />
+		<link rel="stylesheet" href="../styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/partials/home-looged-admin.css" />
+		<link rel="stylesheet" href="../styles/partials/responsive-nav.css">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
@@ -31,7 +31,7 @@
 				>Português<i data-feather="check-circle" id="check-icon"></i
 			></a>
 			<hr />
-			<a onclick="window.location.href='../../Pages-EN/Home/index.html'"
+			<a onclick="window.location.href='../en/index.html'"
 				>English</a
 			>
 			<hr />
@@ -56,12 +56,12 @@
 
 					<picture>
 						<source
-							srcset="./images/logo-white.png"
+							srcset="../images/logo-white.png"
 							class="img-fluid"
 							media="(prefers-color-scheme: dark)"
 						/>
 						<img
-							src="./images/logo.png"
+							src="../images/logo.png"
 							alt="linkedin"
 							class="img-fluid"
 							ondragstart="return false;"
@@ -107,7 +107,7 @@
 						<div id="combo-box" class="combo-box">
 							<ul class="menu-bar">
 								<?php
-									include './php/connection.php';
+									include '../php/connection.php';
 
 									session_start();
 									$userID = $_SESSION['ID'];
@@ -123,18 +123,18 @@
 								<hr />
 								<li
 									class="clipbord"
-									onclick="window.location.href='my-orders.php'"
+									onclick="window.location.href='./my-orders.php'"
 								>
 									<a
-										onclick="window.location.href='my-orders.php'"
+										onclick="window.location.href='./my-orders.php'"
 									>
 										<div
 											class="icon"
-											onclick="window.location.href='my-orders.php'"
+											onclick="window.location.href='./my-orders.php'"
 										>
 											<span
 												class="far fa-clipboard"
-												onclick="window.location.href='my-orders.php'"
+												onclick="window.location.href='./my-orders.php'"
 											></span>
 										</div>
 										Acompanhar pedido
@@ -161,19 +161,19 @@
 								</li>
 								<li
 									class="help-item"
-									onclick="window.location.href='./index.html'"
+									onclick="window.location.href='../index.html'"
 								>
 									<a
-										onclick="window.location.href='./index.html'"
+										onclick="window.location.href='../index.html'"
 									>
 										<div
 											class="icon"
-											onclick="window.location.href='./index.html'"
+											onclick="window.location.href='../index.html'"
 										>
 											<span
 												data-feather="log-out"
 												id="log-out"
-												onclick="window.location.href='./php/logout.php'"
+												onclick="window.location.href='../php/logout.php'"
 											></span>
 										</div>
 										Sair
@@ -224,7 +224,7 @@
 						<div class="delete-group">
 							<div class="delete-icon">
 								<img
-									src="./images/Group 20.svg"
+									src="../images/Group 20.svg"
 									alt="smartphone"
 									id="icon-delete"
 								/>
@@ -241,7 +241,7 @@
 								</button>
 								<button
 									id="delete-account-button"
-									onclick="window.location.href='./php/deleteAccount.php'"
+									onclick="window.location.href='../php/deleteAccount.php'"
 								>
 									Deletar conta
 								</button>
@@ -252,7 +252,7 @@
 
 				<img
 					class="content-img img-fluid"
-					src="./images/main-content.svg"
+					src="../images/main-content.svg"
 					id="img-main"
 					alt="Homem usando computador"
 					ondragstart="return false;"
@@ -285,7 +285,7 @@
 						<div class="card">
 							<div class="avatar">
 								<img
-									src="./images/smartphone.svg"
+									src="../images/smartphone.svg"
 									alt="smartphone"
 								/>
 							</div>
@@ -309,7 +309,7 @@
 							<div class="card">
 								<div class="avatar">
 									<img
-										src="./images/monitorsmartphone.svg"
+										src="../images/monitorsmartphone.svg"
 										alt="monitorsmartphone"
 									/>
 								</div>
@@ -333,7 +333,7 @@
 						</div>
 						<div class="card">
 							<div class="avatar">
-								<img src="./images/monitor.svg" alt="monitor" />
+								<img src="../images/monitor.svg" alt="monitor" />
 							</div>
 							<h3>Web</h3>
 							<div class="value">
@@ -367,28 +367,28 @@
 
 				<div id="portfolio">
 					<div class="tile scale-anm web all">
-						<img src="./images/HomeBe-the-hero.png" alt="" />
+						<img src="../images/HomeBe-the-hero.png" alt="" />
 					</div>
 					<div class="tile scale-anm bcards all">
 						<img src="" alt="" />
 					</div>
 					<div class="tile scale-anm web all">
-						<img src="./images/HomeEcolata.png" alt="" />
+						<img src="../images/HomeEcolata.png" alt="" />
 					</div>
 					<div class="tile scale-anm web all">
-						<img src="./images/HomeProffy.png" alt="" />
+						<img src="../images/HomeProffy.png" alt="" />
 					</div>
 					<div class="tile scale-anm flyers all">
-						<img src="./images/mobileEcoleta.png" alt="" />
+						<img src="../images/mobileEcoleta.png" alt="" />
 					</div>
 					<div class="tile scale-anm bcards all">
 						<img src="" alt="" />
 					</div>
 					<div class="tile scale-anm flyers all">
-						<img src="./images/MobileBe-thehoro.png" alt="" />
+						<img src="../images/MobileBe-thehoro.png" alt="" />
 					</div>
 					<div class="tile scale-anm flyers all">
-						<img src="" alt="" />
+						<img src="../images/flyeritu.png" alt="" />
 					</div>
 					<div class="tile scale-anm web all">
 						<img src="" alt="" />
@@ -418,7 +418,7 @@
 
 				<img
 					class="about-image img-fluid"
-					src="./images/person.svg"
+					src="../images/person.svg"
 					alt="pessoinhas"
 					ondragstart="return false;"
 				/>
@@ -466,11 +466,11 @@
 							>
 								<picture>
 									<source
-										srcset="./images/facebook-white.svg"
+										srcset="../images/facebook-white.svg"
 										media="(prefers-color-scheme: dark)"
 									/>
 									<img
-										src="./images/facebook-icon.svg"
+										src="../images/facebook-icon.svg"
 										alt="facebook"
 										ondragstart="return false;"
 									/>
@@ -484,11 +484,11 @@
 							>
 								<picture>
 									<source
-										srcset="./images/mail-white.svg"
+										srcset="../images/mail-white.svg"
 										media="(prefers-color-scheme: dark)"
 									/>
 									<img
-										src="./images/email-icon.svg"
+										src="../images/email-icon.svg"
 										alt="email"
 										ondragstart="return false;"
 									/>
@@ -503,11 +503,11 @@
 							>
 								<picture>
 									<source
-										srcset="./images/linkedin-white.svg"
+										srcset="../images/linkedin-white.svg"
 										media="(prefers-color-scheme: dark)"
 									/>
 									<img
-										src="./images/linkedin-icon.svg"
+										src="../images/linkedin-icon.svg"
 										alt="linkedin"
 										ondragstart="return false;"
 									/>
@@ -521,11 +521,11 @@
 							>
 								<picture>
 									<source
-										srcset="./images/instagram-white.svg"
+										srcset="../images/instagram-white.svg"
 										media="(prefers-color-scheme: dark)"
 									/>
 									<img
-										src="./images/instagram-icon.svg"
+										src="../images/instagram-icon.svg"
 										alt="instagram"
 										ondragstart="return false;"
 									/>
@@ -543,8 +543,8 @@
 							feather.replace();
 						</script>
 
-						<script src="./scripts/main.js"></script>
-						<script src="./scripts/partials/navbar.js"></script>
+						<script src="../scripts/main.js"></script>
+						<script src="../scripts/partials/navbar.js"></script>
 						<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 						<script>
 							new TypeIt("#subtitle", {

@@ -4,15 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Acompanhar Pedidos - Infinity Tech</title>
-		<link rel="icon" href="./images/logo-icon.svg" />
-		<link rel="stylesheet" href="./styles/vendors/reset.css" />
-		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
-		<link rel="stylesheet" href="./styles/partials/orders.css" />
+		<link rel="icon" href="../images/logo-icon.svg" />
+		<link rel="stylesheet" href="../styles/vendors/reset.css" />
+		<link rel="stylesheet" href="../styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/partials/orders.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./scripts/main.js" defer></script>
+		<script src="../scripts/main.js" defer></script>
 		<script src="https://unpkg.com/feather-icons"></script>
 		<link
 			rel="stylesheet prefetch"
@@ -20,12 +20,12 @@
 		/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		<script src="./scripts/timer.js"></script>
+		<script src="../scripts/timer.js"></script>
 	</head>
 	<body >
 		<picture>
 			<source
-				srcset="./images/arrow-left-white.svg"
+				srcset="../images/arrow-left-white.svg"
 				media="(prefers-color-scheme: dark)"
 				ondragstart="return false;"
 				alt="Seta para voltar"
@@ -33,7 +33,7 @@
 				onclick="window.location.href='./home-logged.php'"
 			/>
 			<img
-				src="./images/arrow-left.svg"
+				src="../images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
@@ -75,7 +75,7 @@
 		<script>
 			$('#busca').keyup(function(){
 				var busca = $("#busca").val();
-				$.post('./php/search.php', {busca: busca},function(data){
+				$.post('../php/search.php', {busca: busca},function(data){
 					$("#teste").html(data);
 				});
 			});

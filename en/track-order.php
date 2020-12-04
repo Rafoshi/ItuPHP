@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Track orders - Infinity Tech</title>
-    <link rel="icon" href="./images/logo-icon.svg" />
-    <link rel="stylesheet" href="./styles/vendors/reset.css" />
-    <link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
-    <link rel="stylesheet" href="./styles/partials/orders.css" />
+    <title>Acompanhar Pedidos - Infinity Tech</title>
+    <link rel="icon" href="../images/logo-icon.svg" />
+    <link rel="stylesheet" href="../styles/vendors/reset.css" />
+    <link rel="stylesheet" href="../styles/vendors/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/partials/orders.css" />
     <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet"
     />
-    <script src="./scripts/main.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <link
             rel="stylesheet prefetch"
@@ -24,7 +24,7 @@
 <body >
 <picture>
     <source
-            srcset="./images/arrow-left-white.svg"
+            srcset="../images/arrow-left-white.svg"
             media="(prefers-color-scheme: dark)"
             ondragstart="return false;"
             alt="Seta para voltar"
@@ -32,7 +32,7 @@
             onclick="window.location.href='./home-logged-admin.php'"
     />
     <img
-            src="./images/arrow-left.svg"
+            src="../images/arrow-left.svg"
             ondragstart="return false;"
             alt="Seta para voltar"
             class="arrow-icon"
@@ -42,7 +42,7 @@
 
 <main>
     <div class="search">
-        <h2 id="orderText">Track orders</h2>
+        <h2 id="orderText">Track Orders</h2>
         <div class="search-container">
             <i data-feather="search" id="search-icon"></i>
             <div class="form-group">
@@ -50,7 +50,8 @@
                         class="form-control"
                         type="text"
                         id="search"
-                        name="busca"
+                        name="search"
+                        autofocus
                 />
             </div>
         </div>
@@ -65,42 +66,24 @@
                 <th scope="col"> </th>
                 <th scope="col">Type</th>
                 <th scope="col">Description</th>
+                <th scope="col">Client</th>
                 <th scope="col">Status</th>
-                <th scope="col">Customer</th>
                 <th scope="col">Code</th>
             </tr>
             </thead>
-            <tbody>
-            <?php
-            include './php/connection.php';
+            <tbody id="test">
 
-            session_start();
-            $userID = $_SESSION['ID'];
-            $keyword = $_GET['busca'];
-            $result = getConnection() -> query("SELECT * FROM infityphp.vw_all where order_type like concat ('%','$keyword','%') or order_desc like concat ('%', '$keyword', '%') or order_status like concat('%','$keyword','%');");
-            while ($row = $result -> fetch(PDO::FETCH_ASSOC)) {
-                $orderID = $row['order_id'];
-                echo '<th scope="row">'.
-                    '</th>'.
-                    "<td>".
-                    $row['order_type'].
-                    "</td><td>".
-                    $row['order_desc'].
-                    "</td><td>".
-                    $row['user_name'].
-                    "</td><td>".
-                    "<form method='post' action='php/checkOrders.php'>".
-                    $row['order_status'].
-                    "</td><td>".
-                    "<input type='submit' name='check-button' id='check-button' value='$orderID' >".
-                    "</input>".
-                    "</td></tr>";
-            }
-
-            ?>
             </tbody>
         </table>
     </div>
+    <script>
+			$('#search').keyup(function(){
+				var search = $("#search").val();
+				$.post('../php/searchadmEn.php', {search: search},function(data){
+					$("#test").html(data);
+				});
+			});
+	</script>
 </main>
 
 <script>

@@ -11,11 +11,11 @@
 
 
    switch ($type) {
-    case 'Web': header('location:/ituphp/form-web-sucess.html');
+    case 'Web': header('location:/ituphp/en/form-web-sucess.html');
       break;
-    case 'Mobile': header('location:/ituphp/form-mobile-sucess.html');
+    case 'Mobile': header('location:/ituphp/en/form-mobile-sucess.html');
       break;
-      case 'Web&Mobile': header('location:/ituphp/form-web-mobile-sucess.html');
+      case 'Web&Mobile': header('location:/ituphp/en/form-web-mobile-sucess.html');
     break;
 }
 ?>

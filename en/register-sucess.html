@@ -4,22 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Register - Infinity Tech</title>
-		<link rel="icon" href="./images/logo-icon.svg" />
-		<link rel="stylesheet" href="./styles/vendors/reset.css" />
-		<link rel="stylesheet" href="./styles/vendors/bootstrap.css" />
-		<link rel="stylesheet" href="./styles/partials/register.css" />
+		<link rel="icon" href="../images/logo-icon.svg" />
+		<link rel="stylesheet" href="../styles/vendors/reset.css" />
+		<link rel="stylesheet" href="../styles/vendors/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/partials/register.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./scripts/main.js" defer></script>
+		<script src="../scripts/main.js" defer></script>
 		<script src="https://unpkg.com/feather-icons"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	<body>
 		<picture>
 			<source
-				srcset="./images/arrow-left-white.svg"
+				srcset="../images/arrow-left-white.svg"
 				media="(prefers-color-scheme: dark)"
 				ondragstart="return false;"
 				alt="Seta para voltar"
@@ -27,7 +27,7 @@
 				onclick="window.location.href='./index.html'"
 			/>
 			<img
-				src="./images/arrow-left.svg"
+				src="../images/arrow-left.svg"
 				ondragstart="return false;"
 				alt="Seta para voltar"
 				class="arrow-icon"
@@ -55,7 +55,7 @@
 			<div class="form"  >
 				<h1>Hello, Make your registration here</h1>
 
-				<form name="formRegister" action="/ituphp/php/registerInsert.php" method="POST" >
+				<form name="formRegister" action="/ituphp/php/registerInsertEn.php" method="POST" >
 
 					<div class="form-group">
 
@@ -77,21 +77,21 @@
 					<input type="submit" id="login-button" value="Cadastrar" ></input>
 
 				<img
-					src="./images/login-blue.svg"
+					src="../images/login-blue.svg"
 					alt="Login icone"
 					class="img-login"
-					onclick="window.location.href='../Login/index.html'"
+					onclick="window.location.href='../login.php'"
 					ondragstart="return false;"
 				/>
 
 				<small id="register">
-					<a href="./Login.php">Already have an account</a>
+					<a href="./login.php">Already have an account</a>
 				</small>
 			</div>
 
 			<div class="image">
 				<img
-					src="./images/321.svg"
+					src="../images/321.svg"
 					alt="Uma mulher voando com um netbook"
 					class="img-fluid"
 					id="netbook"
