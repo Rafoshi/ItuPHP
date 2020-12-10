@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Rocketseat" title="Rocketseat" src=".github/logo.svg" width="60px" />
+    <img alt="Rocketseat" title="Rocketseat" src=".github/logo.svg" width="200px" />
 </h1>
 
 <br>
@@ -10,19 +10,10 @@
 
 ## Infinity Tech Us
 
-## 🚀 Technologies
-This project uses this tools:
-
-- [Node.js](https://nodejs.org/en/)
-- [Express](https://expressjs.com/pt-br/)
-- [Nunjucks](https://mozilla.github.io/nunjucks/)
-- [SQLite](https://www.sqlite.org/index.html)
-
-
 ## 📖 About The Projeto
-Proffy is a plataform for online study, to connecting the Proffys (teachers), who decide their price and schedule, with the students.
+The website is a way to contract a system for your bussiness, here you can select between Web and Mobile.
 
 ## 💻 Layout
 You can see the design layout on the figma link bellow: 
 <br>
-[Figma Link](https://www.figma.com/file/XUUQD2R3htg7gfwrc7lhnw/Proffy_Web?node-id=0%3A1)
+[Figma Link](https://www.figma.com/file/EPYH5k9xyXBLKE2ocpqo3a/Infinity-Php?node-id=57%3A15)
