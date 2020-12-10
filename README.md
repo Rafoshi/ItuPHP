@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-  <img alt="Proffy" src=".github/Home.svg" width="100%">
+  <img alt="Proffy" src=".github/home.jpg" width="100%">
 </p>
 
 ## Infinity Tech Us
